@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 700" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- Azimuth radiation pattern, "Free-Space Pattern", redrawn from NCVEC
+       pool figure E9-1 (canon 1.4 binding spec). Full-circle polar plot,
+       radial spokes every 15 deg, 0 deg reference at the right. Concentric
+       dB rings on the official scale r = R * 10^(dB/40): -3, -6, -12, -24
+       (labeled outer to inner near the top), outer circle = 0 dB, two
+       unlabeled inner circles as published. The heavy trace is the official
+       vector geometry transcribed: main lobe at 0 deg touching the rim with
+       -3 dB crossings at +/-25 deg (50 deg beamwidth, E9B01), rear lobe
+       about -18 dB at 180 deg (front-to-back, E9B02), trace level about
+       -14 dB at +/-90 deg (front-to-side, E9B03).
+       Map: center (360,400), R = 255. -->
+
+  <!-- ===== Title ===== -->
+  <text x="360" y="56" font-size="32" font-weight="bold" text-anchor="middle"
+        fill="currentColor" stroke="none">Figure E9-1</text>
+
+  <!-- ===== Caption text, upper right ===== -->
+  <g fill="currentColor" stroke="none" font-size="21">
+    <text x="652" y="150" text-anchor="start">Free-Space</text>
+    <text x="668" y="176" text-anchor="start">Pattern</text>
+  </g>
+
+  <!-- ===== Grid: rings ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.5">
+    <circle cx="360" cy="400" r="214.6"/>
+    <circle cx="360" cy="400" r="180.5"/>
+    <circle cx="360" cy="400" r="127.8"/>
+    <circle cx="360" cy="400" r="64.1"/>
+    <circle cx="360" cy="400" r="30.5"/>
+    <circle cx="360" cy="400" r="15.8"/>
+    <circle cx="360" cy="400" r="2.2"/>
+  </g>
+
+  <!-- ===== Grid: radial spokes every 15 degrees ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.5">
+    <line x1="105.0" y1="400.0" x2="615.0" y2="400.0"/>
+    <line x1="391.9" y1="391.5" x2="606.3" y2="334.0"/>
+    <line x1="388.6" y1="383.5" x2="580.8" y2="272.5"/>
+    <line x1="383.3" y1="376.7" x2="540.3" y2="219.7"/>
+    <line x1="376.5" y1="371.4" x2="487.5" y2="179.2"/>
+    <line x1="368.5" y1="368.1" x2="426.0" y2="153.7"/>
+    <line x1="360.0" y1="655.0" x2="360.0" y2="145.0"/>
+    <line x1="351.5" y1="368.1" x2="294.0" y2="153.7"/>
+    <line x1="343.5" y1="371.4" x2="232.5" y2="179.2"/>
+    <line x1="336.7" y1="376.7" x2="179.7" y2="219.7"/>
+    <line x1="331.4" y1="383.5" x2="139.2" y2="272.5"/>
+    <line x1="328.1" y1="391.5" x2="113.7" y2="334.0"/>
+    <line x1="328.1" y1="408.5" x2="113.7" y2="466.0"/>
+    <line x1="331.4" y1="416.5" x2="139.2" y2="527.5"/>
+    <line x1="336.7" y1="423.3" x2="179.7" y2="580.3"/>
+    <line x1="343.5" y1="428.6" x2="232.5" y2="620.8"/>
+    <line x1="351.5" y1="431.9" x2="294.0" y2="646.3"/>
+    <line x1="368.5" y1="431.9" x2="426.0" y2="646.3"/>
+    <line x1="376.5" y1="428.6" x2="487.5" y2="620.8"/>
+    <line x1="383.3" y1="423.3" x2="540.3" y2="580.3"/>
+    <line x1="388.6" y1="416.5" x2="580.8" y2="527.5"/>
+    <line x1="391.9" y1="408.5" x2="606.3" y2="466.0"/>
+  </g>
+
+  <!-- ===== Outer circle: the 0 dB reference ===== -->
+  <circle cx="360" cy="400" r="255" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-opacity="0.85"/>
+
+  <!-- ===== Ring labels, stacked just left of the top spoke ===== -->
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="end">
+    <text x="352" y="179">&#8722;3</text>
+    <text x="352" y="214">&#8722;6</text>
+    <text x="352" y="266">&#8722;12</text>
+    <text x="338" y="330">&#8722;24</text>
+  </g>
+
+  <!-- ===== Angular labels (top and bottom spokes carry none, as published) ===== -->
+  <g fill="currentColor" stroke="none" font-size="18">
+    <text x="642" y="406" text-anchor="start">0</text>
+    <text x="604" y="265" text-anchor="middle">30</text>
+    <text x="501" y="162" text-anchor="middle">60</text>
+    <text x="219" y="162" text-anchor="middle">120</text>
+    <text x="116" y="265" text-anchor="middle">150</text>
+    <text x="78" y="406" text-anchor="end">180</text>
+    <text x="116" y="547" text-anchor="middle">&#8722;150</text>
+    <text x="219" y="650" text-anchor="middle">&#8722;120</text>
+    <text x="501" y="650" text-anchor="middle">&#8722;60</text>
+    <text x="604" y="547" text-anchor="middle">&#8722;30</text>
+  </g>
+
+  <!-- ===== The pattern trace (official geometry, scaled) ===== -->
+  <path d="M611.7,400.0c1.0,37.3,-25.4,67.5,-48.3,80.4c-36.1,20.3,-56.5,24.8,-86.9,21.0c-30.4,-3.8,-65.6,-26.3,-71.8,-31.4c-6.3,-5.0,-9.4,-13.2,-13.8,2.5c-2.3,8.3,-1.7,10.8,-9.7,23.5c-4.1,6.5,-10.7,9.1,-16.0,8.8c-5.3,-0.3,-11.9,-3.5,-16.3,-7.2c-4.4,-3.8,-9.7,-8.8,-14.7,-19.1c-6.3,-13.0,-0.6,-30.5,-5.9,-30.5c-6.7,0.0,-8.8,4.1,-22.3,4.5c-7.5,0.2,-15.7,-2.5,-24.5,-9.3c-5.7,-4.4,-9.1,-13.1,-10.1,-22.1c-0.7,-6.0,-1.5,-15.8,-1.5,-21.1c0.0,-5.4,0.8,-15.4,1.5,-21.4c1.0,-9.0,4.3,-17.7,10.1,-22.1c8.9,-6.8,17.0,-9.5,24.5,-9.3c13.5,0.4,15.6,4.5,22.3,4.5c5.3,0.0,-0.4,-17.5,5.9,-30.5c5.0,-10.3,10.3,-15.4,14.7,-19.1c4.4,-3.8,11.0,-6.9,16.3,-7.2c5.3,-0.3,11.9,2.2,16.0,8.8c8.0,12.8,7.4,15.2,9.7,23.5c4.4,15.7,7.5,7.5,13.8,2.5c6.3,-5.0,41.4,-27.6,71.8,-31.4c30.4,-3.8,50.8,0.7,86.9,21.0c22.9,12.9,49.3,43.4,48.3,80.7L611.7,400.0z"
+        fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+
+</svg>

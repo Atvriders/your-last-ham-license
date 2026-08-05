@@ -1,0 +1,8 @@
+{
+  "id": "ch09-phased-array",
+  "chapter": 9,
+  "caption": "Two quarter-wave verticals seen from above: spacing and drive phase pick the pattern, the pool's three combinations. Spaced a half wavelength and fed IN PHASE, the pair makes a figure-eight broadside to the array axis (E9C03). Same spacing, fed 180 degrees OUT OF PHASE, the pattern flips to a figure-eight oriented along the array axis - end-fire (E9C01); at half-wave spacing the phase and the pattern orientation move together. Spaced a quarter wavelength and fed 90 degrees out of phase, the pair makes a cardioid, its maximum toward the element with the lagging phase (E9C02). The phase itself comes from the feed system: multiple driven elements connected through phasing lines are used to control the antenna's radiation pattern (E9E11).",
+  "kind": "original",
+  "source": "original",
+  "spoken": "Three panels, each showing two vertical antennas as dots on a horizontal axis with the resulting azimuth pattern around them. Left: elements a half wave apart, both driven at zero degrees - the pattern is a figure-eight with lobes above and below, broadside to the array. Middle: same half-wave spacing, but the right element driven at 180 degrees - the figure-eight flips to lie along the array axis, end-fire. Right: elements a quarter wave apart, the right one lagging by 90 degrees - the pattern is a cardioid with its maximum toward the lagging element. The phase and the pattern orientation move together: at half-wave spacing, in-phase and out-of-phase swap broadside for end-fire, and the phasing lines in the feed system are what set the phase."
+}

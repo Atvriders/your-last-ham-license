@@ -1,0 +1,8 @@
+{
+  "id": "ch05-q-bandwidth",
+  "chapter": 5,
+  "caption": "Half-power bandwidth is BW = f0/Q: one resonance, and Q alone decides how wide the window is. All three curves share the pool's own f0 = 3.56 MHz (E5A02's 50 uH + 40 pF tank), drawn as relative response in dB against frequency offset. At Q = 35.6 the -3 dB half-power points sit 100 kHz apart; at Q = 75.3 they sit 47.3 kHz apart; at Q = 113.4 just 31.4 kHz. Those two tighter widths are the pool's computed answers - E5A11 divides 7.1 MHz by 150 to get 47.3 kHz and E5A12 divides 3.7 MHz by 118 to get 31.4 kHz - redrawn at the shared f0 so the same law compares side by side. Higher Q, narrower passband: Q is selectivity.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "Three single-tuned response curves in dB against frequency offset from f zero in kilohertz, all peaking at zero dB at the same center frequency, f zero equals 3.56 megahertz. A dotted line marks half power, minus 3 dB. The widest curve, dash-dotted, is Q equals 35.6 with a double-arrow spanning its minus-3-dB width of 100 kilohertz. The middle dashed curve, Q equals 75.3, spans 47.3 kilohertz. The narrowest solid curve, Q equals 113.4, spans 31.4 kilohertz. Annotations note that higher Q means a narrower passband - the same resonance seen through a tighter window - and the footnote gives the pool's own divisions: 7.1 megahertz over 150 equals 47.3 kilohertz, 3.7 megahertz over 118 equals 31.4 kilohertz."
+}

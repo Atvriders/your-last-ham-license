@@ -1,0 +1,8 @@
+{
+  "id": "ch05-time-constants-e",
+  "chapter": 5,
+  "caption": "One time constant, two numbers to know cold. A capacitor charges toward the source voltage as V = Vs(1 - e^(-t/tau)) and discharges as V = V0 e^(-t/tau), with tau = R times C (or L/R for an inductor). After exactly one tau the charge curve reaches 63.2% of the applied voltage and the discharge curve has 36.8% of its initial voltage left - E5B01's definition of the time constant. By five tau the capacitor is at 99.3%, called fully charged. The top axis prices the curves in seconds for the pool's own circuit: E5B04 parallels two 220 uF capacitors and two 1 megohm resistors, so tau = 440 uF times 500 kohm = 220 s, and the 63.2% point lands at 220 seconds.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "Two exponential curves on axes of percent voltage against time in time constants, zero to five tau. A solid charge curve rises steeply and flattens toward one hundred percent; a dashed discharge curve falls from one hundred toward zero. Crosshairs at one tau mark the two keyed percentages: 63.2 percent charged on the rising curve, 36.8 percent remaining on the falling curve. A dot at five tau marks 99.3 percent - called full. A second axis along the top converts the scale to seconds for E5B04's exact circuit - 440 microfarads times 500 kilohms gives tau equals 220 seconds - so one tau on the bottom axis lines up with 220 seconds on top."
+}

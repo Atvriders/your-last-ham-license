@@ -1,0 +1,8 @@
+{
+  "id": "ch07-pll-block",
+  "chapter": 7,
+  "caption": "The phase-locked loop as the pool defines it - an electronic servo loop (E7H03). A stable reference oscillator and the divided-down output meet in the phase detector; the loop filter (a low-pass) smooths the detector's error voltage; that control voltage steers the VCO until the divided output matches the reference exactly, and then the loop is locked with f_out = N times f_ref - pick N, get an exact crystal-referenced frequency. That is why a PLL can perform frequency synthesis and FM demodulation (E7H06). Below, the contrast the same group tests: a direct digital synthesizer has no loop and no VCO - a phase accumulator steps phase each clock, a lookup table turns the phase into amplitude values representing the desired waveform (E7H10), a DAC makes it analog, and a low-pass anti-alias filter strips the sampling artifacts (E7H09). The DDS's major spectral impurities are spurious signals at discrete frequencies, not broadband noise (E7H11).",
+  "kind": "original",
+  "source": "original",
+  "spoken": "A block diagram in two parts. Top: the PLL loop - reference oscillator feeding a phase detector, then a loop filter, then a VCO whose output leaves to the right; a feedback wire samples the output, runs down and through a divide-by-N block, and returns up into the phase detector. A lock box reads: locked, f out equals N times f ref. Bottom: the DDS chain for contrast - phase accumulator, lookup table, DAC, low-pass filter - with the note that DDS spurious signals sit at discrete frequencies."
+}

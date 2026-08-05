@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" font-family="sans-serif">
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0,0 L 9,3 L 0,6 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Map view: north is UP ===== -->
+  <g fill="none" stroke="currentColor">
+    <circle cx="70" cy="80" r="16" stroke-width="1.6"/>
+    <line x1="70" y1="92" x2="70" y2="67" stroke-width="1.8"/>
+    <line x1="54" y1="80" x2="60" y2="80" stroke-width="1.2" opacity="0.5"/>
+    <line x1="80" y1="80" x2="86" y2="80" stroke-width="1.2" opacity="0.5"/>
+  </g>
+  <path d="M 70,59 L 66,69 L 74,69 Z" fill="currentColor" stroke="none"/>
+  <text x="70" y="49" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor" stroke="none">N</text>
+  <text x="70" y="112" text-anchor="middle" font-size="10.5" opacity="0.75" fill="currentColor" stroke="none">map view</text>
+
+  <!-- ===== Auroral curtain across the north (top of map) ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <path d="M 190,52 C 178,78 200,96 186,130" opacity="0.85"/>
+    <path d="M 198,52 C 186,78 208,96 194,130" stroke-width="0.9" opacity="0.4"/>
+    <path d="M 265,52 C 255,80 278,98 262,130" opacity="0.55"/>
+    <path d="M 340,52 C 330,78 352,98 338,130" opacity="0.85"/>
+    <path d="M 348,52 C 338,78 360,98 346,130" stroke-width="0.9" opacity="0.4"/>
+    <path d="M 415,52 C 405,80 428,96 412,130" opacity="0.55"/>
+    <path d="M 490,52 C 480,78 502,98 488,130" opacity="0.85"/>
+    <path d="M 498,52 C 488,78 510,98 496,130" stroke-width="0.9" opacity="0.4"/>
+    <path d="M 565,52 C 555,80 578,96 562,130" opacity="0.55"/>
+    <path d="M 640,52 C 630,78 652,98 638,130" opacity="0.85"/>
+    <path d="M 705,52 C 697,80 716,98 702,130" opacity="0.55"/>
+  </g>
+  <g fill="currentColor" stroke="none" opacity="0.5">
+    <circle cx="222" cy="70" r="1.6"/>
+    <circle cx="300" cy="110" r="1.6"/>
+    <circle cx="372" cy="66" r="1.6"/>
+    <circle cx="455" cy="105" r="1.6"/>
+    <circle cx="530" cy="72" r="1.6"/>
+    <circle cx="600" cy="112" r="1.6"/>
+    <circle cx="675" cy="80" r="1.6"/>
+  </g>
+  <text x="445" y="28" text-anchor="middle" font-size="14" font-weight="bold" letter-spacing="3" fill="currentColor" stroke="none">AURORAL CURTAIN</text>
+  <text x="445" y="44" text-anchor="middle" font-size="11" opacity="0.8" fill="currentColor" stroke="none">far to the north of both stations</text>
+
+  <!-- ===== Scatter region: small starburst on the curtain ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.8">
+    <line x1="411" y1="97" x2="411" y2="119"/>
+    <line x1="401" y1="102" x2="421" y2="114"/>
+    <line x1="401" y1="114" x2="421" y2="102"/>
+  </g>
+
+  <!-- ===== Ground (southern edge of the map) with hatching ===== -->
+  <line x1="30" y1="400" x2="740" y2="400" stroke="currentColor" stroke-width="2.2" fill="none"/>
+  <g stroke="currentColor" stroke-width="1.2" opacity="0.7" fill="none">
+    <line x1="45" y1="400" x2="36" y2="411"/>
+    <line x1="75" y1="400" x2="66" y2="411"/>
+    <line x1="105" y1="400" x2="96" y2="411"/>
+    <line x1="135" y1="400" x2="126" y2="411"/>
+    <line x1="165" y1="400" x2="156" y2="411"/>
+    <line x1="195" y1="400" x2="186" y2="411"/>
+    <line x1="225" y1="400" x2="216" y2="411"/>
+    <line x1="255" y1="400" x2="246" y2="411"/>
+    <line x1="285" y1="400" x2="276" y2="411"/>
+    <line x1="315" y1="400" x2="306" y2="411"/>
+    <line x1="345" y1="400" x2="336" y2="411"/>
+    <line x1="375" y1="400" x2="366" y2="411"/>
+    <line x1="405" y1="400" x2="396" y2="411"/>
+    <line x1="435" y1="400" x2="426" y2="411"/>
+    <line x1="465" y1="400" x2="456" y2="411"/>
+    <line x1="495" y1="400" x2="486" y2="411"/>
+    <line x1="525" y1="400" x2="516" y2="411"/>
+    <line x1="555" y1="400" x2="546" y2="411"/>
+    <line x1="585" y1="400" x2="576" y2="411"/>
+    <line x1="615" y1="400" x2="606" y2="411"/>
+    <line x1="645" y1="400" x2="636" y2="411"/>
+    <line x1="675" y1="400" x2="666" y2="411"/>
+    <line x1="705" y1="400" x2="696" y2="411"/>
+    <line x1="735" y1="400" x2="726" y2="411"/>
+  </g>
+
+  <!-- ===== TX station ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="180" y1="400" x2="180" y2="330"/>
+    <line x1="180" y1="330" x2="168" y2="318"/>
+    <line x1="180" y1="330" x2="192" y2="318"/>
+    <line x1="180" y1="330" x2="180" y2="312"/>
+  </g>
+
+  <!-- ===== RX station ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="640" y1="400" x2="640" y2="330"/>
+    <line x1="640" y1="330" x2="628" y2="318"/>
+    <line x1="640" y1="330" x2="652" y2="318"/>
+    <line x1="640" y1="330" x2="640" y2="312"/>
+  </g>
+
+  <!-- ===== Propagation path: TX north to the curtain, scattered back to RX ===== -->
+  <path d="M 188,318 L 382,108" fill="none" stroke="currentColor" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <path d="M 440,118 L 632,318" fill="none" stroke="currentColor" stroke-width="2.4" marker-end="url(#arrow)"/>
+
+  <!-- ===== The direct path they do NOT use ===== -->
+  <line x1="196" y1="386" x2="624" y2="386" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5,5" opacity="0.45" fill="none"/>
+  <g stroke="currentColor" stroke-width="2" opacity="0.8" fill="none" stroke-linecap="round">
+    <line x1="404" y1="380" x2="416" y2="392"/>
+    <line x1="404" y1="392" x2="416" y2="380"/>
+  </g>
+
+  <!-- ===== Labels ===== -->
+  <g fill="currentColor" stroke="none">
+    <text x="166" y="394" text-anchor="end" font-size="11.5" font-weight="bold">TX</text>
+    <text x="654" y="394" text-anchor="start" font-size="11.5" font-weight="bold">RX</text>
+    <text x="269" y="198" font-size="11.5" transform="rotate(-47.2 269 198)">beamed NORTH</text>
+    <text x="549" y="206" font-size="11.5" transform="rotate(46.2 549 206)">scattered back</text>
+    <text x="410" y="368" text-anchor="middle" font-size="11" opacity="0.8">they never beam at each other</text>
+
+    <text x="380" y="440" text-anchor="middle" font-size="12">After a severe geomagnetic storm, both stations beam NORTH at the curtain; the moving curtain scatters VHF signals back.</text>
+    <text x="380" y="459" text-anchor="middle" font-size="12">Erratic Doppler spreads a carrier into a buzz a few kHz wide - fluttery, phase-distorted; CW is the most usable mode.</text>
+  </g>
+</svg>

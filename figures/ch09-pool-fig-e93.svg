@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 760" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- Simplified normalized Smith chart, redrawn from NCVEC pool figure
+       E9-3 (canon 1.4 binding spec, post-errata-1 orientation): infinity
+       at the RIGHT end of the horizontal diameter (open circuit), 0 at the
+       LEFT end (short circuit). The horizontal diameter is the chart's
+       only straight line = the RESISTANCE AXIS (E9G07), carrying the
+       resistance-circle labels 0, 0.2, 0.5, 1.0, 2.0, 5.0, 20 left to
+       right; 1.0 at mid-chart is the prime center. Constant-resistance
+       circles are true circles all tangent at the infinity point, bulging
+       left. Constant-reactance arcs sweep from the rim into the infinity
+       point, labeled 0.2, 0.5, 1.0, 2.0, 5.0 above the axis (inductive,
+       +jX) with matching magnitudes below (capacitive, -jX); every arc
+       terminates on the large outer circle = the REACTANCE AXIS (E9G06).
+       No wavelength scales, as published.
+       Map: center (350,420), R = 290, infinity (640,420), zero (60,420).
+       Constant-R circle for r: center (640 - R/(r+1), 420), radius R/(r+1).
+       Reactance arc for x: circle center (640, 420 -/+ R/x), radius R/x,
+       drawn from its rim point (angle 2*atan(1/x)) into infinity. -->
+
+  <!-- ===== Title ===== -->
+  <text x="350" y="58" font-size="32" font-weight="bold" text-anchor="middle"
+        fill="currentColor" stroke="none">Figure E9-3</text>
+
+  <!-- ===== Outer circle: the reactance axis (E9G06) ===== -->
+  <circle cx="350" cy="420" r="290" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-opacity="0.9"/>
+
+  <!-- ===== Constant-resistance circles (tangent at infinity) ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8">
+    <circle cx="398.3" cy="420" r="241.7"/>
+    <circle cx="446.7" cy="420" r="193.3"/>
+    <circle cx="495.0" cy="420" r="145.0"/>
+    <circle cx="543.3" cy="420" r="96.7"/>
+    <circle cx="591.7" cy="420" r="48.3"/>
+    <circle cx="626.2" cy="420" r="13.8"/>
+    <circle cx="634.3" cy="420" r="5.7"/>
+  </g>
+
+  <!-- ===== Constant-reactance arcs (terminate on the outer circle) ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="0.9" stroke-opacity="0.8">
+    <!-- inductive (+jX), above the axis -->
+    <path d="M82.3,308.5 A1450.0,1450.0 0 0 0 640,420"/>
+    <path d="M176.0,188.0 A580.0,580.0 0 0 0 640,420"/>
+    <path d="M350.0,130.0 A290.0,290.0 0 0 0 640,420"/>
+    <path d="M524.0,188.0 A145.0,145.0 0 0 0 640,420"/>
+    <path d="M617.7,308.5 A58.0,58.0 0 0 0 640,420"/>
+    <path d="M638.6,391.1 A14.5,14.5 0 0 0 640,420"/>
+    <path d="M639.8,408.4 A5.8,5.8 0 0 0 640,420"/>
+    <!-- capacitive (-jX), below the axis -->
+    <path d="M82.3,531.5 A1450.0,1450.0 0 0 1 640,420"/>
+    <path d="M176.0,652.0 A580.0,580.0 0 0 1 640,420"/>
+    <path d="M350.0,710.0 A290.0,290.0 0 0 1 640,420"/>
+    <path d="M524.0,652.0 A145.0,145.0 0 0 1 640,420"/>
+    <path d="M617.7,531.5 A58.0,58.0 0 0 1 640,420"/>
+    <path d="M638.6,448.9 A14.5,14.5 0 0 1 640,420"/>
+    <path d="M639.8,431.6 A5.8,5.8 0 0 1 640,420"/>
+  </g>
+
+  <!-- ===== The resistance axis: the chart's only straight line (E9G07) ===== -->
+  <line x1="60" y1="420" x2="640" y2="420" fill="none" stroke="currentColor"
+        stroke-width="1.2" stroke-opacity="0.9"/>
+
+  <!-- ===== Prime center (1.0) ===== -->
+  <circle cx="350" cy="420" r="3.5" fill="none" stroke="currentColor"
+          stroke-width="1.2"/>
+
+  <!-- ===== Axis labels (resistance values, reading bottom to top) ===== -->
+  <g fill="currentColor" stroke="none" font-size="16">
+    <text x="62.0" y="415" text-anchor="start" transform="rotate(-90 62.0 415)">0</text>
+    <text x="153.7" y="415" text-anchor="start" transform="rotate(-90 153.7 415)">0.2</text>
+    <text x="250.3" y="415" text-anchor="start" transform="rotate(-90 250.3 415)">0.5</text>
+    <text x="347.0" y="415" text-anchor="start" transform="rotate(-90 347.0 415)">1.0</text>
+    <text x="443.7" y="415" text-anchor="start" transform="rotate(-90 443.7 415)">2.0</text>
+    <text x="540.3" y="415" text-anchor="start" transform="rotate(-90 540.3 415)">5.0</text>
+    <text x="609.4" y="415" text-anchor="start" transform="rotate(-90 609.4 415)">20</text>
+  </g>
+
+  <!-- ===== Infinity label, right of the open-circuit point ===== -->
+  <text x="652" y="428" font-size="26" text-anchor="start"
+        fill="currentColor" stroke="none">&#8734;</text>
+
+  <!-- ===== Rim labels at the reactance-arc terminations ===== -->
+  <g fill="currentColor" stroke="none" font-size="16">
+    <!-- inductive (+jX), above -->
+    <text x="102.4" y="316.9" text-anchor="middle" dominant-baseline="central" transform="rotate(24.6 102.4 316.9)">0.2</text>
+    <text x="189.1" y="205.4" text-anchor="middle" dominant-baseline="central" transform="rotate(48.3 189.1 205.4)">0.5</text>
+    <text x="347.7" y="151.8" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 347.7 151.8)">1.0</text>
+    <text x="510.9" y="205.4" text-anchor="middle" dominant-baseline="central" transform="rotate(-55.7 510.9 205.4)">2.0</text>
+    <text x="597.6" y="316.9" text-anchor="middle" dominant-baseline="central" transform="rotate(-30.3 597.6 316.9)">5.0</text>
+    <!-- capacitive (-jX), below -->
+    <text x="102.4" y="523.1" text-anchor="middle" dominant-baseline="central" transform="rotate(-19.4 102.4 523.1)">0.2</text>
+    <text x="189.1" y="634.6" text-anchor="middle" dominant-baseline="central" transform="rotate(-47.3 189.1 634.6)">0.5</text>
+    <text x="347.7" y="688.2" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 347.7 688.2)">1.0</text>
+    <text x="510.9" y="634.6" text-anchor="middle" dominant-baseline="central" transform="rotate(-122.0 510.9 634.6)">2.0</text>
+    <text x="597.6" y="523.1" text-anchor="middle" dominant-baseline="central" transform="rotate(-148.3 597.6 523.1)">5.0</text>
+  </g>
+
+</svg>

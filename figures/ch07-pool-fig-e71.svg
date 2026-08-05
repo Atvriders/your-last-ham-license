@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 540" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Pool figure E7-1: common-emitter NPN amplifier stage with voltage-divider bias">
+  <title>Pool figure E7-1 — common-emitter NPN amplifier stage (R1/R2 voltage-divider bias, R3 self bias), redrawn from the NCVEC 2024–2028 Extra pool</title>
+  <defs>
+    <!-- ground symbol per canon §1.4: three slanted strokes of decreasing length, longest on top; wire enters at (0,0) -->
+    <g id="gnd" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+      <line x1="14.7" y1="-0.5" x2="-14.7" y2="16.5"/>
+      <line x1="10.5" y1="14.5" x2="-8.5" y2="25.5"/>
+      <line x1="7.2" y1="26" x2="-3.2" y2="32"/>
+    </g>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- positive supply rail across the top to the open-circle + terminal -->
+    <line x1="166" y1="112" x2="411" y2="112"/>
+    <circle cx="422" cy="112" r="11"/>
+
+    <!-- R1: from the + rail down to the base node -->
+    <line x1="166" y1="112" x2="166" y2="154"/>
+    <path d="M166,154 L166,159 L175,166 L157,176 L175,186 L157,196 L175,206 L157,216 L175,226 L166,233"/>
+    <line x1="166" y1="233" x2="166" y2="328"/>
+
+    <!-- R2: from the base node to ground -->
+    <path d="M166,328 L166,333 L175,340 L157,350 L175,360 L157,370 L175,380 L157,390 L175,398 L166,404"/>
+    <line x1="166" y1="404" x2="166" y2="423"/>
+
+    <!-- C1: series coupling capacitor from IN to the base node (straight plate, then curved) -->
+    <circle cx="63" cy="288" r="11"/>
+    <line x1="74" y1="288" x2="99" y2="288"/>
+    <line x1="99" y1="270" x2="99" y2="306"/>
+    <path d="M112,270 Q102,288 112,306"/>
+    <line x1="112" y1="288" x2="271" y2="288"/>
+
+    <!-- NPN transistor in a circle: base bar on the left, collector up-right, emitter down-right -->
+    <circle cx="295" cy="289" r="56"/>
+    <line x1="273" y1="273" x2="340" y2="238"/>
+    <line x1="273" y1="303" x2="340" y2="339"/>
+
+    <!-- unlabeled collector load resistor from the + rail to the collector -->
+    <line x1="340" y1="238" x2="340" y2="210"/>
+    <path d="M340,210 L340,205 L349,199 L331,190 L349,181 L331,172 L349,163 L340,157"/>
+    <line x1="340" y1="157" x2="340" y2="112"/>
+
+    <!-- C2: series coupling capacitor from the collector to OUT -->
+    <line x1="340" y1="231" x2="401" y2="231"/>
+    <line x1="401" y1="213" x2="401" y2="249"/>
+    <path d="M414,213 Q404,231 414,249"/>
+    <line x1="414" y1="231" x2="479" y2="231"/>
+    <circle cx="490" cy="231" r="11"/>
+
+    <!-- emitter node: R3 down to ground, C3 branch right to ground (C3 parallel to R3) -->
+    <line x1="340" y1="339" x2="340" y2="388"/>
+    <path d="M340,388 L340,393 L349,400 L331,410 L349,420 L331,430 L349,440 L331,450 L349,458 L340,464"/>
+    <line x1="340" y1="464" x2="340" y2="484"/>
+    <line x1="340" y1="359" x2="403" y2="359"/>
+    <line x1="403" y1="341" x2="403" y2="377"/>
+    <path d="M416,341 Q406,359 416,377"/>
+    <line x1="416" y1="359" x2="487" y2="359"/>
+    <line x1="487" y1="359" x2="487" y2="484"/>
+  </g>
+
+  <g fill="currentColor" stroke="none">
+    <!-- base bar and emitter arrowhead (pointing outward, down-right = NPN) -->
+    <rect x="270" y="256" width="8" height="65"/>
+    <path d="M297.8,297.9 L313.1,324.1 L282,325.7 Z"/>
+    <!-- junction dots: base node, collector-load rail tap, C2 collector tap, C3 emitter tap -->
+    <circle cx="166" cy="289" r="5"/>
+    <circle cx="340" cy="112" r="5"/>
+    <circle cx="340" cy="231" r="5"/>
+    <circle cx="340" cy="359" r="5"/>
+  </g>
+
+  <use href="#gnd" transform="translate(166 423)"/>
+  <use href="#gnd" transform="translate(340 484)"/>
+  <use href="#gnd" transform="translate(487 484)"/>
+
+  <g fill="currentColor" stroke="none" font-weight="bold">
+    <text x="280" y="44" font-size="24" text-anchor="middle">Figure E7-1</text>
+    <text x="15" y="300" font-size="21">IN</text>
+    <text x="490" y="276" font-size="21" text-anchor="middle">OUT</text>
+    <text x="440" y="120" font-size="21">+</text>
+    <text x="190" y="204" font-size="21">R1</text>
+    <text x="96" y="253" font-size="21">C1</text>
+    <text x="190" y="376" font-size="21">R2</text>
+    <text x="373" y="435" font-size="21">R3</text>
+    <text x="391" y="326" font-size="21">C3</text>
+    <text x="388" y="199" font-size="21">C2</text>
+  </g>
+</svg>

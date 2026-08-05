@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 715" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="A PN junction at rest, under forward bias, and under reverse bias, showing the depletion region and carrier motion">
+
+  <!-- The PN junction at the physics level the Extra pool tests (subelement
+       E6A): donor impurities add free electrons (N-type), acceptor impurities
+       add holes (P-type); the depletion region at the junction holds only
+       fixed ions; forward bias narrows it and current flows; reverse bias
+       pulls carriers away from the junction, widens it, and current stops. -->
+
+  <defs>
+    <!-- hole: open circle (free positive carrier) -->
+    <circle id="hl" cx="0" cy="0" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <!-- electron: filled dot (free negative carrier) -->
+    <circle id="el" cx="0" cy="0" r="3.5" fill="currentColor" stroke="none"/>
+    <!-- fixed acceptor ion: square with minus (P side of the depletion region) -->
+    <g id="ia" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="-6" y="-6" width="12" height="12"/>
+      <line x1="-3.5" y1="0" x2="3.5" y2="0"/>
+    </g>
+    <!-- fixed donor ion: square with plus (N side of the depletion region) -->
+    <g id="id" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="-6" y="-6" width="12" height="12"/>
+      <line x1="-3.5" y1="0" x2="3.5" y2="0"/>
+      <line x1="0" y1="-3.5" x2="0" y2="3.5"/>
+    </g>
+  </defs>
+
+  <!-- ===== Title and legend ===== -->
+  <text x="380" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="currentColor" stroke="none">The PN junction — depletion region, carriers, and bias</text>
+  <g font-size="12" fill="currentColor" stroke="none">
+    <use href="#hl" transform="translate(140 48)"/>
+    <text x="152" y="52">hole</text>
+    <use href="#el" transform="translate(225 48)"/>
+    <text x="237" y="52">electron</text>
+    <use href="#ia" transform="translate(322 48)"/>
+    <text x="336" y="52">acceptor ion (&#8722;) — fixed</text>
+    <use href="#id" transform="translate(494 48)"/>
+    <text x="508" y="52">donor ion (+) — fixed</text>
+  </g>
+
+  <!-- ================= Panel A: at rest ================= -->
+  <text x="70" y="84" font-size="15" font-weight="bold" fill="currentColor" stroke="none">At rest — carriers recombine near the junction and leave the depletion region</text>
+
+  <rect x="360" y="94" width="70" height="115" fill="currentColor" stroke="none" fill-opacity="0.10"/>
+  <g fill="none" stroke="currentColor" stroke-width="2.5">
+    <rect x="90" y="94" width="270" height="115"/>
+    <rect x="430" y="94" width="270" height="115"/>
+  </g>
+
+  <!-- holes (majority) in P -->
+  <use href="#hl" transform="translate(120 115)"/><use href="#hl" transform="translate(160 140)"/>
+  <use href="#hl" transform="translate(200 118)"/><use href="#hl" transform="translate(240 145)"/>
+  <use href="#hl" transform="translate(280 120)"/><use href="#hl" transform="translate(320 142)"/>
+  <use href="#hl" transform="translate(140 175)"/><use href="#hl" transform="translate(260 180)"/>
+  <use href="#hl" transform="translate(330 175)"/>
+  <!-- electrons (minority) in P -->
+  <use href="#el" transform="translate(180 168)"/><use href="#el" transform="translate(300 165)"/>
+  <!-- electrons (majority) in N -->
+  <use href="#el" transform="translate(450 118)"/><use href="#el" transform="translate(490 142)"/>
+  <use href="#el" transform="translate(530 115)"/><use href="#el" transform="translate(570 140)"/>
+  <use href="#el" transform="translate(610 118)"/><use href="#el" transform="translate(650 145)"/>
+  <use href="#el" transform="translate(680 120)"/><use href="#el" transform="translate(470 175)"/>
+  <use href="#el" transform="translate(550 178)"/><use href="#el" transform="translate(630 172)"/>
+  <use href="#el" transform="translate(690 175)"/>
+  <!-- holes (minority) in N -->
+  <use href="#hl" transform="translate(505 166)"/><use href="#hl" transform="translate(600 162)"/>
+  <!-- fixed ions in the depletion region: acceptor (-) on the P side, donor (+) on the N side -->
+  <use href="#ia" transform="translate(368 112)"/><use href="#ia" transform="translate(368 140)"/>
+  <use href="#ia" transform="translate(368 168)"/><use href="#ia" transform="translate(368 194)"/>
+  <use href="#ia" transform="translate(384 112)"/><use href="#ia" transform="translate(384 140)"/>
+  <use href="#ia" transform="translate(384 168)"/><use href="#ia" transform="translate(384 194)"/>
+  <use href="#id" transform="translate(406 112)"/><use href="#id" transform="translate(406 140)"/>
+  <use href="#id" transform="translate(406 168)"/><use href="#id" transform="translate(406 194)"/>
+  <use href="#id" transform="translate(422 112)"/><use href="#id" transform="translate(422 140)"/>
+  <use href="#id" transform="translate(422 168)"/><use href="#id" transform="translate(422 194)"/>
+
+  <g font-size="13" font-weight="bold" fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="225" y="227">P-type</text>
+    <text x="395" y="227">depletion region</text>
+    <text x="565" y="227">N-type</text>
+  </g>
+  <g font-size="12.5" fill="currentColor" stroke="none">
+    <text x="70" y="250">Majority carriers: holes in the P region, free electrons in the N region (minority carriers: electrons in P, holes in N).</text>
+    <text x="70" y="268">Near the junction the two recombine, leaving only fixed ions — the depletion region, whose charge opposes further flow.</text>
+  </g>
+
+  <!-- ================= Panel B: forward bias ================= -->
+  <text x="70" y="300" font-size="15" font-weight="bold" fill="currentColor" stroke="none">Forward bias — the depletion region narrows and current flows</text>
+
+  <rect x="378" y="310" width="44" height="115" fill="currentColor" stroke="none" fill-opacity="0.10"/>
+  <g fill="none" stroke="currentColor" stroke-width="2.5">
+    <rect x="90" y="310" width="288" height="115"/>
+    <rect x="422" y="310" width="278" height="115"/>
+  </g>
+
+  <!-- battery: + to the P side, - to the N side -->
+  <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+    <polyline points="120,425 120,456 364,456"/>
+    <line x1="364" y1="444" x2="364" y2="468"/>
+    <line x1="384" y1="450" x2="384" y2="462"/>
+    <polyline points="384,456 640,456 640,425"/>
+  </g>
+  <g font-size="14" font-weight="bold" fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="357" y="441">+</text>
+    <text x="391" y="441">&#8722;</text>
+  </g>
+
+  <!-- carrier drift: holes pushed right, electrons pushed left, toward the junction -->
+  <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+    <line x1="130" y1="334" x2="158" y2="334"/><line x1="210" y1="334" x2="238" y2="334"/><line x1="290" y1="334" x2="318" y2="334"/>
+    <line x1="660" y1="334" x2="632" y2="334"/><line x1="580" y1="334" x2="552" y2="334"/><line x1="500" y1="334" x2="472" y2="334"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <path d="M158,334 L148,329.5 L148,338.5 Z"/><path d="M238,334 L228,329.5 L228,338.5 Z"/><path d="M318,334 L308,329.5 L308,338.5 Z"/>
+    <path d="M632,334 L642,329.5 L642,338.5 Z"/><path d="M552,334 L562,329.5 L562,338.5 Z"/><path d="M472,334 L482,329.5 L482,338.5 Z"/>
+  </g>
+
+  <!-- holes in P (a few minority electrons) -->
+  <use href="#hl" transform="translate(120 366)"/><use href="#hl" transform="translate(160 392)"/>
+  <use href="#hl" transform="translate(205 368)"/><use href="#hl" transform="translate(250 394)"/>
+  <use href="#hl" transform="translate(295 390)"/><use href="#hl" transform="translate(340 392)"/>
+  <use href="#hl" transform="translate(175 410)"/><use href="#hl" transform="translate(265 412)"/>
+  <use href="#el" transform="translate(140 408)"/><use href="#el" transform="translate(320 410)"/>
+  <!-- electrons in N (a few minority holes) -->
+  <use href="#el" transform="translate(440 368)"/><use href="#el" transform="translate(480 392)"/>
+  <use href="#el" transform="translate(520 366)"/><use href="#el" transform="translate(560 394)"/>
+  <use href="#el" transform="translate(600 368)"/><use href="#el" transform="translate(645 392)"/>
+  <use href="#el" transform="translate(680 366)"/><use href="#el" transform="translate(455 410)"/>
+  <use href="#el" transform="translate(535 412)"/><use href="#el" transform="translate(615 410)"/>
+  <use href="#hl" transform="translate(500 408)"/><use href="#hl" transform="translate(660 410)"/>
+  <!-- fixed ions in the narrowed depletion region -->
+  <use href="#ia" transform="translate(388 326)"/><use href="#ia" transform="translate(388 354)"/>
+  <use href="#ia" transform="translate(388 382)"/><use href="#ia" transform="translate(388 410)"/>
+  <use href="#id" transform="translate(412 326)"/><use href="#id" transform="translate(412 354)"/>
+  <use href="#id" transform="translate(412 382)"/><use href="#id" transform="translate(412 410)"/>
+
+  <!-- conventional current across the junction -->
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round">
+    <line x1="330" y1="368" x2="450" y2="368"/>
+  </g>
+  <path d="M450,368 L438,362 L438,374 Z" fill="currentColor" stroke="none"/>
+  <text x="322" y="372" font-size="12" font-weight="bold" font-style="italic" fill="currentColor" stroke="none" text-anchor="end">current</text>
+
+  <g font-size="13" font-weight="bold" fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="225" y="443">P-type</text>
+    <text x="565" y="443">N-type</text>
+  </g>
+  <g font-size="12.5" fill="currentColor" stroke="none">
+    <text x="70" y="490">+ to the P side, &#8722; to the N side: the battery pushes holes and electrons TOWARD the junction, where they</text>
+    <text x="70" y="508">cross and recombine — the depletion region narrows and current flows.</text>
+  </g>
+
+  <!-- ================= Panel C: reverse bias ================= -->
+  <text x="70" y="540" font-size="15" font-weight="bold" fill="currentColor" stroke="none">Reverse bias — the depletion region widens and current stops</text>
+
+  <rect x="320" y="550" width="160" height="115" fill="currentColor" stroke="none" fill-opacity="0.10"/>
+  <g fill="none" stroke="currentColor" stroke-width="2.5">
+    <rect x="90" y="550" width="230" height="115"/>
+    <rect x="480" y="550" width="220" height="115"/>
+  </g>
+
+  <!-- battery: - to the P side, + to the N side -->
+  <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+    <polyline points="120,665 120,696 364,696"/>
+    <line x1="364" y1="690" x2="364" y2="702"/>
+    <line x1="384" y1="684" x2="384" y2="708"/>
+    <polyline points="384,696 640,696 640,665"/>
+  </g>
+  <g font-size="14" font-weight="bold" fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="357" y="681">&#8722;</text>
+    <text x="391" y="681">+</text>
+  </g>
+
+  <!-- carrier drift: holes pulled left, electrons pulled right, AWAY from the junction -->
+  <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+    <line x1="170" y1="574" x2="142" y2="574"/><line x1="240" y1="574" x2="212" y2="574"/><line x1="300" y1="574" x2="272" y2="574"/>
+    <line x1="520" y1="574" x2="548" y2="574"/><line x1="590" y1="574" x2="618" y2="574"/><line x1="655" y1="574" x2="683" y2="574"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <path d="M142,574 L152,569.5 L152,578.5 Z"/><path d="M212,574 L222,569.5 L222,578.5 Z"/><path d="M272,574 L282,569.5 L282,578.5 Z"/>
+    <path d="M548,574 L538,569.5 L538,578.5 Z"/><path d="M618,574 L608,569.5 L608,578.5 Z"/><path d="M683,574 L673,569.5 L673,578.5 Z"/>
+  </g>
+
+  <!-- holes in P, pulled toward the contact -->
+  <use href="#hl" transform="translate(115 606)"/><use href="#hl" transform="translate(150 632)"/>
+  <use href="#hl" transform="translate(190 608)"/><use href="#hl" transform="translate(230 634)"/>
+  <use href="#hl" transform="translate(265 610)"/><use href="#hl" transform="translate(130 648)"/>
+  <use href="#hl" transform="translate(210 650)"/><use href="#hl" transform="translate(285 646)"/>
+  <use href="#el" transform="translate(170 646)"/><use href="#el" transform="translate(250 628)"/>
+  <!-- electrons in N, pulled toward the contact -->
+  <use href="#el" transform="translate(505 606)"/><use href="#el" transform="translate(545 634)"/>
+  <use href="#el" transform="translate(585 608)"/><use href="#el" transform="translate(625 634)"/>
+  <use href="#el" transform="translate(665 610)"/><use href="#el" transform="translate(690 636)"/>
+  <use href="#el" transform="translate(525 650)"/><use href="#el" transform="translate(605 648)"/>
+  <use href="#el" transform="translate(675 648)"/>
+  <use href="#hl" transform="translate(560 630)"/><use href="#hl" transform="translate(645 652)"/>
+  <!-- fixed ions in the widened depletion region -->
+  <use href="#ia" transform="translate(330 566)"/><use href="#ia" transform="translate(330 594)"/>
+  <use href="#ia" transform="translate(330 622)"/><use href="#ia" transform="translate(330 650)"/>
+  <use href="#ia" transform="translate(350 566)"/><use href="#ia" transform="translate(350 594)"/>
+  <use href="#ia" transform="translate(350 622)"/><use href="#ia" transform="translate(350 650)"/>
+  <use href="#ia" transform="translate(370 566)"/><use href="#ia" transform="translate(370 594)"/>
+  <use href="#ia" transform="translate(370 622)"/><use href="#ia" transform="translate(370 650)"/>
+  <use href="#id" transform="translate(430 566)"/><use href="#id" transform="translate(430 594)"/>
+  <use href="#id" transform="translate(430 622)"/><use href="#id" transform="translate(430 650)"/>
+  <use href="#id" transform="translate(450 566)"/><use href="#id" transform="translate(450 594)"/>
+  <use href="#id" transform="translate(450 622)"/><use href="#id" transform="translate(450 650)"/>
+  <use href="#id" transform="translate(470 566)"/><use href="#id" transform="translate(470 594)"/>
+  <use href="#id" transform="translate(470 622)"/><use href="#id" transform="translate(470 650)"/>
+
+  <!-- essentially no current -->
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+    <line x1="350" y1="610" x2="450" y2="610" stroke-dasharray="7 5"/>
+    <line x1="388" y1="588" x2="412" y2="632" stroke-width="3.5"/>
+  </g>
+  <path d="M450,610 L440,605.5 L440,614.5 Z" fill="currentColor" stroke="none"/>
+  <text x="400" y="584" font-size="12" font-weight="bold" font-style="italic" fill="currentColor" stroke="none" text-anchor="middle">essentially no current</text>
+
+  <g font-size="13" font-weight="bold" fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="205" y="683">P-type</text>
+    <text x="590" y="683">N-type</text>
+  </g>
+</svg>

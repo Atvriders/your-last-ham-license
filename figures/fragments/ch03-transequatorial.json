@@ -1,0 +1,8 @@
+{
+  "id": "ch03-transequatorial",
+  "chapter": 3,
+  "caption": "Transequatorial propagation (TE). Stations about 1,500-2,500 miles north and south of the geomagnetic equator - typically 2,000-3,000 miles apart on a path crossing it within 20 degrees of a right angle - complete two F-region hops ducted between the equatorial-anomaly crests with no mid-path ground reflection. Maximum range is about 5,000 miles, most likely in the afternoon or early evening.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "A cross-section of the transequatorial path. The F region is drawn as a dashed band with two humps - the north and south equatorial-anomaly crests - with a trough directly above the geomagnetic equator, which is marked by a vertical dashed line at the middle of the ground. The transmitting station sits on the left, the receiving station on the right, each about 1,500 to 2,500 miles from the equator. The signal rises to the north crest, ducts across to the south crest high above the equator, and comes back down - two F-region hops with no ground reflection in the middle. A faint dashed zigzag shows what ordinary multi-hop would do: bounce off the ground mid-path, and a cross marks that skipped, lossy bounce. Stations are typically 2,000 to 3,000 miles apart on a path crossing the equator within 20 degrees of a right angle; the maximum range is about 5,000 miles, and the path is most likely in the afternoon or early evening."
+}

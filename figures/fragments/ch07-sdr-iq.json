@@ -1,0 +1,8 @@
+{
+  "id": "ch07-sdr-iq",
+  "chapter": 7,
+  "caption": "A software-defined radio's quadrature architecture. The antenna feeds a low-noise amplifier, and the amplified RF splits into two mixers driven by the same local oscillator in two phases exactly 90 degrees apart, producing the I (in-phase) and Q (quadrature) baseband channels. Each channel is low-pass filtered and digitized by its own ADC, and the DSP block demodulates, filters, and decodes in software - any mode the math can describe. The sampling numbers the pool tests: Nyquist says the sample rate must be at least twice the highest frequency component, so 15 kHz of content needs at least a 30 kHz sample rate (E7F05); the sample rate sets the maximum receive bandwidth of a direct-sampling SDR (E7F10); and undersampled signals fold back as aliases, which is why anti-alias filtering must come before decimation (E7F09). In the direct-sampling variant (E7F01) the ADC digitizes the RF straight from the LNA - no mixers, no local oscillator at all.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "A block diagram: antenna to LNA, then the RF splits to two circle-cross mixer symbols stacked vertically. A local oscillator below feeds the top mixer directly, marked zero degrees, and the bottom mixer through a 90-degree phase-shift box. The top path is labeled I, the bottom Q; each runs through a low-pass filter and an ADC into a tall DSP block, and out to audio or data. Beneath, four sampling notes: Nyquist requires twice the highest component - 15 kilohertz of content needs a 30 kilohertz rate - the sample rate sets the maximum receive bandwidth, anti-alias filtering comes before decimation, and the direct-sampling variant digitizes RF right from the LNA with no mixers."
+}

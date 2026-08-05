@@ -1,0 +1,8 @@
+{
+  "id": "ch07-pool-fig-e71",
+  "chapter": 7,
+  "caption": "Pool figure E7-1, redrawn for this book: a single-stage NPN transistor amplifier. R1 (from the positive rail to the base) and R2 (base to ground) form a voltage divider that sets the base's DC operating point - voltage divider bias, the answer to E7B10. R3 sits in the emitter lead and carries the full emitter current, giving emitter-degeneration self bias, the answer to E7B11 - and note the classic misread: C3, the capacitor in parallel with R3, is the emitter bypass (for AC only), not R3. Signal enters at IN through coupling capacitor C1 to the base and leaves at OUT through C2 from the collector, with the unlabeled resistor in the collector lead as the load. Input at the base, output at the collector, emitter common to both: a common-emitter amplifier, the answer to E7B12.",
+  "kind": "original",
+  "source": "redrawn from NCVEC pool figure E7-1",
+  "spoken": "A schematic: across the top a positive supply rail ending in an open-circle plus terminal. R1 drops from the rail to the base node, R2 from the base node to ground. The input terminal couples through capacitor C1 to the base of an NPN transistor drawn in a circle, emitter arrow pointing outward. An unlabeled resistor drops from the rail to the collector, and capacitor C2 couples the collector to the output terminal. From the emitter, R3 goes down to ground with capacitor C3 in parallel beside it. Three ground symbols."
+}

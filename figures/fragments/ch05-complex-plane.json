@@ -1,0 +1,8 @@
+{
+  "id": "ch05-complex-plane",
+  "chapter": 5,
+  "caption": "One impedance, two spellings. Rectangular form plots the parts: Z = R plus-or-minus jX, resistance across and reactance up or down, with +j inductive (up) and -j capacitive (down). Polar form states the whole: magnitude |Z| and phase angle theta. The worked value is the pool's own (E5C06): 50 - j25 ohms becomes |Z| = sqrt(50^2 + 25^2) = 55.9 ohms at theta = atan(-25/50) = -26.6 degrees, written 55.9 angle -26.6 degrees. Right panel: the j-operator is a 90-degree rotation - multiplying a resistance by +j spins it counterclockwise to the inductive axis, by -j clockwise to the capacitive axis (E5C01, E5C03). On the E5-1 chart this is why capacitive impedances always plot in the lower half.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "Left panel: a complex plane with resistance R on the horizontal axis and reactance jX on the vertical. A dashed rectangular construction drops from fifty on the R axis over and down to minus twenty-five on the jX axis, ending at a dot labeled Z equals 50 minus j25 ohms. A bold vector from the origin to that dot is labeled magnitude of Z equals 55.9 ohms, with an arc at the origin marking theta equals minus 26.6 degrees. Right panel: a horizontal R vector with two rotation arcs - one swings it up ninety degrees to the plus-j inductive axis, one swings it down ninety degrees to the minus-j capacitive axis - multiplying by j is a ninety-degree rotation. A bottom band gives the conversion rules: magnitude equals the square root of R squared plus X squared, theta equals the arctangent of X over R."
+}

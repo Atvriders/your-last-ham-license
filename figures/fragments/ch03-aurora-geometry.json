@@ -1,0 +1,8 @@
+{
+  "id": "ch03-aurora-geometry",
+  "chapter": 3,
+  "caption": "Auroral propagation, seen from above. After a severe geomagnetic storm both stations beam NORTH at the auroral curtain - never at each other - and the moving curtain scatters VHF signals back down. Erratic Doppler spreads a carrier into a buzz a few kHz wide, so signals arrive fluttery and phase-distorted and CW is the most usable mode.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "A map view of an auroral contact, with north at the top, marked by a compass rose. Across the top of the map hangs the auroral curtain, drawn as wavy vertical ribbons, far to the north of both stations. The transmitting station, at the lower left, points its beam north, up at the curtain; the signal scatters off the curtain and comes back down to the receiving station at the lower right, which is beaming north too. A dashed line drawn directly between the two stations is crossed out: they never point at each other - both point at the curtain. Because the curtain keeps moving, the returned signal is phase-distorted: a pure carrier spreads into a buzz a few kilohertz wide, SSB turns to mushy garble, and CW is the most usable mode. Auroral propagation follows severe geomagnetic storms."
+}

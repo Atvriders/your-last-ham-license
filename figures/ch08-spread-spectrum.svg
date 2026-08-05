@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 712" font-family="sans-serif">
+
+  <!-- ===== title ===== -->
+  <text x="380" y="30" text-anchor="middle" font-size="13.5" font-weight="bold" fill="currentColor" stroke="none">spread spectrum — two ways to spread a signal, one reason it survives</text>
+  <text x="380" y="50" text-anchor="middle" font-size="10.5" fill="currentColor" stroke="none">the receiver knows the spreading algorithm — and suppresses every signal that doesn't use it (pool E8D01)</text>
+
+  <!-- ================= PANEL 1: DIRECT SEQUENCE ================= -->
+  <text x="40" y="84" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">direct sequence (DSSS): multiply the data by a fast code</text>
+  <text x="40" y="100" font-size="10" font-style="italic" fill="currentColor" stroke="none">a high-speed binary bit stream shifts the RF carrier's phase — “phase” = direct sequence (E8D02)</text>
+
+  <!-- bit-boundary guides across the three traces -->
+  <g fill="none" stroke="currentColor" stroke-width="0.7" stroke-opacity="0.3">
+    <line x1="190" y1="118" x2="190" y2="272"/>
+    <line x1="320" y1="118" x2="320" y2="272"/>
+  </g>
+
+  <!-- data trace -->
+  <text x="125" y="114" text-anchor="middle" font-size="10" fill="currentColor" stroke="none">1</text>
+  <text x="255" y="114" text-anchor="middle" font-size="10" fill="currentColor" stroke="none">0</text>
+  <text x="385" y="114" text-anchor="middle" font-size="10" fill="currentColor" stroke="none">1</text>
+  <text x="52" y="140" text-anchor="end" font-size="10.5" font-weight="bold" fill="currentColor" stroke="none">data</text>
+  <polyline points="60,122 190,122 190,150 320,150 320,122 450,122" fill="none" stroke="currentColor" stroke-width="2.4"/>
+
+  <!-- code trace -->
+  <text x="60" y="170" font-size="9" font-style="italic" fill="currentColor" stroke="none">the spreading code — a high-speed binary bit stream, many chips per data bit</text>
+  <text x="52" y="198" text-anchor="end" font-size="10.5" font-weight="bold" fill="currentColor" stroke="none">&#215; code</text>
+  <polyline points="60,208 76.25,208 76.25,180 92.5,180 108.75,180 108.75,208 125,208 125,180 141.25,180 141.25,208 157.5,208 173.75,208 173.75,180 190,180 190,208 206.25,208 206.25,180 222.5,180 238.75,180 238.75,208 255,208 255,180 271.25,180 271.25,208 287.5,208 303.75,208 303.75,180 320,180 320,208 336.25,208 336.25,180 352.5,180 368.75,180 368.75,208 385,208 385,180 401.25,180 401.25,208 417.5,208 433.75,208 433.75,180 450,180" fill="none" stroke="currentColor" stroke-width="2"/>
+
+  <!-- product trace -->
+  <text x="60" y="228" font-size="9" font-style="italic" fill="currentColor" stroke="none">= data &#215; code, chip by chip — the fast chip rate is what widens the signal</text>
+  <text x="52" y="258" text-anchor="end" font-size="10.5" font-weight="bold" fill="currentColor" stroke="none">= spread</text>
+  <polyline points="60,240 76.25,240 76.25,268 92.5,268 108.75,268 108.75,240 125,240 125,268 141.25,268 141.25,240 157.5,240 173.75,240 173.75,268 190,268 206.25,268 206.25,240 222.5,240 238.75,240 238.75,268 255,268 255,240 271.25,240 271.25,268 287.5,268 303.75,268 303.75,240 320,240 336.25,240 336.25,268 352.5,268 368.75,268 368.75,240 385,240 385,268 401.25,268 401.25,240 417.5,240 433.75,240 433.75,268 450,268" fill="none" stroke="currentColor" stroke-width="2.4"/>
+
+  <!-- spectrum sketch -->
+  <text x="620" y="122" text-anchor="middle" font-size="10" font-weight="bold" fill="currentColor" stroke="none">the spectrum</text>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <line x1="505" y1="255" x2="505" y2="132"/>
+    <line x1="505" y1="255" x2="734" y2="255"/>
+  </g>
+  <polygon points="505,124 500,134 510,134" fill="currentColor" stroke="none"/>
+  <polygon points="742,255 732,250 732,260" fill="currentColor" stroke="none"/>
+  <text x="498" y="136" text-anchor="end" font-size="8.5" fill="currentColor" stroke="none">power</text>
+  <text x="620" y="273" text-anchor="middle" font-size="9" fill="currentColor" stroke="none">frequency</text>
+  <path d="M556,255 C564,150 606,150 614,255" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M512,255 C540,224 630,224 658,255" fill="none" stroke="currentColor" stroke-width="1.8" stroke-dasharray="5 3"/>
+  <text x="676" y="136" text-anchor="middle" font-size="9" fill="currentColor" stroke="none">the data alone:</text>
+  <text x="676" y="148" text-anchor="middle" font-size="9" fill="currentColor" stroke="none">narrow and tall</text>
+  <line x1="658" y1="153" x2="602" y2="186" fill="none" stroke="currentColor" stroke-width="0.9"/>
+  <text x="736" y="196" text-anchor="end" font-size="9" fill="currentColor" stroke="none">spread: same total power,</text>
+  <text x="736" y="208" text-anchor="end" font-size="9" fill="currentColor" stroke="none">wider, lower at every point</text>
+  <line x1="648" y1="212" x2="638" y2="236" fill="none" stroke="currentColor" stroke-width="0.9"/>
+
+  <!-- receiver note -->
+  <text x="380" y="308" text-anchor="middle" font-size="10.5" fill="currentColor" stroke="none">at the receiver the same code multiplies again and collapses the wanted signal back to narrow —</text>
+  <text x="380" y="324" text-anchor="middle" font-size="10.5" fill="currentColor" stroke="none">anything not using the code stays spread and is suppressed</text>
+  <text x="380" y="342" text-anchor="middle" font-size="10" font-style="italic" fill="currentColor" stroke="none">despreading gathers the spread power back into the data — that recovery is the process gain</text>
+
+  <line x1="40" y1="360" x2="720" y2="360" fill="none" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.35"/>
+
+  <!-- ================= PANEL 2: FREQUENCY HOPPING ================= -->
+  <text x="40" y="388" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">frequency hopping (FHSS): jump the carrier, channel to channel</text>
+  <text x="40" y="404" font-size="10" font-style="italic" fill="currentColor" stroke="none">the carrier frequency changes rapidly, following a pseudorandom sequence — “frequency” = hopping (E8D03)</text>
+
+  <!-- interference band on channel 6 (row y 462–483) -->
+  <rect x="80" y="462" width="620" height="21" fill="currentColor" fill-opacity="0.10" stroke="none"/>
+  <text x="702" y="414" text-anchor="end" font-size="9.5" font-style="italic" fill="currentColor" stroke="none">interference parked on one channel</text>
+  <line x1="694" y1="418" x2="694" y2="460" fill="none" stroke="currentColor" stroke-width="0.9"/>
+
+  <!-- grid: 8 channels x 10 time slots -->
+  <g fill="none" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.25">
+    <line x1="80" y1="420" x2="700" y2="420"/>
+    <line x1="80" y1="441" x2="700" y2="441"/>
+    <line x1="80" y1="462" x2="700" y2="462"/>
+    <line x1="80" y1="483" x2="700" y2="483"/>
+    <line x1="80" y1="504" x2="700" y2="504"/>
+    <line x1="80" y1="525" x2="700" y2="525"/>
+    <line x1="80" y1="546" x2="700" y2="546"/>
+    <line x1="80" y1="567" x2="700" y2="567"/>
+    <line x1="80" y1="588" x2="700" y2="588"/>
+    <line x1="80" y1="420" x2="80" y2="588"/>
+    <line x1="142" y1="420" x2="142" y2="588"/>
+    <line x1="204" y1="420" x2="204" y2="588"/>
+    <line x1="266" y1="420" x2="266" y2="588"/>
+    <line x1="328" y1="420" x2="328" y2="588"/>
+    <line x1="390" y1="420" x2="390" y2="588"/>
+    <line x1="452" y1="420" x2="452" y2="588"/>
+    <line x1="514" y1="420" x2="514" y2="588"/>
+    <line x1="576" y1="420" x2="576" y2="588"/>
+    <line x1="638" y1="420" x2="638" y2="588"/>
+    <line x1="700" y1="420" x2="700" y2="588"/>
+  </g>
+
+  <!-- axes -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <line x1="80" y1="588" x2="80" y2="414"/>
+    <line x1="80" y1="588" x2="706" y2="588"/>
+  </g>
+  <polygon points="80,406 75,416 85,416" fill="currentColor" stroke="none"/>
+  <polygon points="714,588 704,583 704,593" fill="currentColor" stroke="none"/>
+  <text x="66" y="504" text-anchor="middle" font-size="9.5" fill="currentColor" stroke="none" transform="rotate(-90 66 504)">frequency</text>
+  <text x="390" y="606" text-anchor="middle" font-size="9.5" fill="currentColor" stroke="none">time</text>
+
+  <!-- the hop trace: channels [3,7,2,8,5,1,6,4,8,2] over 10 slots -->
+  <polyline points="80,535.5 142,535.5 142,451.5 204,451.5 204,556.5 266,556.5 266,430.5 328,430.5 328,493.5 390,493.5 390,577.5 452,577.5 452,472.5 514,472.5 514,514.5 576,514.5 576,430.5 638,430.5 638,556.5 700,556.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="currentColor" stroke="none">
+    <circle cx="111" cy="535.5" r="4"/>
+    <circle cx="173" cy="451.5" r="4"/>
+    <circle cx="235" cy="556.5" r="4"/>
+    <circle cx="297" cy="430.5" r="4"/>
+    <circle cx="359" cy="493.5" r="4"/>
+    <circle cx="421" cy="577.5" r="4"/>
+    <circle cx="483" cy="472.5" r="4"/>
+    <circle cx="545" cy="514.5" r="4"/>
+    <circle cx="607" cy="430.5" r="4"/>
+    <circle cx="669" cy="556.5" r="4"/>
+  </g>
+
+  <!-- FHSS notes -->
+  <text x="380" y="624" text-anchor="middle" font-size="10.5" fill="currentColor" stroke="none">a jammer or a dead channel costs at most the hops that land on it — the signal has already moved on</text>
+  <text x="380" y="642" text-anchor="middle" font-size="10" font-style="italic" fill="currentColor" stroke="none">transmitter and receiver share the pseudorandom hop sequence, so the receiver always knows where to listen</text>
+
+  <!-- ===== footer banner: why they're robust ===== -->
+  <rect x="30" y="660" width="700" height="44" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+  <text x="380" y="679" text-anchor="middle" font-size="10.5" font-weight="bold" fill="currentColor" stroke="none">why spread spectrum resists interference: the receiver suppresses every signal not using the spreading algorithm</text>
+  <text x="380" y="695" text-anchor="middle" font-size="9.5" font-style="italic" fill="currentColor" stroke="none">the pool swaps the two definitions as distractors — “phase” = direct sequence (E8D02) · “frequency” = hopping (E8D03)</text>
+</svg>

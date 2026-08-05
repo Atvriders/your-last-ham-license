@@ -1,0 +1,8 @@
+{
+  "id": "ch02-eme-path",
+  "chapter": 2,
+  "caption": "Earth–Moon–Earth: any two stations that can both see the Moon — up to about 12,000 miles apart along the surface — can use it as a passive reflector. The round trip takes about 2.5 seconds at the Moon's average 384,400 km distance (WSJT-X's Echo mode exists so you can hear your own echo), the path loss is about 252 dB at 144 MHz (271 dB at 1296 MHz, and about 2 dB better at perigee than apogee), and the Moon reflects only about 6 percent of the power that reaches it. The answer is antenna gain on both ends, a low-noise preamp at the antenna, and patience — digital modes like JT65 and Q65 decode 10–15 dB below CW, on 2 m, the most active EME band.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "Earth-Moon-Earth: two stations that can both see the moon — up to about 12,000 miles apart — use it as a passive reflector. Your signal's round trip takes about two and a half seconds, the path loss is about 252 decibels at 144 megahertz, and the moon reflects only about 6 percent of the power that hits it. The answer is antenna gain on both ends, a low-noise preamp at the antenna, and patience. Digital modes like J T 65 and Q 65 decode 10 to 15 decibels below what C W needs."
+}

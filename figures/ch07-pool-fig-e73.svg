@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 640" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Pool figure E7-3: inverting operational amplifier, gain equals minus RF over R1">
+  <title>Pool figure E7-3 — inverting op-amp (R1 to the inverting input, RF feedback across the top, non-inverting input grounded), redrawn from the NCVEC 2024–2028 Extra pool</title>
+  <defs>
+    <!-- ground symbol per canon §1.4: three slanted strokes of decreasing length, longest on top; wire enters at (0,0) -->
+    <g id="gnd" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+      <line x1="14.7" y1="-0.5" x2="-14.7" y2="16.5"/>
+      <line x1="10.5" y1="14.5" x2="-8.5" y2="25.5"/>
+      <line x1="7.2" y1="26" x2="-3.2" y2="32"/>
+    </g>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- input terminal and R1 to the inverting (-) input node -->
+    <circle cx="32" cy="337" r="13"/>
+    <line x1="45" y1="337" x2="86" y2="337"/>
+    <path d="M86,337 L90,320 L105,355 L120,320 L135,355 L150,320 L165,355 L176,337"/>
+    <line x1="176" y1="337" x2="322" y2="337"/>
+
+    <!-- op-amp triangle pointing right; - input on top, + input below -->
+    <path d="M322,299 L322,491 L473,394 Z"/>
+    <line x1="332" y1="342" x2="350" y2="342"/>
+    <line x1="247" y1="452" x2="322" y2="452"/>
+    <line x1="332" y1="447" x2="350" y2="447"/>
+    <line x1="341" y1="438" x2="341" y2="456"/>
+
+    <!-- non-inverting (+) input grounded -->
+    <line x1="247" y1="452" x2="247" y2="568"/>
+
+    <!-- RF feedback resistor from the output back to the - input, drawn across the top -->
+    <line x1="246" y1="337" x2="246" y2="202"/>
+    <line x1="246" y1="202" x2="353" y2="202"/>
+    <path d="M353,202 L358,185 L373,220 L388,185 L403,220 L418,185 L433,220 L444,202"/>
+    <line x1="444" y1="202" x2="473" y2="202"/>
+    <line x1="473" y1="202" x2="473" y2="394"/>
+
+    <!-- output terminal, and the separate grounded output-reference terminal below it -->
+    <line x1="473" y1="394" x2="597" y2="395"/>
+    <circle cx="610" cy="395" r="13"/>
+    <circle cx="610" cy="471" r="13"/>
+    <line x1="597" y1="471" x2="549" y2="471"/>
+    <line x1="549" y1="471" x2="549" y2="510"/>
+  </g>
+
+  <g fill="currentColor" stroke="none">
+    <!-- junction dots: - input node, + input node, output node at the apex -->
+    <circle cx="246" cy="337" r="7"/>
+    <circle cx="247" cy="452" r="7"/>
+    <circle cx="473" cy="394" r="7"/>
+  </g>
+
+  <use href="#gnd" transform="translate(247 568)"/>
+  <use href="#gnd" transform="translate(549 510)"/>
+
+  <g fill="currentColor" stroke="none" font-weight="bold">
+    <text x="330" y="60" font-size="24" text-anchor="middle">Figure E7-3</text>
+    <text x="112" y="305" font-size="21">R1</text>
+    <text x="353" y="168" font-size="24">R</text>
+    <text x="373" y="177" font-size="17">F</text>
+  </g>
+</svg>

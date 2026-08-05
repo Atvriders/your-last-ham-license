@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" font-family="sans-serif">
+
+  <!-- ===== title ===== -->
+  <text x="400" y="34" font-size="19" font-weight="bold" fill="currentColor" text-anchor="middle">OPERATING IN CEPT COUNTRIES</text>
+  <text x="400" y="55" font-size="11" fill="currentColor" text-anchor="middle">your FCC Amateur Extra grant works abroad under CEPT Recommendation T/R 61-01 — carry these three documents</text>
+
+  <!-- ===== card 1: FCC license grant ===== -->
+  <text x="38" y="100" font-size="12" font-weight="bold" fill="currentColor">1</text>
+  <rect x="30" y="80" width="230" height="190" rx="10" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.06"/>
+  <!-- icon: license card -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <rect x="115" y="112" width="60" height="38" rx="4"/>
+    <line x1="122" y1="124" x2="160" y2="124"/>
+    <line x1="122" y1="132" x2="152" y2="132"/>
+    <circle cx="165" cy="141" r="6"/>
+  </g>
+  <text x="145" y="186" font-size="12.5" font-weight="bold" fill="currentColor" text-anchor="middle">YOUR FCC LICENSE</text>
+  <g font-size="9.5" fill="currentColor" text-anchor="middle">
+    <text x="145" y="208">evidence of the FCC</text>
+    <text x="145" y="223">license grant — your</text>
+    <text x="145" y="238">Amateur Extra license</text>
+    <text x="145" y="253">(carry the ULS record)</text>
+  </g>
+
+  <!-- ===== card 2: passport ===== -->
+  <text x="293" y="100" font-size="12" font-weight="bold" fill="currentColor">2</text>
+  <rect x="285" y="80" width="230" height="190" rx="10" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.06"/>
+  <!-- icon: passport booklet -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <rect x="378" y="104" width="44" height="56" rx="4"/>
+    <circle cx="400" cy="124" r="9"/>
+    <line x1="388" y1="144" x2="412" y2="144"/>
+  </g>
+  <text x="400" y="186" font-size="12.5" font-weight="bold" fill="currentColor" text-anchor="middle">YOUR PASSPORT</text>
+  <g font-size="9.5" fill="currentColor" text-anchor="middle">
+    <text x="400" y="208">proof of U.S. citizenship</text>
+  </g>
+
+  <!-- ===== card 3: the public notice ===== -->
+  <text x="548" y="100" font-size="12" font-weight="bold" fill="currentColor">3</text>
+  <rect x="540" y="80" width="230" height="190" rx="10" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.06"/>
+  <!-- icon: document with folded corner -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <path d="M632,104 L664,104 L676,116 L676,160 L632,160 Z"/>
+    <path d="M664,104 L664,116 L676,116"/>
+    <line x1="639" y1="126" x2="669" y2="126"/>
+    <line x1="639" y1="136" x2="669" y2="136"/>
+    <line x1="639" y1="146" x2="661" y2="146"/>
+  </g>
+  <text x="655" y="186" font-size="12.5" font-weight="bold" fill="currentColor" text-anchor="middle">PUBLIC NOTICE DA 16-1048</text>
+  <g font-size="9.5" fill="currentColor" text-anchor="middle">
+    <text x="655" y="208">a copy of the FCC’s own</text>
+    <text x="655" y="223">notice, “Amateur Service</text>
+    <text x="655" y="238">Operation in CEPT</text>
+    <text x="655" y="253">Countries” (2016)</text>
+  </g>
+
+  <!-- ===== what your class earns there ===== -->
+  <text x="400" y="296" font-size="10" font-weight="bold" fill="currentColor" text-anchor="middle">WHAT YOUR LICENSE CLASS EARNS THERE</text>
+
+  <rect x="30" y="308" width="355" height="52" rx="8" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity="0.12"/>
+  <text x="207" y="330" font-size="12" font-weight="bold" fill="currentColor" text-anchor="middle">AMATEUR EXTRA · ADVANCED</text>
+  <text x="207" y="348" font-size="9.5" fill="currentColor" text-anchor="middle">full CEPT Radio Amateur License privileges — T/R 61-01</text>
+
+  <rect x="415" y="308" width="355" height="52" rx="8" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.04"/>
+  <text x="592" y="330" font-size="12" font-weight="bold" fill="currentColor" text-anchor="middle">GENERAL</text>
+  <text x="592" y="348" font-size="9.5" fill="currentColor" text-anchor="middle">CEPT Novice privileges only — ECC Recommendation (05)06</text>
+
+  <!-- ===== footnotes ===== -->
+  <text x="400" y="396" font-size="10" fill="currentColor" text-anchor="middle">No “/CEPT” suffix and no local-language ID requirement exists — the three documents are the whole carry (FCC Public Notice DA 16-1048).</text>
+  <text x="400" y="414" font-size="10" fill="currentColor" text-anchor="middle">CEPT T/R 61-01 covers many European countries; in the Americas the counterpart is the IARP — a different permit.</text>
+
+</svg>

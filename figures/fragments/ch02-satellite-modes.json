@@ -1,0 +1,8 @@
+{
+  "id": "ch02-satellite-modes",
+  "chapter": 2,
+  "caption": "A satellite's mode designator is a pair of letters naming its uplink and downlink bands, uplink first: V = 2 m, U = 70 cm, L = 23 cm, S = 13 cm, and X = 3 cm (10 GHz, e.g. QO-100's downlink). In the worked example, mode U/V means you transmit up on 70 cm (435–438 MHz) and your friend listens down on 2 m (145.8–146 MHz). The mode is a band pair — not FM versus SSB and not an orbit class.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "A satellite's mode designator is two letters: the uplink band first, then the downlink band. V is 2 meters, U is 70 centimeters, L is 23 centimeters, S is 13 centimeters, and X is 3 centimeters at 10 gigahertz. So mode U slash V means you transmit up on 70 centimeters and listen down on 2 meters. The mode is a band pair — not F M versus S S B, and not an orbit class."
+}

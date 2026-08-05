@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 730" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- Rectangular-coordinate impedance chart, redrawn from NCVEC pool
+       figure E5-1 (canon 1.4 binding spec). Square plot box, both axes
+       -600..+600 ohms, numeric tick labels every 100 ohms (X below the
+       horizontal axis, Y left of the vertical axis), light gridlines every
+       200 ohms, bold axes through the origin extending slightly past the
+       box, axis tips +X/-X/+Y/-Y, title centered above. Eight labeled
+       points at the official coordinates. Horizontal = resistance R,
+       vertical = reactance jX (per E5C09; the figure itself carries only
+       the tip labels, as published).
+       Map: x = 380 + 0.43333*R, y = 400 - 0.43333*X. -->
+
+  <!-- ===== Title ===== -->
+  <text x="380" y="56" font-size="34" font-weight="bold" text-anchor="middle"
+        fill="currentColor" stroke="none">Figure E5-1</text>
+
+  <!-- ===== Axis tip labels ===== -->
+  <g fill="currentColor" stroke="none" font-size="22">
+    <text x="380" y="98" text-anchor="middle">+Y</text>
+    <text x="380" y="711" text-anchor="middle">&#8722;Y</text>
+    <text x="82" y="407" text-anchor="end">&#8722;X</text>
+    <text x="678" y="407" text-anchor="start">+X</text>
+  </g>
+
+  <!-- ===== Plot box (+/-600 edges) and 200-ohm gridlines ===== -->
+  <!-- Gridlines break where the tick-number bands sit, as published. -->
+  <g stroke="currentColor" fill="none" stroke-width="1.2" stroke-opacity="0.5">
+    <!-- vertical lines: segments 140-408 and 430-660 (gap clears X labels) -->
+    <line x1="120" y1="140" x2="120" y2="408"/>
+    <line x1="120" y1="430" x2="120" y2="660"/>
+    <line x1="206.7" y1="140" x2="206.7" y2="408"/>
+    <line x1="206.7" y1="430" x2="206.7" y2="660"/>
+    <line x1="293.3" y1="140" x2="293.3" y2="408"/>
+    <line x1="293.3" y1="430" x2="293.3" y2="660"/>
+    <line x1="466.7" y1="140" x2="466.7" y2="408"/>
+    <line x1="466.7" y1="430" x2="466.7" y2="660"/>
+    <line x1="553.3" y1="140" x2="553.3" y2="408"/>
+    <line x1="553.3" y1="430" x2="553.3" y2="660"/>
+    <line x1="640" y1="140" x2="640" y2="408"/>
+    <line x1="640" y1="430" x2="640" y2="660"/>
+    <!-- horizontal lines: segments 120-338 and 374-640 (gap clears Y labels) -->
+    <line x1="120" y1="140" x2="338" y2="140"/>
+    <line x1="374" y1="140" x2="640" y2="140"/>
+    <line x1="120" y1="226.7" x2="338" y2="226.7"/>
+    <line x1="374" y1="226.7" x2="640" y2="226.7"/>
+    <line x1="120" y1="313.3" x2="338" y2="313.3"/>
+    <line x1="374" y1="313.3" x2="640" y2="313.3"/>
+    <line x1="120" y1="486.7" x2="338" y2="486.7"/>
+    <line x1="374" y1="486.7" x2="640" y2="486.7"/>
+    <line x1="120" y1="573.3" x2="338" y2="573.3"/>
+    <line x1="374" y1="573.3" x2="640" y2="573.3"/>
+    <line x1="120" y1="660" x2="338" y2="660"/>
+    <line x1="374" y1="660" x2="640" y2="660"/>
+  </g>
+
+  <!-- ===== Bold axes through the origin, extending slightly past the box ===== -->
+  <g stroke="currentColor" fill="none" stroke-width="2.6" stroke-linecap="round">
+    <line x1="92" y1="400" x2="668" y2="400"/>
+    <line x1="380" y1="108" x2="380" y2="688"/>
+  </g>
+
+  <!-- ===== Tick labels every 100 ohms ===== -->
+  <g fill="currentColor" stroke="none" font-size="14">
+    <!-- X labels below the horizontal axis -->
+    <g text-anchor="middle">
+      <text x="120" y="424">&#8722;600</text>
+      <text x="163.3" y="424">&#8722;500</text>
+      <text x="206.7" y="424">&#8722;400</text>
+      <text x="250" y="424">&#8722;300</text>
+      <text x="293.3" y="424">&#8722;200</text>
+      <text x="336.7" y="424">&#8722;100</text>
+      <text x="423.3" y="424">100</text>
+      <text x="466.7" y="424">200</text>
+      <text x="510" y="424">300</text>
+      <text x="553.3" y="424">400</text>
+      <text x="596.7" y="424">500</text>
+      <text x="640" y="424">600</text>
+    </g>
+    <!-- Y labels left of the vertical axis -->
+    <g text-anchor="end">
+      <text x="368" y="145">600</text>
+      <text x="368" y="188.3">500</text>
+      <text x="368" y="231.7">400</text>
+      <text x="368" y="275">300</text>
+      <text x="368" y="318.3">200</text>
+      <text x="368" y="361.7">100</text>
+      <text x="368" y="448.3">&#8722;100</text>
+      <text x="368" y="491.7">&#8722;200</text>
+      <text x="368" y="535">&#8722;300</text>
+      <text x="368" y="578.3">&#8722;400</text>
+      <text x="368" y="621.7">&#8722;500</text>
+      <text x="368" y="665">&#8722;600</text>
+    </g>
+  </g>
+
+  <!-- ===== Point labels (same side of each dot as the published art) ===== -->
+  <g fill="currentColor" stroke="none" font-size="22">
+    <text x="497" y="221" text-anchor="end">Point 3</text>
+    <text x="566" y="277" text-anchor="start">Point 2</text>
+    <text x="566" y="399" text-anchor="start">Point 6</text>
+    <text x="497" y="390" text-anchor="end">Point 8</text>
+    <text x="193" y="537" text-anchor="end">Point 5</text>
+    <text x="250" y="606" text-anchor="middle">Point 7</text>
+    <text x="510" y="606" text-anchor="middle">Point 1</text>
+    <text x="566" y="537" text-anchor="start">Point 4</text>
+  </g>
+
+  <!-- ===== The eight points ===== -->
+  <!-- P1 (+300,-400)  P2 (+400,+300)  P3 (+300,+400)  P4 (+400,-300)
+       P5 (-400,-300)  P6 (+400, a hair below the axis)  P7 (-300,-400)
+       P8 (+300, a hair above the axis) -->
+  <g fill="currentColor" stroke="none">
+    <circle cx="510" cy="573.3" r="5"/>
+    <circle cx="553.3" cy="270" r="5"/>
+    <circle cx="510" cy="226.7" r="5"/>
+    <circle cx="553.3" cy="530" r="5"/>
+    <circle cx="206.7" cy="530" r="5"/>
+    <circle cx="553.3" cy="402.5" r="5"/>
+    <circle cx="250" cy="573.3" r="5"/>
+    <circle cx="510" cy="394" r="5"/>
+  </g>
+
+</svg>

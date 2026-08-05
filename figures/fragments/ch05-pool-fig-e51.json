@@ -1,0 +1,8 @@
+{
+  "id": "ch05-pool-fig-e51",
+  "chapter": 5,
+  "caption": "Figure E5-1, the rectangular-coordinate impedance chart three exam questions plot on. The horizontal axis is resistance and the vertical axis is reactance, both scaled -600 to +600 ohms with numeric labels every 100 ohms and light gridlines every 200; bold axes cross at the origin and the tips are labeled +X, -X, +Y, -Y. Eight labeled points: Point 1 (+300, -400), Point 2 (+400, +300), Point 3 (+300, +400), Point 4 (+400, -300), Point 5 (-400, -300), Point 6 (+400, on the axis), Point 7 (-300, -400), Point 8 (+300, on the axis). The plotting questions key to the right half-plane: E5C10's 400 - j300 is Point 4, E5C11's 300 + j400 is Point 3, E5C12's 300 - j400 is Point 1. Points 5 and 7 have negative resistance - impossible for a passive series circuit - and Points 6 and 8 sit on the axis: all four are pure distractors. Redrawn from the NCVEC pool figure.",
+  "kind": "original",
+  "source": "redrawn from NCVEC pool figure E5-1",
+  "spoken": "A square chart titled Figure E5-1. Bold horizontal and vertical axes cross at the center, their tips labeled plus X, minus X, plus Y, and minus Y; both scales run minus 600 to plus 600 ohms, numbered every 100, with faint gridlines every 200. Eight dots carry labels: Point 3 at plus 300, plus 400 and Point 2 at plus 400, plus 300 in the upper right; Points 6 and 8 on the positive horizontal axis at 400 and 300; Point 4 at plus 400, minus 300 and Point 1 at plus 300, minus 400 in the lower right; Point 5 at minus 400, minus 300 and Point 7 at minus 300, minus 400 in the lower left. The three keyed answers - Point 4, Point 3, and Point 1 - all sit in the right half-plane; the negative-resistance and on-axis points are distractors."
+}

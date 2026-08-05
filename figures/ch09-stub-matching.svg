@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- Matching with transmission lines: the quarter-wave transformer
+       (Q-section) and open/shorted stubs as reactances. Worked pool
+       numbers: 75-ohm Q-section for 100-to-50 (E9E06), 10.6 m half-wave
+       air line at 14.10 MHz (E9F06), stub behaviors E9F04/E9F09-E9F12,
+       stub match definition E9E03, Smith-chart use E9G05. -->
+
+  <!-- ===== Title ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="400" y="30" font-size="17" font-weight="bold">MATCHING WITH TRANSMISSION LINES</text>
+    <text x="400" y="50" font-size="12">the line itself is the matching network — a quarter wave inverts, a half wave repeats, a stub adds reactance</text>
+  </g>
+
+  <!-- ===== Section 1: the quarter-wave transformer ===== -->
+  <text x="40" y="92" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">1 &#183; THE &#955;/4 TRANSFORMER (Q-SECTION) — it inverts the load</text>
+
+  <!-- feed line -->
+  <line x1="60" y1="150" x2="200" y2="150" stroke="currentColor" stroke-width="2" fill="none"/>
+  <!-- Q-section (drawn heavier) -->
+  <line x1="200" y1="150" x2="340" y2="150" stroke="currentColor" stroke-width="4.5" fill="none"/>
+  <!-- load resistor -->
+  <path d="M340,150 h12 l3,-8 l6,16 l6,-16 l6,16 l6,-16 l6,16 l6,-16 l3,8 h12" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <!-- joints -->
+  <g fill="currentColor" stroke="none">
+    <circle cx="200" cy="150" r="3.5"/>
+    <circle cx="340" cy="150" r="3.5"/>
+  </g>
+  <!-- labels -->
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="130" y="132" font-size="11">50 &#937; feed line</text>
+    <text x="270" y="132" font-size="11" font-weight="bold">&#955;/4 Q-section — 75 &#937;</text>
+    <text x="383" y="132" font-size="11">100 &#937; load</text>
+    <text x="130" y="168" font-size="9.5" font-style="italic">from the transmitter</text>
+    <text x="270" y="170" font-size="9.5" font-style="italic">a quarter wave long</text>
+  </g>
+
+  <g fill="currentColor" stroke="none" font-size="10.5">
+    <text x="60" y="205">the quarter-wave inverts: Z_in = Z&#8320;&#178; &#247; Z_load</text>
+    <text x="60" y="228">so pick Z&#8320; = &#8730;(Z_line &#215; Z_load) = &#8730;(50 &#215; 100) = 70.7 &#937;</text>
+    <text x="60" y="251" font-weight="bold">&#8594; use 75 &#937; line (E9E06) — the 62 &#937; choice is the arithmetic-mean trap</text>
+  </g>
+
+  <!-- ===== Section 2: the half-wave line repeats ===== -->
+  <text x="440" y="92" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">2 &#183; THE &#955;/2 LINE — it repeats its termination</text>
+
+  <!-- RF input terminal -->
+  <circle cx="450" cy="150" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+  <!-- the line -->
+  <line x1="454" y1="150" x2="640" y2="150" stroke="currentColor" stroke-width="2" fill="none"/>
+  <!-- load resistor -->
+  <path d="M640,150 h10 l3,-8 l6,16 l6,-16 l6,16 l6,-16 l6,16 l6,-16 l3,8 h10" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="546" y="132" font-size="11" font-weight="bold">&#955;/2 of line (any Z&#8320;)</text>
+    <text x="671" y="132" font-size="11">any Z</text>
+    <text x="450" y="170" font-size="9.5" font-style="italic">RF input</text>
+  </g>
+
+  <g fill="currentColor" stroke="none" font-size="10.5">
+    <text x="440" y="205">the half-wave repeats: the input sees the load, unchanged —</text>
+    <text x="440" y="228">a shorted far end shows up as very low impedance (E9F04)</text>
+    <text x="440" y="251" font-weight="bold">&#955; = 300 &#247; 14.10 MHz = 21.3 m &#8594; &#955;/2 = 10.6 m of air-insulated line (E9F06)</text>
+  </g>
+
+  <!-- ===== Section 3: stubs as reactances ===== -->
+  <text x="40" y="312" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">3 &#183; STUBS — open or shorted line sections as reactances</text>
+  <text x="40" y="334" font-size="10.5" fill="currentColor" stroke="none">a stub match is a short length of transmission line connected in parallel with the feed line, at or near the feed point (E9E03)</text>
+
+  <!-- column headers -->
+  <g fill="currentColor" stroke="none" text-anchor="middle" font-size="11.5" font-weight="bold">
+    <text x="220" y="366">&#955;/8 STUB</text>
+    <text x="440" y="366">&#955;/4 STUB</text>
+    <text x="660" y="366">&#955;/2 STUB</text>
+  </g>
+
+  <!-- row labels -->
+  <g fill="currentColor" stroke="none" font-size="10.5">
+    <text x="40" y="424">far end SHORTED</text>
+    <text x="40" y="514">far end OPEN</text>
+  </g>
+
+  <!-- shorted stubs: parallel lines closed by a bar -->
+  <g stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M185,408 h70 M185,422 h70 M255,408 v14"/>
+    <path d="M405,408 h70 M405,422 h70 M475,408 v14"/>
+    <path d="M625,408 h70 M625,422 h70 M695,408 v14"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="220" y="447" font-size="11" font-weight="bold">inductive reactance (+jX)</text>
+    <text x="220" y="463" font-size="9.5">E9F10</text>
+    <text x="440" y="447" font-size="11" font-weight="bold">very high impedance</text>
+    <text x="440" y="463" font-size="9.5">E9F09</text>
+    <text x="660" y="447" font-size="11" font-weight="bold">very low impedance</text>
+    <text x="660" y="463" font-size="9.5">E9F04</text>
+  </g>
+
+  <!-- open stubs: parallel lines left unconnected -->
+  <g stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M185,498 h70 M185,512 h70"/>
+    <path d="M405,498 h70 M405,512 h70"/>
+    <path d="M625,498 h70 M625,512 h70"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="220" y="537" font-size="11" font-weight="bold">capacitive reactance (&#8722;jX)</text>
+    <text x="220" y="553" font-size="9.5">E9F11</text>
+    <text x="440" y="537" font-size="11" font-weight="bold">very low impedance</text>
+    <text x="440" y="553" font-size="9.5">E9F12</text>
+    <text x="660" y="537" font-size="11" font-weight="bold">very high impedance</text>
+    <text x="660" y="553" font-size="9.5">repeats the open</text>
+  </g>
+
+  <!-- ===== bottom notes ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle" font-style="italic">
+    <text x="400" y="600" font-size="11.5">&#955;/4 inverts &#183; &#955;/2 repeats &#183; &#955;/8 makes a reactance — shorted is inductive, open is capacitive</text>
+    <text x="400" y="624" font-size="11.5">where to put the stub and how long to cut it: the Smith chart's classic job (E9G05) — see Figure E9-3</text>
+  </g>
+
+</svg>

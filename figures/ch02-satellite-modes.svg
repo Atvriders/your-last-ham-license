@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" font-family="sans-serif">
+
+  <!-- ===== title ===== -->
+  <text x="380" y="30" text-anchor="middle" font-size="13.5" font-weight="bold" fill="currentColor" stroke="none">satellite mode designators — the uplink band letter comes first</text>
+
+  <!-- ===== left: the letters ===== -->
+  <text x="180" y="66" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor" stroke="none">the letters name bands</text>
+  <rect x="36" y="86" width="288" height="220" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+  <g fill="currentColor" stroke="none">
+    <text x="56" y="117" font-size="18" font-weight="bold">V</text>
+    <text x="84" y="115" font-size="13.5">= 2 m</text>
+    <text x="84" y="131" font-size="10" font-style="italic">145.80–146.00 MHz OSCAR subband</text>
+
+    <text x="56" y="159" font-size="18" font-weight="bold">U</text>
+    <text x="84" y="157" font-size="13.5">= 70 cm</text>
+    <text x="84" y="173" font-size="10" font-style="italic">435–438 MHz, satellite only</text>
+
+    <text x="56" y="201" font-size="18" font-weight="bold">L</text>
+    <text x="84" y="199" font-size="13.5">= 23 cm</text>
+    <text x="84" y="215" font-size="10" font-style="italic">1260–1270 MHz satellite uplinks</text>
+
+    <text x="56" y="243" font-size="18" font-weight="bold">S</text>
+    <text x="84" y="241" font-size="13.5">= 13 cm</text>
+    <text x="84" y="257" font-size="10" font-style="italic">2400–2410 MHz amateur satellite</text>
+
+    <text x="56" y="285" font-size="18" font-weight="bold">X</text>
+    <text x="84" y="283" font-size="13.5">= 3 cm</text>
+    <text x="84" y="299" font-size="10" font-style="italic">10 GHz — e.g. QO-100's downlink</text>
+  </g>
+
+  <!-- ===== left: reading the pair ===== -->
+  <text x="180" y="338" text-anchor="middle" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">reading the pair</text>
+  <rect x="36" y="356" width="288" height="86" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+  <g fill="currentColor" stroke="none" font-size="11.5">
+    <text x="52" y="380">read the pair uplink-first:</text>
+    <text x="52" y="400">V/U — up on 2 m, down on 70 cm</text>
+    <text x="52" y="420">U/V — up on 70 cm, down on 2 m</text>
+  </g>
+
+  <!-- ===== right: worked example ===== -->
+  <text x="550" y="66" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor" stroke="none">worked example — mode U/V</text>
+
+  <!-- the satellite -->
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <rect x="534" y="92" width="32" height="16" rx="2"/>
+    <rect x="500" y="94" width="30" height="12"/>
+    <rect x="570" y="94" width="30" height="12"/>
+    <line x1="530" y1="100" x2="534" y2="100"/>
+    <line x1="566" y1="100" x2="570" y2="100"/>
+  </g>
+  <text x="616" y="104" font-size="11" fill="currentColor" stroke="none">the satellite</text>
+
+  <!-- big mode readout between the legs -->
+  <text x="550" y="170" text-anchor="middle" font-size="11" font-style="italic" fill="currentColor" stroke="none">mode</text>
+  <text x="550" y="198" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">U/V</text>
+
+  <!-- uplink arrow -->
+  <line x1="440" y1="388" x2="522" y2="132" stroke="currentColor" stroke-width="2.4" fill="none"/>
+  <polygon points="522,132 514,142 522.6,144.8" fill="currentColor" stroke="none"/>
+  <text x="438" y="250" text-anchor="middle" font-size="30" font-weight="bold" fill="currentColor" stroke="none">U</text>
+  <text x="464" y="272" text-anchor="end" font-size="10.5" fill="currentColor" stroke="none">uplink — first letter</text>
+  <text x="464" y="288" text-anchor="end" font-size="10.5" fill="currentColor" stroke="none">70 cm · 435–438 MHz</text>
+
+  <!-- downlink arrow -->
+  <line x1="578" y1="132" x2="654" y2="370" stroke="currentColor" stroke-width="2.4" fill="none"/>
+  <polygon points="654,370 646,357.2 654.6,360" fill="currentColor" stroke="none"/>
+  <text x="662" y="250" text-anchor="middle" font-size="30" font-weight="bold" fill="currentColor" stroke="none">V</text>
+  <text x="636" y="272" font-size="10.5" fill="currentColor" stroke="none">downlink — second</text>
+  <text x="636" y="288" font-size="10.5" fill="currentColor" stroke="none">2 m · 145.8–146 MHz</text>
+
+  <!-- ===== ground ===== -->
+  <line x1="360" y1="448" x2="740" y2="448" stroke="currentColor" stroke-width="2.2" fill="none"/>
+  <g stroke="currentColor" stroke-width="1.2" opacity="0.7" fill="none">
+    <line x1="380" y1="448" x2="372" y2="459"/>
+    <line x1="430" y1="448" x2="422" y2="459"/>
+    <line x1="455" y1="448" x2="447" y2="459"/>
+    <line x1="480" y1="448" x2="472" y2="459"/>
+    <line x1="505" y1="448" x2="497" y2="459"/>
+    <line x1="530" y1="448" x2="522" y2="459"/>
+    <line x1="555" y1="448" x2="547" y2="459"/>
+    <line x1="580" y1="448" x2="572" y2="459"/>
+    <line x1="605" y1="448" x2="597" y2="459"/>
+    <line x1="630" y1="448" x2="622" y2="459"/>
+    <line x1="655" y1="448" x2="647" y2="459"/>
+    <line x1="730" y1="448" x2="722" y2="459"/>
+  </g>
+
+  <!-- station A: you transmit -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="410" y1="448" x2="410" y2="416"/>
+    <line x1="410" y1="416" x2="434" y2="392"/>
+    <line x1="413" y1="403" x2="423" y2="413"/>
+    <line x1="421" y1="395" x2="431" y2="405"/>
+    <line x1="427" y1="389" x2="437" y2="399"/>
+  </g>
+  <text x="410" y="470" text-anchor="middle" font-size="11" fill="currentColor" stroke="none">you transmit</text>
+
+  <!-- station B: your friend receives -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="690" y1="448" x2="690" y2="416"/>
+    <line x1="690" y1="416" x2="666" y2="392"/>
+    <line x1="677" y1="413" x2="687" y2="403"/>
+    <line x1="669" y1="405" x2="679" y2="395"/>
+    <line x1="663" y1="399" x2="673" y2="389"/>
+  </g>
+  <text x="690" y="470" text-anchor="middle" font-size="10.5" fill="currentColor" stroke="none">your friend receives</text>
+
+  <!-- ===== notes ===== -->
+  <g fill="currentColor" stroke="none" font-size="11.5" font-style="italic" text-anchor="middle">
+    <text x="380" y="514">a satellite's “mode” is its uplink/downlink band pair — uplink letter first</text>
+    <text x="380" y="536">not FM versus SSB, not an orbit class — just which band goes up and which band comes down</text>
+  </g>
+</svg>

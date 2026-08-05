@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- ===== Title ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="400" y="30" font-size="17" font-weight="bold">WHY THE FIRST STAGE SETS THE NOISE FIGURE</text>
+    <text x="400" y="52" font-size="12">every stage adds its own noise — but gain ahead of a stage shrinks what that stage can contribute</text>
+  </g>
+
+  <!-- ===== the receiver chain ===== -->
+  <g stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round">
+    <line x1="70" y1="175" x2="70" y2="108"/>
+    <line x1="70" y1="108" x2="56" y2="94"/>
+    <line x1="70" y1="108" x2="70" y2="90"/>
+    <line x1="70" y1="108" x2="84" y2="94"/>
+  </g>
+  <text x="70" y="198" font-size="11" font-weight="bold" fill="currentColor" stroke="none" text-anchor="middle">ANTENNA</text>
+
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <rect x="150" y="120" width="170" height="64" rx="8"/>
+    <rect x="380" y="120" width="170" height="64" rx="8"/>
+    <rect x="610" y="120" width="160" height="64" rx="8"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="235" y="145" font-size="11.5" font-weight="bold">PREAMP — stage 1</text>
+    <text x="235" y="164" font-size="9.5">gain G1 &#183; noise figure NF1</text>
+    <text x="465" y="145" font-size="11.5" font-weight="bold">MIXER — stage 2</text>
+    <text x="465" y="164" font-size="9.5">gain G2 &#183; noise figure NF2</text>
+    <text x="690" y="145" font-size="11.5" font-weight="bold">IF AMP — stage 3</text>
+    <text x="690" y="164" font-size="9.5">gain G3 &#183; noise figure NF3</text>
+  </g>
+  <!-- chain arrows -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <line x1="70" y1="150" x2="142" y2="150"/>
+    <line x1="320" y1="150" x2="372" y2="150"/>
+    <line x1="550" y1="150" x2="602" y2="150"/>
+    <line x1="770" y1="150" x2="786" y2="150"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <polygon points="150,150 141,146 141,154"/>
+    <polygon points="380,150 371,146 371,154"/>
+    <polygon points="610,150 601,146 601,154"/>
+    <polygon points="794,150 786,146 786,154"/>
+    <text x="782" y="138" font-size="9" font-style="italic" text-anchor="middle">out</text>
+  </g>
+  <text x="400" y="222" font-size="10.5" font-style="italic" fill="currentColor" stroke="none" text-anchor="middle">signal and atmospheric noise enter together — once mixed, no later stage can strip the noise back out</text>
+
+  <!-- ===== noise contributions referred to the input ===== -->
+  <text x="40" y="262" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">EACH STAGE'S NOISE AS HEARD AT THE INPUT — the Friis idea, no formula</text>
+  <line x1="80" y1="415" x2="720" y2="415" stroke="currentColor" stroke-width="2" fill="none"/>
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <rect x="140" y="290" width="120" height="125"/>
+    <rect x="340" y="373" width="120" height="42"/>
+    <rect x="540" y="401" width="120" height="14"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="200" y="280" font-size="10.5" font-weight="bold">stage 1 &#183; preamp</text>
+    <text x="200" y="332" font-size="9">arrives at full strength</text>
+    <text x="200" y="348" font-size="9">and gets amplified by</text>
+    <text x="200" y="364" font-size="9">every later stage</text>
+    <text x="400" y="363" font-size="10.5" font-weight="bold">stage 2 &#183; mixer</text>
+    <text x="400" y="431" font-size="9.5">&#247; G1, the gain ahead of it</text>
+    <text x="600" y="391" font-size="10.5" font-weight="bold">stage 3 &#183; IF amp</text>
+    <text x="600" y="431" font-size="9.5">&#247; G1 &#215; G2, all the gain ahead</text>
+  </g>
+  <text x="400" y="468" font-size="11" fill="currentColor" stroke="none" text-anchor="middle">spend the low-noise budget on stage 1 — its gain then quiets every stage after it</text>
+
+  <!-- ===== the rules of thumb ===== -->
+  <g fill="currentColor" stroke="none" font-size="10.5">
+    <text x="60" y="505">&#8226; noise figure: the dB ratio of the receiver's noise to the theoretical minimum</text>
+    <text x="60" y="527">&#8226; the theoretical floor: &#8722;174 dBm in a 1 Hz bandwidth at room temperature</text>
+    <text x="60" y="549">&#8226; a preamp can't beat noise the antenna already hears — it can only avoid adding more</text>
+    <text x="60" y="571">&#8226; on the low HF bands the atmosphere is noisier than the receiver — front-end attenuation there costs almost nothing</text>
+  </g>
+
+</svg>

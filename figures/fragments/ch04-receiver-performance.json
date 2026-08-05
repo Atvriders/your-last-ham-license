@@ -1,0 +1,8 @@
+{
+  "id": "ch04-receiver-performance",
+  "chapter": 4,
+  "caption": "The three receiver numbers that matter. Sensitivity says how weak a signal still clears the noise: the floor starts at the physical -174 dBm in a 1 Hz bandwidth, and widening the filter from 50 to 1,000 Hz raises it 13 dB. Dynamic range spans from that floor to the level causing 1 dB of gain compression; past it come cross-modulation and desense, and the third-order intercept (40 dBm) is an extrapolated yardstick, never a working level, while odd-order products such as 2f1 - f2 land back in-band. Selectivity is the filter passband stripping a strong adjacent signal: a narrow roofing filter works early, IF Shift slides the passband, and a preselector removes out-of-band signals before they can intermod.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "Three panels translate the spec sheet. First, sensitivity: a tiny signal pokes above a wiggling noise floor and a dashed MDS line - minimum discernible signal - while the notes give the physics floor of minus 174 dBm per hertz and the 13 dB penalty for widening from 50 to 1,000 hertz. Second, dynamic range: two loud neighbor signals rise toward a dashed 1 dB compression line, and the arrow from the noise floor to that line is the blocking dynamic range; beyond it come cross-modulation and desense, the 40 dBm third-order intercept is an extrapolation, and odd-order intermod products land back in-band. Third, selectivity: a filter passband keeps the wanted signal while a much taller adjacent signal sits outside the skirt and is stripped away, with the roofing filter, IF Shift, and preselector listed as the tools."
+}

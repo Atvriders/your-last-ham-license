@@ -1,0 +1,8 @@
+{
+  "id": "ch04-link-budget",
+  "chapter": 4,
+  "caption": "A link budget is pure dB bookkeeping. The chain adds transmit power and antenna gains and subtracts path loss: 40 dBm (10 W) plus 6 dB of transmit gain, minus 100 dB of path loss, plus 3 dB of receive gain delivers -51 dBm, and each pool distractor drops exactly one gain. The margin then compares the arrival with the receiver's noise: on a longer path the same bookkeeping gives -89 dBm, which is 14 dB above a -103 dBm MDS, and holding back the required 6 dB SNR leaves +8 dB of margin - the link works with room to spare. (Pool E4D13, E4D12.)",
+  "kind": "original",
+  "source": "original",
+  "spoken": "The top chain walks the signal left to right: the transmitter makes 40 dBm, ten watts; the transmit antenna adds 6 dB for a running total of 46; the path takes away 100 dB, dropping the total to minus 54; the receive antenna adds 3, and the receiver sees minus 51 dBm. The wrong exam answers each omit one gain. Below, a dBm thermometer shows the margin example: the received level sits at minus 89 dBm, the receiver's MDS noise floor at minus 103, fourteen dB below it; holding back a 6 dB SNR reserve leaves plus 8 dB of margin. A footnote anchors dBm to real watts: 40 dBm is 10 watts and minus 100 dBm is a tenth of a picowatt."
+}

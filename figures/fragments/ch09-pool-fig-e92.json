@@ -1,0 +1,8 @@
+{
+  "id": "ch09-pool-fig-e92",
+  "chapter": 9,
+  "caption": "Figure E9-2, the elevation pattern over real ground three exam questions read. A semicircular polar plot above a horizontal baseline (the ground): 180 degrees at the left end of the baseline, 0 at the right end, 90 at the zenith, with labeled radials every 30 degrees and subdivision spokes every 15. Concentric dB arcs are labeled along the baseline right of center in the published order -40, -30, -20, -10; the outer semicircle is 0 dB. The semicircle-above-ground format is the tell that this is an elevation pattern, not an azimuth pattern (E9B05). The largest lobe hugs the horizon, peaking at 7.5 degrees elevation - halfway to the first subdivision spoke - and reaching the outer arc (E9B06); successively smaller lobes sit above it, and the small rear lobes toward 150-180 degrees are down about 28 dB, giving the 28 dB front-to-back ratio (E9B04). Redrawn from the NCVEC pool figure.",
+  "kind": "original",
+  "source": "redrawn from NCVEC pool figure E9-2",
+  "spoken": "A semicircular polar plot titled Figure E9-2, captioned Over Real Ground at the upper right. The flat baseline is the ground: 180 degrees at its left end, 0 at its right end, 90 at the top, with spokes every 15 degrees and labels every 30. Arc labels minus 40, minus 30, minus 20, and minus 10 dB sit along the baseline to the right of center; the outer semicircle is 0 dB. The heavy trace is a fan of lobes: the biggest hugs the horizon and peaks at 7.5 degrees elevation, touching the outer arc; three more lobes step down as they climb toward 60 degrees; and a cluster of small rear lobes toward 180 is down about 28 dB. The three figure questions read: elevation pattern, 7.5 degree peak, 28 dB front-to-back."
+}

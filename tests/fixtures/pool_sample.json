@@ -1,0 +1,1302 @@
+{
+  "E1A01": {
+    "group": "E1A",
+    "subelement": "E1",
+    "question": "Which frequency segment is reserved exclusively for Amateur Extra class licensees?",
+    "choices": {
+      "A": "The entire 80 meter band",
+      "B": "14.100 MHz to 14.150 MHz",
+      "C": "All frequencies above 30 MHz",
+      "D": "The 60 meter channels"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E1A03": {
+    "group": "E1A",
+    "subelement": "E1",
+    "question": "What is the maximum bandwidth for a data emission on the 20 meter band?",
+    "choices": {
+      "A": "2.8 kHz",
+      "B": "300 hertz",
+      "C": "19.6 kHz",
+      "D": "56 kHz"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E1B01": {
+    "group": "E1B",
+    "subelement": "E1",
+    "question": "Sample fixture question E1B01 for Extra pool group E1B?",
+    "choices": {
+      "A": "Fixture choice A for E1B01",
+      "B": "Fixture choice B for E1B01",
+      "C": "Fixture choice C for E1B01",
+      "D": "Fixture choice D for E1B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E1B02": {
+    "group": "E1B",
+    "subelement": "E1",
+    "question": "Sample fixture question E1B02 for Extra pool group E1B?",
+    "choices": {
+      "A": "Fixture choice A for E1B02",
+      "B": "Fixture choice B for E1B02",
+      "C": "Fixture choice C for E1B02",
+      "D": "Fixture choice D for E1B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E1C01": {
+    "group": "E1C",
+    "subelement": "E1",
+    "question": "Sample fixture question E1C01 for Extra pool group E1C?",
+    "choices": {
+      "A": "Fixture choice A for E1C01",
+      "B": "Fixture choice B for E1C01",
+      "C": "Fixture choice C for E1C01",
+      "D": "Fixture choice D for E1C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E1C02": {
+    "group": "E1C",
+    "subelement": "E1",
+    "question": "Sample fixture question E1C02 for Extra pool group E1C?",
+    "choices": {
+      "A": "Fixture choice A for E1C02",
+      "B": "Fixture choice B for E1C02",
+      "C": "Fixture choice C for E1C02",
+      "D": "Fixture choice D for E1C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E1D01": {
+    "group": "E1D",
+    "subelement": "E1",
+    "question": "Sample fixture question E1D01 for Extra pool group E1D?",
+    "choices": {
+      "A": "Fixture choice A for E1D01",
+      "B": "Fixture choice B for E1D01",
+      "C": "Fixture choice C for E1D01",
+      "D": "Fixture choice D for E1D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E1D02": {
+    "group": "E1D",
+    "subelement": "E1",
+    "question": "Sample fixture question E1D02 for Extra pool group E1D?",
+    "choices": {
+      "A": "Fixture choice A for E1D02",
+      "B": "Fixture choice B for E1D02",
+      "C": "Fixture choice C for E1D02",
+      "D": "Fixture choice D for E1D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E1E01": {
+    "group": "E1E",
+    "subelement": "E1",
+    "question": "Sample fixture question E1E01 for Extra pool group E1E?",
+    "choices": {
+      "A": "Fixture choice A for E1E01",
+      "B": "Fixture choice B for E1E01",
+      "C": "Fixture choice C for E1E01",
+      "D": "Fixture choice D for E1E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E1E02": {
+    "group": "E1E",
+    "subelement": "E1",
+    "question": "Sample fixture question E1E02 for Extra pool group E1E?",
+    "choices": {
+      "A": "Fixture choice A for E1E02",
+      "B": "Fixture choice B for E1E02",
+      "C": "Fixture choice C for E1E02",
+      "D": "Fixture choice D for E1E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E2A01": {
+    "group": "E2A",
+    "subelement": "E2",
+    "question": "Sample fixture question E2A01 for Extra pool group E2A?",
+    "choices": {
+      "A": "Fixture choice A for E2A01",
+      "B": "Fixture choice B for E2A01",
+      "C": "Fixture choice C for E2A01",
+      "D": "Fixture choice D for E2A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E2A02": {
+    "group": "E2A",
+    "subelement": "E2",
+    "question": "Sample fixture question E2A02 for Extra pool group E2A?",
+    "choices": {
+      "A": "Fixture choice A for E2A02",
+      "B": "Fixture choice B for E2A02",
+      "C": "Fixture choice C for E2A02",
+      "D": "Fixture choice D for E2A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E2B01": {
+    "group": "E2B",
+    "subelement": "E2",
+    "question": "Sample fixture question E2B01 for Extra pool group E2B?",
+    "choices": {
+      "A": "Fixture choice A for E2B01",
+      "B": "Fixture choice B for E2B01",
+      "C": "Fixture choice C for E2B01",
+      "D": "Fixture choice D for E2B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E2B02": {
+    "group": "E2B",
+    "subelement": "E2",
+    "question": "Sample fixture question E2B02 for Extra pool group E2B?",
+    "choices": {
+      "A": "Fixture choice A for E2B02",
+      "B": "Fixture choice B for E2B02",
+      "C": "Fixture choice C for E2B02",
+      "D": "Fixture choice D for E2B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E2C01": {
+    "group": "E2C",
+    "subelement": "E2",
+    "question": "Sample fixture question E2C01 for Extra pool group E2C?",
+    "choices": {
+      "A": "Fixture choice A for E2C01",
+      "B": "Fixture choice B for E2C01",
+      "C": "Fixture choice C for E2C01",
+      "D": "Fixture choice D for E2C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E2C02": {
+    "group": "E2C",
+    "subelement": "E2",
+    "question": "Sample fixture question E2C02 for Extra pool group E2C?",
+    "choices": {
+      "A": "Fixture choice A for E2C02",
+      "B": "Fixture choice B for E2C02",
+      "C": "Fixture choice C for E2C02",
+      "D": "Fixture choice D for E2C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E2D01": {
+    "group": "E2D",
+    "subelement": "E2",
+    "question": "Sample fixture question E2D01 for Extra pool group E2D?",
+    "choices": {
+      "A": "Fixture choice A for E2D01",
+      "B": "Fixture choice B for E2D01",
+      "C": "Fixture choice C for E2D01",
+      "D": "Fixture choice D for E2D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E2D02": {
+    "group": "E2D",
+    "subelement": "E2",
+    "question": "Sample fixture question E2D02 for Extra pool group E2D?",
+    "choices": {
+      "A": "Fixture choice A for E2D02",
+      "B": "Fixture choice B for E2D02",
+      "C": "Fixture choice C for E2D02",
+      "D": "Fixture choice D for E2D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E2E01": {
+    "group": "E2E",
+    "subelement": "E2",
+    "question": "Sample fixture question E2E01 for Extra pool group E2E?",
+    "choices": {
+      "A": "Fixture choice A for E2E01",
+      "B": "Fixture choice B for E2E01",
+      "C": "Fixture choice C for E2E01",
+      "D": "Fixture choice D for E2E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E2E02": {
+    "group": "E2E",
+    "subelement": "E2",
+    "question": "Sample fixture question E2E02 for Extra pool group E2E?",
+    "choices": {
+      "A": "Fixture choice A for E2E02",
+      "B": "Fixture choice B for E2E02",
+      "C": "Fixture choice C for E2E02",
+      "D": "Fixture choice D for E2E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E3A01": {
+    "group": "E3A",
+    "subelement": "E3",
+    "question": "Sample fixture question E3A01 for Extra pool group E3A?",
+    "choices": {
+      "A": "Fixture choice A for E3A01",
+      "B": "Fixture choice B for E3A01",
+      "C": "Fixture choice C for E3A01",
+      "D": "Fixture choice D for E3A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E3A02": {
+    "group": "E3A",
+    "subelement": "E3",
+    "question": "Sample fixture question E3A02 for Extra pool group E3A?",
+    "choices": {
+      "A": "Fixture choice A for E3A02",
+      "B": "Fixture choice B for E3A02",
+      "C": "Fixture choice C for E3A02",
+      "D": "Fixture choice D for E3A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E3B01": {
+    "group": "E3B",
+    "subelement": "E3",
+    "question": "Sample fixture question E3B01 for Extra pool group E3B?",
+    "choices": {
+      "A": "Fixture choice A for E3B01",
+      "B": "Fixture choice B for E3B01",
+      "C": "Fixture choice C for E3B01",
+      "D": "Fixture choice D for E3B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E3B02": {
+    "group": "E3B",
+    "subelement": "E3",
+    "question": "Sample fixture question E3B02 for Extra pool group E3B?",
+    "choices": {
+      "A": "Fixture choice A for E3B02",
+      "B": "Fixture choice B for E3B02",
+      "C": "Fixture choice C for E3B02",
+      "D": "Fixture choice D for E3B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E3C01": {
+    "group": "E3C",
+    "subelement": "E3",
+    "question": "Sample fixture question E3C01 for Extra pool group E3C?",
+    "choices": {
+      "A": "Fixture choice A for E3C01",
+      "B": "Fixture choice B for E3C01",
+      "C": "Fixture choice C for E3C01",
+      "D": "Fixture choice D for E3C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E3C02": {
+    "group": "E3C",
+    "subelement": "E3",
+    "question": "Sample fixture question E3C02 for Extra pool group E3C?",
+    "choices": {
+      "A": "Fixture choice A for E3C02",
+      "B": "Fixture choice B for E3C02",
+      "C": "Fixture choice C for E3C02",
+      "D": "Fixture choice D for E3C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E3D01": {
+    "group": "E3D",
+    "subelement": "E3",
+    "question": "Sample fixture question E3D01 for Extra pool group E3D?",
+    "choices": {
+      "A": "Fixture choice A for E3D01",
+      "B": "Fixture choice B for E3D01",
+      "C": "Fixture choice C for E3D01",
+      "D": "Fixture choice D for E3D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E3D02": {
+    "group": "E3D",
+    "subelement": "E3",
+    "question": "Sample fixture question E3D02 for Extra pool group E3D?",
+    "choices": {
+      "A": "Fixture choice A for E3D02",
+      "B": "Fixture choice B for E3D02",
+      "C": "Fixture choice C for E3D02",
+      "D": "Fixture choice D for E3D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E3E01": {
+    "group": "E3E",
+    "subelement": "E3",
+    "question": "Sample fixture question E3E01 for Extra pool group E3E?",
+    "choices": {
+      "A": "Fixture choice A for E3E01",
+      "B": "Fixture choice B for E3E01",
+      "C": "Fixture choice C for E3E01",
+      "D": "Fixture choice D for E3E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E3E02": {
+    "group": "E3E",
+    "subelement": "E3",
+    "question": "Sample fixture question E3E02 for Extra pool group E3E?",
+    "choices": {
+      "A": "Fixture choice A for E3E02",
+      "B": "Fixture choice B for E3E02",
+      "C": "Fixture choice C for E3E02",
+      "D": "Fixture choice D for E3E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E4A01": {
+    "group": "E4A",
+    "subelement": "E4",
+    "question": "Sample fixture question E4A01 for Extra pool group E4A?",
+    "choices": {
+      "A": "Fixture choice A for E4A01",
+      "B": "Fixture choice B for E4A01",
+      "C": "Fixture choice C for E4A01",
+      "D": "Fixture choice D for E4A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E4A02": {
+    "group": "E4A",
+    "subelement": "E4",
+    "question": "Sample fixture question E4A02 for Extra pool group E4A?",
+    "choices": {
+      "A": "Fixture choice A for E4A02",
+      "B": "Fixture choice B for E4A02",
+      "C": "Fixture choice C for E4A02",
+      "D": "Fixture choice D for E4A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E4B01": {
+    "group": "E4B",
+    "subelement": "E4",
+    "question": "Sample fixture question E4B01 for Extra pool group E4B?",
+    "choices": {
+      "A": "Fixture choice A for E4B01",
+      "B": "Fixture choice B for E4B01",
+      "C": "Fixture choice C for E4B01",
+      "D": "Fixture choice D for E4B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E4B02": {
+    "group": "E4B",
+    "subelement": "E4",
+    "question": "Sample fixture question E4B02 for Extra pool group E4B?",
+    "choices": {
+      "A": "Fixture choice A for E4B02",
+      "B": "Fixture choice B for E4B02",
+      "C": "Fixture choice C for E4B02",
+      "D": "Fixture choice D for E4B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E4C01": {
+    "group": "E4C",
+    "subelement": "E4",
+    "question": "Sample fixture question E4C01 for Extra pool group E4C?",
+    "choices": {
+      "A": "Fixture choice A for E4C01",
+      "B": "Fixture choice B for E4C01",
+      "C": "Fixture choice C for E4C01",
+      "D": "Fixture choice D for E4C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E4C02": {
+    "group": "E4C",
+    "subelement": "E4",
+    "question": "Sample fixture question E4C02 for Extra pool group E4C?",
+    "choices": {
+      "A": "Fixture choice A for E4C02",
+      "B": "Fixture choice B for E4C02",
+      "C": "Fixture choice C for E4C02",
+      "D": "Fixture choice D for E4C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E4D01": {
+    "group": "E4D",
+    "subelement": "E4",
+    "question": "Sample fixture question E4D01 for Extra pool group E4D?",
+    "choices": {
+      "A": "Fixture choice A for E4D01",
+      "B": "Fixture choice B for E4D01",
+      "C": "Fixture choice C for E4D01",
+      "D": "Fixture choice D for E4D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E4D02": {
+    "group": "E4D",
+    "subelement": "E4",
+    "question": "Sample fixture question E4D02 for Extra pool group E4D?",
+    "choices": {
+      "A": "Fixture choice A for E4D02",
+      "B": "Fixture choice B for E4D02",
+      "C": "Fixture choice C for E4D02",
+      "D": "Fixture choice D for E4D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E4E01": {
+    "group": "E4E",
+    "subelement": "E4",
+    "question": "Sample fixture question E4E01 for Extra pool group E4E?",
+    "choices": {
+      "A": "Fixture choice A for E4E01",
+      "B": "Fixture choice B for E4E01",
+      "C": "Fixture choice C for E4E01",
+      "D": "Fixture choice D for E4E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E4E02": {
+    "group": "E4E",
+    "subelement": "E4",
+    "question": "Sample fixture question E4E02 for Extra pool group E4E?",
+    "choices": {
+      "A": "Fixture choice A for E4E02",
+      "B": "Fixture choice B for E4E02",
+      "C": "Fixture choice C for E4E02",
+      "D": "Fixture choice D for E4E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E5A01": {
+    "group": "E5A",
+    "subelement": "E5",
+    "question": "Sample fixture question E5A01 for Extra pool group E5A?",
+    "choices": {
+      "A": "Fixture choice A for E5A01",
+      "B": "Fixture choice B for E5A01",
+      "C": "Fixture choice C for E5A01",
+      "D": "Fixture choice D for E5A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E5A02": {
+    "group": "E5A",
+    "subelement": "E5",
+    "question": "Sample fixture question E5A02 for Extra pool group E5A?",
+    "choices": {
+      "A": "Fixture choice A for E5A02",
+      "B": "Fixture choice B for E5A02",
+      "C": "Fixture choice C for E5A02",
+      "D": "Fixture choice D for E5A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E5B01": {
+    "group": "E5B",
+    "subelement": "E5",
+    "question": "What is the magnitude of the impedance of a series circuit with 50 ohms resistance and 50 ohms reactance?",
+    "choices": {
+      "A": "50 ohms",
+      "B": "70.7 ohms",
+      "C": "100 ohms",
+      "D": "2500 ohms"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E5B02": {
+    "group": "E5B",
+    "subelement": "E5",
+    "question": "What is the impedance of a circuit with 30 ohms resistance and 40 ohms reactance?",
+    "choices": {
+      "A": "10 ohms",
+      "B": "35 ohms",
+      "C": "50 ohms",
+      "D": "70 ohms"
+    },
+    "answer": "C",
+    "figure": null
+  },
+  "E5C01": {
+    "group": "E5C",
+    "subelement": "E5",
+    "question": "Sample fixture question E5C01 for Extra pool group E5C?",
+    "choices": {
+      "A": "Fixture choice A for E5C01",
+      "B": "Fixture choice B for E5C01",
+      "C": "Fixture choice C for E5C01",
+      "D": "Fixture choice D for E5C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E5C02": {
+    "group": "E5C",
+    "subelement": "E5",
+    "question": "Sample fixture question E5C02 for Extra pool group E5C?",
+    "choices": {
+      "A": "Fixture choice A for E5C02",
+      "B": "Fixture choice B for E5C02",
+      "C": "Fixture choice C for E5C02",
+      "D": "Fixture choice D for E5C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E5D01": {
+    "group": "E5D",
+    "subelement": "E5",
+    "question": "Sample fixture question E5D01 for Extra pool group E5D?",
+    "choices": {
+      "A": "Fixture choice A for E5D01",
+      "B": "Fixture choice B for E5D01",
+      "C": "Fixture choice C for E5D01",
+      "D": "Fixture choice D for E5D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E5D02": {
+    "group": "E5D",
+    "subelement": "E5",
+    "question": "Sample fixture question E5D02 for Extra pool group E5D?",
+    "choices": {
+      "A": "Fixture choice A for E5D02",
+      "B": "Fixture choice B for E5D02",
+      "C": "Fixture choice C for E5D02",
+      "D": "Fixture choice D for E5D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E5E01": {
+    "group": "E5E",
+    "subelement": "E5",
+    "question": "Sample fixture question E5E01 for Extra pool group E5E?",
+    "choices": {
+      "A": "Fixture choice A for E5E01",
+      "B": "Fixture choice B for E5E01",
+      "C": "Fixture choice C for E5E01",
+      "D": "Fixture choice D for E5E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E5E02": {
+    "group": "E5E",
+    "subelement": "E5",
+    "question": "Sample fixture question E5E02 for Extra pool group E5E?",
+    "choices": {
+      "A": "Fixture choice A for E5E02",
+      "B": "Fixture choice B for E5E02",
+      "C": "Fixture choice C for E5E02",
+      "D": "Fixture choice D for E5E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E6A01": {
+    "group": "E6A",
+    "subelement": "E6",
+    "question": "Sample fixture question E6A01 for Extra pool group E6A?",
+    "choices": {
+      "A": "Fixture choice A for E6A01",
+      "B": "Fixture choice B for E6A01",
+      "C": "Fixture choice C for E6A01",
+      "D": "Fixture choice D for E6A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E6A02": {
+    "group": "E6A",
+    "subelement": "E6",
+    "question": "Sample fixture question E6A02 for Extra pool group E6A?",
+    "choices": {
+      "A": "Fixture choice A for E6A02",
+      "B": "Fixture choice B for E6A02",
+      "C": "Fixture choice C for E6A02",
+      "D": "Fixture choice D for E6A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E6B01": {
+    "group": "E6B",
+    "subelement": "E6",
+    "question": "Sample fixture question E6B01 for Extra pool group E6B?",
+    "choices": {
+      "A": "Fixture choice A for E6B01",
+      "B": "Fixture choice B for E6B01",
+      "C": "Fixture choice C for E6B01",
+      "D": "Fixture choice D for E6B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E6B02": {
+    "group": "E6B",
+    "subelement": "E6",
+    "question": "Sample fixture question E6B02 for Extra pool group E6B?",
+    "choices": {
+      "A": "Fixture choice A for E6B02",
+      "B": "Fixture choice B for E6B02",
+      "C": "Fixture choice C for E6B02",
+      "D": "Fixture choice D for E6B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E6C01": {
+    "group": "E6C",
+    "subelement": "E6",
+    "question": "Sample fixture question E6C01 for Extra pool group E6C?",
+    "choices": {
+      "A": "Fixture choice A for E6C01",
+      "B": "Fixture choice B for E6C01",
+      "C": "Fixture choice C for E6C01",
+      "D": "Fixture choice D for E6C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E6C02": {
+    "group": "E6C",
+    "subelement": "E6",
+    "question": "Sample fixture question E6C02 for Extra pool group E6C?",
+    "choices": {
+      "A": "Fixture choice A for E6C02",
+      "B": "Fixture choice B for E6C02",
+      "C": "Fixture choice C for E6C02",
+      "D": "Fixture choice D for E6C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E6D01": {
+    "group": "E6D",
+    "subelement": "E6",
+    "question": "Sample fixture question E6D01 for Extra pool group E6D?",
+    "choices": {
+      "A": "Fixture choice A for E6D01",
+      "B": "Fixture choice B for E6D01",
+      "C": "Fixture choice C for E6D01",
+      "D": "Fixture choice D for E6D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E6D02": {
+    "group": "E6D",
+    "subelement": "E6",
+    "question": "Sample fixture question E6D02 for Extra pool group E6D?",
+    "choices": {
+      "A": "Fixture choice A for E6D02",
+      "B": "Fixture choice B for E6D02",
+      "C": "Fixture choice C for E6D02",
+      "D": "Fixture choice D for E6D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E6E01": {
+    "group": "E6E",
+    "subelement": "E6",
+    "question": "Sample fixture question E6E01 for Extra pool group E6E?",
+    "choices": {
+      "A": "Fixture choice A for E6E01",
+      "B": "Fixture choice B for E6E01",
+      "C": "Fixture choice C for E6E01",
+      "D": "Fixture choice D for E6E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E6E02": {
+    "group": "E6E",
+    "subelement": "E6",
+    "question": "Sample fixture question E6E02 for Extra pool group E6E?",
+    "choices": {
+      "A": "Fixture choice A for E6E02",
+      "B": "Fixture choice B for E6E02",
+      "C": "Fixture choice C for E6E02",
+      "D": "Fixture choice D for E6E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7A01": {
+    "group": "E7A",
+    "subelement": "E7",
+    "question": "Sample fixture question E7A01 for Extra pool group E7A?",
+    "choices": {
+      "A": "Fixture choice A for E7A01",
+      "B": "Fixture choice B for E7A01",
+      "C": "Fixture choice C for E7A01",
+      "D": "Fixture choice D for E7A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7A02": {
+    "group": "E7A",
+    "subelement": "E7",
+    "question": "Sample fixture question E7A02 for Extra pool group E7A?",
+    "choices": {
+      "A": "Fixture choice A for E7A02",
+      "B": "Fixture choice B for E7A02",
+      "C": "Fixture choice C for E7A02",
+      "D": "Fixture choice D for E7A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7B01": {
+    "group": "E7B",
+    "subelement": "E7",
+    "question": "Sample fixture question E7B01 for Extra pool group E7B?",
+    "choices": {
+      "A": "Fixture choice A for E7B01",
+      "B": "Fixture choice B for E7B01",
+      "C": "Fixture choice C for E7B01",
+      "D": "Fixture choice D for E7B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7B02": {
+    "group": "E7B",
+    "subelement": "E7",
+    "question": "Sample fixture question E7B02 for Extra pool group E7B?",
+    "choices": {
+      "A": "Fixture choice A for E7B02",
+      "B": "Fixture choice B for E7B02",
+      "C": "Fixture choice C for E7B02",
+      "D": "Fixture choice D for E7B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7C01": {
+    "group": "E7C",
+    "subelement": "E7",
+    "question": "Sample fixture question E7C01 for Extra pool group E7C?",
+    "choices": {
+      "A": "Fixture choice A for E7C01",
+      "B": "Fixture choice B for E7C01",
+      "C": "Fixture choice C for E7C01",
+      "D": "Fixture choice D for E7C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7C02": {
+    "group": "E7C",
+    "subelement": "E7",
+    "question": "Sample fixture question E7C02 for Extra pool group E7C?",
+    "choices": {
+      "A": "Fixture choice A for E7C02",
+      "B": "Fixture choice B for E7C02",
+      "C": "Fixture choice C for E7C02",
+      "D": "Fixture choice D for E7C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7D01": {
+    "group": "E7D",
+    "subelement": "E7",
+    "question": "Sample fixture question E7D01 for Extra pool group E7D?",
+    "choices": {
+      "A": "Fixture choice A for E7D01",
+      "B": "Fixture choice B for E7D01",
+      "C": "Fixture choice C for E7D01",
+      "D": "Fixture choice D for E7D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7D02": {
+    "group": "E7D",
+    "subelement": "E7",
+    "question": "Sample fixture question E7D02 for Extra pool group E7D?",
+    "choices": {
+      "A": "Fixture choice A for E7D02",
+      "B": "Fixture choice B for E7D02",
+      "C": "Fixture choice C for E7D02",
+      "D": "Fixture choice D for E7D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7E01": {
+    "group": "E7E",
+    "subelement": "E7",
+    "question": "Sample fixture question E7E01 for Extra pool group E7E?",
+    "choices": {
+      "A": "Fixture choice A for E7E01",
+      "B": "Fixture choice B for E7E01",
+      "C": "Fixture choice C for E7E01",
+      "D": "Fixture choice D for E7E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7E02": {
+    "group": "E7E",
+    "subelement": "E7",
+    "question": "Sample fixture question E7E02 for Extra pool group E7E?",
+    "choices": {
+      "A": "Fixture choice A for E7E02",
+      "B": "Fixture choice B for E7E02",
+      "C": "Fixture choice C for E7E02",
+      "D": "Fixture choice D for E7E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7F01": {
+    "group": "E7F",
+    "subelement": "E7",
+    "question": "Sample fixture question E7F01 for Extra pool group E7F?",
+    "choices": {
+      "A": "Fixture choice A for E7F01",
+      "B": "Fixture choice B for E7F01",
+      "C": "Fixture choice C for E7F01",
+      "D": "Fixture choice D for E7F01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7F02": {
+    "group": "E7F",
+    "subelement": "E7",
+    "question": "Sample fixture question E7F02 for Extra pool group E7F?",
+    "choices": {
+      "A": "Fixture choice A for E7F02",
+      "B": "Fixture choice B for E7F02",
+      "C": "Fixture choice C for E7F02",
+      "D": "Fixture choice D for E7F02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7G01": {
+    "group": "E7G",
+    "subelement": "E7",
+    "question": "Sample fixture question E7G01 for Extra pool group E7G?",
+    "choices": {
+      "A": "Fixture choice A for E7G01",
+      "B": "Fixture choice B for E7G01",
+      "C": "Fixture choice C for E7G01",
+      "D": "Fixture choice D for E7G01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7G02": {
+    "group": "E7G",
+    "subelement": "E7",
+    "question": "Sample fixture question E7G02 for Extra pool group E7G?",
+    "choices": {
+      "A": "Fixture choice A for E7G02",
+      "B": "Fixture choice B for E7G02",
+      "C": "Fixture choice C for E7G02",
+      "D": "Fixture choice D for E7G02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E7H01": {
+    "group": "E7H",
+    "subelement": "E7",
+    "question": "Sample fixture question E7H01 for Extra pool group E7H?",
+    "choices": {
+      "A": "Fixture choice A for E7H01",
+      "B": "Fixture choice B for E7H01",
+      "C": "Fixture choice C for E7H01",
+      "D": "Fixture choice D for E7H01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E7H02": {
+    "group": "E7H",
+    "subelement": "E7",
+    "question": "Sample fixture question E7H02 for Extra pool group E7H?",
+    "choices": {
+      "A": "Fixture choice A for E7H02",
+      "B": "Fixture choice B for E7H02",
+      "C": "Fixture choice C for E7H02",
+      "D": "Fixture choice D for E7H02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E8A01": {
+    "group": "E8A",
+    "subelement": "E8",
+    "question": "Sample fixture question E8A01 for Extra pool group E8A?",
+    "choices": {
+      "A": "Fixture choice A for E8A01",
+      "B": "Fixture choice B for E8A01",
+      "C": "Fixture choice C for E8A01",
+      "D": "Fixture choice D for E8A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E8A02": {
+    "group": "E8A",
+    "subelement": "E8",
+    "question": "Sample fixture question E8A02 for Extra pool group E8A?",
+    "choices": {
+      "A": "Fixture choice A for E8A02",
+      "B": "Fixture choice B for E8A02",
+      "C": "Fixture choice C for E8A02",
+      "D": "Fixture choice D for E8A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E8B01": {
+    "group": "E8B",
+    "subelement": "E8",
+    "question": "Sample fixture question E8B01 for Extra pool group E8B?",
+    "choices": {
+      "A": "Fixture choice A for E8B01",
+      "B": "Fixture choice B for E8B01",
+      "C": "Fixture choice C for E8B01",
+      "D": "Fixture choice D for E8B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E8B02": {
+    "group": "E8B",
+    "subelement": "E8",
+    "question": "Sample fixture question E8B02 for Extra pool group E8B?",
+    "choices": {
+      "A": "Fixture choice A for E8B02",
+      "B": "Fixture choice B for E8B02",
+      "C": "Fixture choice C for E8B02",
+      "D": "Fixture choice D for E8B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E8C01": {
+    "group": "E8C",
+    "subelement": "E8",
+    "question": "Sample fixture question E8C01 for Extra pool group E8C?",
+    "choices": {
+      "A": "Fixture choice A for E8C01",
+      "B": "Fixture choice B for E8C01",
+      "C": "Fixture choice C for E8C01",
+      "D": "Fixture choice D for E8C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E8C02": {
+    "group": "E8C",
+    "subelement": "E8",
+    "question": "Sample fixture question E8C02 for Extra pool group E8C?",
+    "choices": {
+      "A": "Fixture choice A for E8C02",
+      "B": "Fixture choice B for E8C02",
+      "C": "Fixture choice C for E8C02",
+      "D": "Fixture choice D for E8C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E8D01": {
+    "group": "E8D",
+    "subelement": "E8",
+    "question": "Sample fixture question E8D01 for Extra pool group E8D?",
+    "choices": {
+      "A": "Fixture choice A for E8D01",
+      "B": "Fixture choice B for E8D01",
+      "C": "Fixture choice C for E8D01",
+      "D": "Fixture choice D for E8D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E8D02": {
+    "group": "E8D",
+    "subelement": "E8",
+    "question": "Sample fixture question E8D02 for Extra pool group E8D?",
+    "choices": {
+      "A": "Fixture choice A for E8D02",
+      "B": "Fixture choice B for E8D02",
+      "C": "Fixture choice C for E8D02",
+      "D": "Fixture choice D for E8D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E9A01": {
+    "group": "E9A",
+    "subelement": "E9",
+    "question": "Sample fixture question E9A01 for Extra pool group E9A?",
+    "choices": {
+      "A": "Fixture choice A for E9A01",
+      "B": "Fixture choice B for E9A01",
+      "C": "Fixture choice C for E9A01",
+      "D": "Fixture choice D for E9A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E9A02": {
+    "group": "E9A",
+    "subelement": "E9",
+    "question": "Sample fixture question E9A02 for Extra pool group E9A?",
+    "choices": {
+      "A": "Fixture choice A for E9A02",
+      "B": "Fixture choice B for E9A02",
+      "C": "Fixture choice C for E9A02",
+      "D": "Fixture choice D for E9A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E9B01": {
+    "group": "E9B",
+    "subelement": "E9",
+    "question": "Sample fixture question E9B01 for Extra pool group E9B?",
+    "choices": {
+      "A": "Fixture choice A for E9B01",
+      "B": "Fixture choice B for E9B01",
+      "C": "Fixture choice C for E9B01",
+      "D": "Fixture choice D for E9B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E9B02": {
+    "group": "E9B",
+    "subelement": "E9",
+    "question": "Sample fixture question E9B02 for Extra pool group E9B?",
+    "choices": {
+      "A": "Fixture choice A for E9B02",
+      "B": "Fixture choice B for E9B02",
+      "C": "Fixture choice C for E9B02",
+      "D": "Fixture choice D for E9B02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E9C01": {
+    "group": "E9C",
+    "subelement": "E9",
+    "question": "Sample fixture question E9C01 for Extra pool group E9C?",
+    "choices": {
+      "A": "Fixture choice A for E9C01",
+      "B": "Fixture choice B for E9C01",
+      "C": "Fixture choice C for E9C01",
+      "D": "Fixture choice D for E9C01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E9C02": {
+    "group": "E9C",
+    "subelement": "E9",
+    "question": "Sample fixture question E9C02 for Extra pool group E9C?",
+    "choices": {
+      "A": "Fixture choice A for E9C02",
+      "B": "Fixture choice B for E9C02",
+      "C": "Fixture choice C for E9C02",
+      "D": "Fixture choice D for E9C02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E9D01": {
+    "group": "E9D",
+    "subelement": "E9",
+    "question": "Sample fixture question E9D01 for Extra pool group E9D?",
+    "choices": {
+      "A": "Fixture choice A for E9D01",
+      "B": "Fixture choice B for E9D01",
+      "C": "Fixture choice C for E9D01",
+      "D": "Fixture choice D for E9D01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E9D02": {
+    "group": "E9D",
+    "subelement": "E9",
+    "question": "Sample fixture question E9D02 for Extra pool group E9D?",
+    "choices": {
+      "A": "Fixture choice A for E9D02",
+      "B": "Fixture choice B for E9D02",
+      "C": "Fixture choice C for E9D02",
+      "D": "Fixture choice D for E9D02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E9E01": {
+    "group": "E9E",
+    "subelement": "E9",
+    "question": "Sample fixture question E9E01 for Extra pool group E9E?",
+    "choices": {
+      "A": "Fixture choice A for E9E01",
+      "B": "Fixture choice B for E9E01",
+      "C": "Fixture choice C for E9E01",
+      "D": "Fixture choice D for E9E01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E9E02": {
+    "group": "E9E",
+    "subelement": "E9",
+    "question": "Sample fixture question E9E02 for Extra pool group E9E?",
+    "choices": {
+      "A": "Fixture choice A for E9E02",
+      "B": "Fixture choice B for E9E02",
+      "C": "Fixture choice C for E9E02",
+      "D": "Fixture choice D for E9E02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E9F01": {
+    "group": "E9F",
+    "subelement": "E9",
+    "question": "Sample fixture question E9F01 for Extra pool group E9F?",
+    "choices": {
+      "A": "Fixture choice A for E9F01",
+      "B": "Fixture choice B for E9F01",
+      "C": "Fixture choice C for E9F01",
+      "D": "Fixture choice D for E9F01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E9F02": {
+    "group": "E9F",
+    "subelement": "E9",
+    "question": "Sample fixture question E9F02 for Extra pool group E9F?",
+    "choices": {
+      "A": "Fixture choice A for E9F02",
+      "B": "Fixture choice B for E9F02",
+      "C": "Fixture choice C for E9F02",
+      "D": "Fixture choice D for E9F02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E0A01": {
+    "group": "E0A",
+    "subelement": "E0",
+    "question": "Sample fixture question E0A01 for Extra pool group E0A?",
+    "choices": {
+      "A": "Fixture choice A for E0A01",
+      "B": "Fixture choice B for E0A01",
+      "C": "Fixture choice C for E0A01",
+      "D": "Fixture choice D for E0A01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E0A02": {
+    "group": "E0A",
+    "subelement": "E0",
+    "question": "Sample fixture question E0A02 for Extra pool group E0A?",
+    "choices": {
+      "A": "Fixture choice A for E0A02",
+      "B": "Fixture choice B for E0A02",
+      "C": "Fixture choice C for E0A02",
+      "D": "Fixture choice D for E0A02"
+    },
+    "answer": "B",
+    "figure": null
+  },
+  "E0B01": {
+    "group": "E0B",
+    "subelement": "E0",
+    "question": "Sample fixture question E0B01 for Extra pool group E0B?",
+    "choices": {
+      "A": "Fixture choice A for E0B01",
+      "B": "Fixture choice B for E0B01",
+      "C": "Fixture choice C for E0B01",
+      "D": "Fixture choice D for E0B01"
+    },
+    "answer": "A",
+    "figure": null
+  },
+  "E0B02": {
+    "group": "E0B",
+    "subelement": "E0",
+    "question": "Sample fixture question E0B02 for Extra pool group E0B?",
+    "choices": {
+      "A": "Fixture choice A for E0B02",
+      "B": "Fixture choice B for E0B02",
+      "C": "Fixture choice C for E0B02",
+      "D": "Fixture choice D for E0B02"
+    },
+    "answer": "B",
+    "figure": null
+  }
+}

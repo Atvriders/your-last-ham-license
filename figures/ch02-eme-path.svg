@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" font-family="sans-serif">
+
+  <!-- ===== title ===== -->
+  <text x="380" y="28" text-anchor="middle" font-size="13.5" font-weight="bold" fill="currentColor" stroke="none">Earth–Moon–Earth — the Moon as a passive reflector</text>
+
+  <!-- ===== the Moon ===== -->
+  <circle cx="380" cy="104" r="44" fill="none" stroke="currentColor" stroke-width="2.2"/>
+  <g fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.8">
+    <circle cx="364" cy="92" r="6"/>
+    <circle cx="392" cy="118" r="8"/>
+    <circle cx="374" cy="124" r="4.5"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <text x="444" y="88" font-size="12" font-weight="bold">the Moon</text>
+    <text x="444" y="105" font-size="10.5" font-style="italic">a passive reflector —</text>
+    <text x="444" y="121" font-size="10.5" font-style="italic">only about 6% of the power</text>
+    <text x="444" y="137" font-size="10.5" font-style="italic">that hits it comes back</text>
+  </g>
+
+  <!-- ===== left callout: the delay ===== -->
+  <g fill="currentColor" stroke="none">
+    <text x="36" y="224" font-size="15" font-weight="bold">≈ 2.5-second round trip</text>
+    <text x="36" y="242" font-size="10.5">(2.4–2.8 s as lunar distance varies)</text>
+    <text x="36" y="260" font-size="10.5">at the Moon's average 384,400 km,</text>
+    <text x="36" y="276" font-size="10.5">you can hear your own echo —</text>
+    <text x="36" y="292" font-size="10.5">WSJT-X's Echo mode listens for it</text>
+  </g>
+
+  <!-- ===== right callout: the loss ===== -->
+  <g fill="currentColor" stroke="none">
+    <text x="724" y="224" text-anchor="end" font-size="15" font-weight="bold">path loss ≈ 252 dB at 144 MHz</text>
+    <text x="724" y="242" text-anchor="end" font-size="10.5">≈ 271 dB at 1296 MHz</text>
+    <text x="724" y="260" text-anchor="end" font-size="10.5">≈ 2 dB better at perigee than apogee</text>
+  </g>
+
+  <!-- ===== the answer (between the paths) ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="380" y="336" font-size="12.5" font-weight="bold">the answer</text>
+    <text x="380" y="356" font-size="11">antenna gain on both ends</text>
+    <text x="380" y="374" font-size="11">a low-noise preamp at the antenna</text>
+    <text x="380" y="392" font-size="11">patience — and digital modes:</text>
+    <text x="380" y="410" font-size="11">JT65 / Q65 decode 10–15 dB below CW</text>
+  </g>
+
+  <!-- ===== the Earth (horizon arc) ===== -->
+  <path d="M 30,616 A 760 760 0 0 1 730,616" fill="none" stroke="currentColor" stroke-width="2.2"/>
+
+  <!-- ===== paths ===== -->
+  <line x1="168" y1="556" x2="346" y2="146" stroke="currentColor" stroke-width="2.4" fill="none"/>
+  <polygon points="346,146 336.6,155 345.8,159" fill="currentColor" stroke="none"/>
+  <text x="273" y="358" text-anchor="middle" font-size="10.5" fill="currentColor" stroke="none" transform="rotate(-66.5 273 358)">your signal up</text>
+
+  <line x1="414" y1="146" x2="592" y2="556" stroke="currentColor" stroke-width="2.2" stroke-dasharray="7,5" opacity="0.55" fill="none"/>
+  <polygon points="592,556 582.6,543 591.8,547" fill="currentColor" stroke="none" opacity="0.7"/>
+  <text x="486" y="359" text-anchor="middle" font-size="10.5" fill="currentColor" stroke="none" opacity="0.8" transform="rotate(66.5 486 359)">the echo comes back</text>
+
+  <!-- ===== station A: you ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="150" y1="572" x2="165" y2="541.5"/>
+    <line x1="148.9" y1="558.3" x2="161.5" y2="564.5"/>
+    <line x1="153.4" y1="549.1" x2="166" y2="555.3"/>
+    <line x1="157.9" y1="540" x2="170.5" y2="546.2"/>
+  </g>
+  <text x="150" y="598" text-anchor="middle" font-size="11" fill="currentColor" stroke="none">you</text>
+
+  <!-- ===== station B: your friend ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="610" y1="572" x2="595" y2="541.5"/>
+    <line x1="598.5" y1="564.5" x2="611.1" y2="558.3"/>
+    <line x1="594" y1="555.3" x2="606.6" y2="549.1"/>
+    <line x1="589.5" y1="546.2" x2="602.1" y2="540"/>
+  </g>
+  <text x="610" y="598" text-anchor="middle" font-size="11" fill="currentColor" stroke="none">your friend</text>
+
+  <!-- ===== mutual visibility ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="380" y="508" font-size="11">any two stations that can both see the Moon</text>
+    <text x="380" y="524" font-size="10.5" font-style="italic">up to about 12,000 miles apart along the surface</text>
+  </g>
+
+  <!-- ===== bottom note ===== -->
+  <text x="380" y="610" text-anchor="middle" font-size="10.5" font-style="italic" fill="currentColor" stroke="none">2 m is the most active EME band</text>
+</svg>

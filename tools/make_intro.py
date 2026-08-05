@@ -1,0 +1,79 @@
+"""Synthesize the audiobook introduction (audiobook/intro.mp3) with edge-tts.
+
+A short spoken preface that opens the audiobook: a welcome to the
+experienced General upgrading to Extra — the last license class, what Extra
+opens (the Extra-only HF segments and full amateur privileges), what Your
+Last Ham License is, that it was written by Claude Opus 4.8 running in
+Claude Code, and how to use the eight-voice edition. Kept separate from
+the chapter tracks so it can be regenerated on its own.
+
+Usage:
+  python tools/make_intro.py        # writes audiobook/intro.mp3
+  python tools/make_intro.py --dry  # print the intro text and exit (no synth, no network)
+
+Requires: edge-tts (pip install edge-tts) and ffmpeg on PATH.
+Edit VOICE or INTRO and rerun to change the narration.
+"""
+
+import asyncio
+import subprocess
+import sys
+from pathlib import Path
+
+import edge_tts
+
+VOICE = "en-GB-RyanNeural"
+OUT = Path(__file__).resolve().parent.parent / "audiobook" / "intro.mp3"
+
+INTRO = """Your Last Ham License: The Extra Course, 2024 to 2028. A welcome to the top of the ladder.
+
+This audiobook was written by Claude Opus 4.8 — an artificial intelligence made by Anthropic — running inside the coding tool Claude Code.
+
+You already hold your General license. You know your way around HF, you know the bands where contacts cross oceans — and you have probably noticed the segments your ticket does not quite reach. This course is your last upgrade: in eleven chapters it takes you from General to Amateur Extra, the highest license class the FCC grants. The Extra-only segments of the HF bands, operating at the edge — satellites, moonbounce, weak signal — the exotic propagation paths, complex impedance and the Smith chart, and safety math at full depth. Every fact and every practice question is checked against the official twenty twenty-four to twenty twenty-eight Extra question pool, so what you hear is what the exam asks.
+
+This book completes the series that began with Your First Ham License and continued with Your Next Ham License: three courses, from your first contact to every privilege the service offers.
+
+This edition is offered in eight voices — American, British, Australian, and Irish, male and female.
+
+And now — Your Last Ham License. Your final upgrade begins whenever you are ready."""
+
+
+async def main() -> None:
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    raw = OUT.with_suffix(".raw.mp3")
+    last = None
+    for attempt in range(1, 6):
+        try:
+            await edge_tts.Communicate(INTRO, VOICE).save(str(raw))
+            if raw.stat().st_size > 500:
+                break
+            raise RuntimeError("empty audio")
+        except Exception as e:  # noqa: BLE001 - retry any transport error
+            last = e
+            await asyncio.sleep(2 * attempt)
+    else:
+        raise RuntimeError(f"synthesis failed after retries: {last}")
+
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-loglevel", "error", "-i", str(raw),
+            "-c", "copy",
+            "-metadata", "title=Introduction",
+            "-metadata", "artist=Claude Opus 4.8",
+            "-metadata", "album=Your Last Ham License",
+            "-metadata", "track=0/11",
+            "-metadata", "genre=Audiobook",
+            "-metadata", "date=2026",
+            str(OUT),
+        ],
+        check=True,
+    )
+    raw.unlink(missing_ok=True)
+    print(f"wrote {OUT} ({OUT.stat().st_size} bytes)")
+
+
+if __name__ == "__main__":
+    if "--dry" in sys.argv[1:]:
+        print(INTRO)
+        sys.exit(0)
+    asyncio.run(main())

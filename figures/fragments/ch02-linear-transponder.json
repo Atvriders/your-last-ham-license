@@ -1,0 +1,8 @@
+{
+  "id": "ch02-linear-transponder",
+  "chapter": 2,
+  "caption": "A linear transponder is a bent pipe: the whole uplink passband is mixed with a local oscillator and the difference product retransmitted on the downlink band, so any mode — CW, SSB, FM, SSTV, data — passes through. A non-inverting transponder preserves band order and sideband; an inverting one swaps sidebands (USB in becomes LSB out), reverses band positions, and its uplink and downlink Doppler shifts move in opposite directions so they partially cancel. Typical LEO Doppler is about ±3.5 kHz on 2 m and ±10 kHz on 70 cm, so you tune the higher-frequency link — and you run your uplink power so your downlink is about as strong as the satellite's beacon, because downlink power is shared.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "A linear transponder is a bent pipe in the sky: it mixes the whole uplink passband with a local oscillator and retransmits the difference product, so any mode passes — C W, S S B, F M, or data. A non-inverting transponder keeps everything in the same order. An inverting one swaps the sidebands, reverses the band positions, and its uplink and downlink Doppler shifts move in opposite directions, so they partially cancel. L E O Doppler runs about plus or minus 3.5 kilohertz on 2 meters and plus or minus 10 kilohertz on 70 centimeters — tune the higher-frequency link. And share: run your uplink so your downlink is about as strong as the satellite's beacon."
+}

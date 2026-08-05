@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- Complex impedance: rectangular Z = R +/- jX vs polar |Z| <theta>.
+       Worked example is the pool's own value (E5C06): 50 - j25 ohm =
+       55.9 <-26.6 deg ohm. Right panel: the j-operator as a 90-degree
+       rotation (+j inductive plots up, -j capacitive plots down). -->
+
+  <!-- ===== Title ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="400" y="36" font-size="20" font-weight="bold">One Impedance, Two Spellings: Rectangular and Polar</text>
+    <text x="400" y="58" font-size="12.5">rectangular plots the parts, polar states the whole &#183; the pool&#8217;s worked value 50 &#8722; j25 &#937; (E5C06)</text>
+  </g>
+
+  <!-- ===== Left panel: the complex impedance plane ===== -->
+  <g stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round">
+    <line x1="100" y1="300" x2="470" y2="300"/>
+    <line x1="140" y1="480" x2="140" y2="110"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <polygon points="470,300 459,295 459,305"/>
+    <polygon points="140,110 135,121 145,121"/>
+  </g>
+
+  <!-- axis titles and hints -->
+  <g fill="currentColor" stroke="none">
+    <text x="466" y="288" font-size="12.5" text-anchor="end">resistance R (&#937;)</text>
+    <text x="104" y="295" font-size="12.5" text-anchor="middle" transform="rotate(-90 104 295)">reactance jX (&#937;)</text>
+    <text x="150" y="128" font-size="11.5" font-style="italic">+j up: inductive</text>
+    <text x="150" y="466" font-size="11.5" font-style="italic">&#8722;j down: capacitive</text>
+    <text x="130" y="316" font-size="11" text-anchor="end">0</text>
+  </g>
+
+  <!-- rectangular construction (dashed) and axis ticks -->
+  <g stroke="currentColor" fill="none" stroke-width="1.4" stroke-dasharray="6 5" stroke-opacity="0.8">
+    <line x1="370" y1="300" x2="370" y2="415"/>
+    <line x1="140" y1="415" x2="370" y2="415"/>
+  </g>
+  <g stroke="currentColor" fill="none" stroke-width="1.6">
+    <line x1="370" y1="294" x2="370" y2="306"/>
+    <line x1="134" y1="415" x2="146" y2="415"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <text x="358" y="318" font-size="11" text-anchor="end">50</text>
+    <text x="130" y="419" font-size="11" text-anchor="end">&#8722;25</text>
+    <text x="255" y="291" font-size="12.5" text-anchor="middle">R = 50 &#937;</text>
+    <text x="380" y="362" font-size="12.5">X = &#8722;j25 &#937;</text>
+  </g>
+
+  <!-- polar vector |Z| with the phase-angle arc -->
+  <line x1="140" y1="300" x2="370" y2="415" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <polygon points="370,415 357.2,413.6 361.2,405.6" fill="currentColor" stroke="none"/>
+  <path d="M 210 300 A 70 70 0 0 1 202.6 331.3" stroke="currentColor" stroke-width="1.6" fill="none"/>
+  <polygon points="202.6,331.3 209.3,325.7 203.1,322.5" fill="currentColor" stroke="none"/>
+  <g fill="currentColor" stroke="none">
+    <text x="222" y="330" font-size="12">&#952; = &#8722;26.6&#176;</text>
+    <text x="268" y="406" font-size="13" font-weight="bold" text-anchor="middle">|Z| = 55.9 &#937;</text>
+  </g>
+
+  <!-- the plotted impedance -->
+  <circle cx="370" cy="415" r="5" fill="currentColor" stroke="none"/>
+  <text x="382" y="420" font-size="13" font-weight="bold" fill="currentColor" stroke="none">Z = 50 &#8722; j25 &#937;</text>
+
+  <!-- ===== Divider ===== -->
+  <line x1="495" y1="92" x2="495" y2="492" stroke="currentColor" stroke-width="1" stroke-opacity="0.25" fill="none"/>
+
+  <!-- ===== Right panel: the j-operator as a 90-degree rotation ===== -->
+  <text x="640" y="124" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor" stroke="none">the j-operator: &#215; j = rotate 90&#176;</text>
+
+  <g stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round">
+    <line x1="640" y1="300" x2="752" y2="300"/>
+    <line x1="640" y1="300" x2="640" y2="198"/>
+    <line x1="640" y1="300" x2="640" y2="402"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <polygon points="752,300 741,295 741,305"/>
+    <polygon points="640,198 635,209 645,209"/>
+    <polygon points="640,402 635,391 645,391"/>
+    <text x="760" y="304" font-size="12.5">R</text>
+    <text x="640" y="188" font-size="12.5" text-anchor="middle">+j &#183; inductive</text>
+    <text x="640" y="424" font-size="12.5" text-anchor="middle">&#8722;j &#183; capacitive</text>
+  </g>
+
+  <!-- rotation arcs: +90 CCW (inductive) and -90 CW (capacitive) -->
+  <path d="M 692 300 A 52 52 0 0 0 640 248" stroke="currentColor" stroke-width="1.6" fill="none"/>
+  <polygon points="640,248 649,243 649,253" fill="currentColor" stroke="none"/>
+  <path d="M 712 300 A 72 72 0 0 1 640 372" stroke="currentColor" stroke-width="1.6" fill="none"/>
+  <polygon points="640,372 649,367 649,377" fill="currentColor" stroke="none"/>
+  <g fill="currentColor" stroke="none" font-size="12.5">
+    <text x="700" y="250">&#215;(+j) = +90&#176;</text>
+    <text x="700" y="360">&#215;(&#8722;j) = &#8722;90&#176;</text>
+    <text x="640" y="458" text-anchor="middle" font-style="italic">same R, spun up or down by j</text>
+  </g>
+
+  <!-- ===== Bottom band: the conversion rules ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle" font-size="12.5">
+    <text x="400" y="518">rectangular: Z = R &#177; jX &#8212; resistance across, reactance up or down &#183; polar: |Z| &#8736;&#952; &#8212; magnitude and phase angle</text>
+    <text x="400" y="540">|Z| = &#8730;(R&#178; + X&#178;) = &#8730;(50&#178; + 25&#178;) = 55.9 &#937; &#183; &#952; = atan(X/R) = atan(&#8722;25/50) = &#8722;26.6&#176; (pool E5C01&#8211;E5C06)</text>
+  </g>
+
+</svg>

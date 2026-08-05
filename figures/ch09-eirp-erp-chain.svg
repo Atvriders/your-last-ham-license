@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 680" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- ERP/EIRP chain: transmitter power minus line losses times antenna
+       gain. Worked pool values: 286 W ERP (E9A02), 317 W ERP (E9A06),
+       252 W EIRP (E9A07); dBd = dBi - 2.15 (E9A12). -->
+
+  <!-- ===== Title ===== -->
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="400" y="30" font-size="17" font-weight="bold">ERP AND EIRP: dB BOOKKEEPING END TO END</text>
+    <text x="400" y="50" font-size="12">subtract every loss, add the antenna gain, convert back to watts — ERP pairs with dBd, EIRP with dBi</text>
+  </g>
+
+  <!-- ===== Section 1: the chain (pool E9A02) ===== -->
+  <text x="40" y="88" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">1 &#183; THE CHAIN — the pool's repeater example (E9A02)</text>
+
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <rect x="40" y="105" width="140" height="60" rx="8"/>
+    <rect x="215" y="105" width="125" height="60" rx="8"/>
+    <rect x="375" y="105" width="125" height="60" rx="8"/>
+    <rect x="535" y="105" width="125" height="60" rx="8"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="110" y="129" font-size="11.5" font-weight="bold">TRANSMITTER</text>
+    <text x="110" y="149" font-size="12">150 W</text>
+
+    <text x="277.5" y="129" font-size="11.5" font-weight="bold">FEED LINE</text>
+    <text x="277.5" y="149" font-size="12">&#8722;2 dB</text>
+
+    <text x="437.5" y="129" font-size="11.5" font-weight="bold">DUPLEXER</text>
+    <text x="437.5" y="149" font-size="12">&#8722;2.2 dB</text>
+
+    <text x="597.5" y="129" font-size="11.5" font-weight="bold">ANTENNA</text>
+    <text x="597.5" y="149" font-size="12">+7 dBd</text>
+  </g>
+  <!-- arrows -->
+  <g stroke="currentColor" stroke-width="2" fill="none">
+    <line x1="182" y1="135" x2="209" y2="135"/>
+    <line x1="342" y1="135" x2="369" y2="135"/>
+    <line x1="502" y1="135" x2="529" y2="135"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <polygon points="215,135 206,131 206,139"/>
+    <polygon points="375,135 366,131 366,139"/>
+    <polygon points="535,135 526,131 526,139"/>
+  </g>
+  <!-- running net dB -->
+  <g fill="currentColor" stroke="none" text-anchor="middle" font-size="9.5">
+    <text x="110" y="183">net: —</text>
+    <text x="277.5" y="183">net: &#8722;2 dB</text>
+    <text x="437.5" y="183">net: &#8722;4.2 dB</text>
+    <text x="597.5" y="183">net: +2.8 dB</text>
+  </g>
+  <!-- drop into the result bar -->
+  <line x1="597.5" y1="188" x2="597.5" y2="200" stroke="currentColor" stroke-width="2" fill="none"/>
+  <polygon points="597.5,208 593.5,199 601.5,199" fill="currentColor" stroke="none"/>
+  <rect x="40" y="205" width="620" height="44" rx="8" fill="none" stroke="currentColor" stroke-width="2.4"/>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="350" y="223" font-size="12.5" font-weight="bold">ERP = 150 W &#215; 10^(+2.8/10) = 150 &#215; 1.905 &#8776; 286 W</text>
+    <text x="350" y="239" font-size="10.5">net dB = &#8722;2 &#8722; 2.2 + 7 = +2.8 — then convert: 10^(net/10) &#215; watts out</text>
+  </g>
+  <text x="400" y="272" font-size="10.5" font-style="italic" fill="currentColor" stroke="none" text-anchor="middle">the traps: ADD the losses &#8594; 469 W &#183; deeper sign slips &#8594; 78.7 W</text>
+
+  <!-- ===== Section 2: dBd vs dBi ===== -->
+  <text x="40" y="320" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">2 &#183; dBd vs dBi — the 2.15 dB step between the two rulers</text>
+
+  <!-- isotropic: point source, equal everywhere -->
+  <circle cx="150" cy="395" r="48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5 4" stroke-opacity="0.7"/>
+  <circle cx="150" cy="395" r="5" fill="currentColor" stroke="none"/>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="150" y="462" font-size="10.5" font-weight="bold">isotropic radiator</text>
+    <text x="150" y="478" font-size="9.5">0 dBi — hypothetical, radiates equally</text>
+    <text x="150" y="492" font-size="9.5">in all directions (E9A01)</text>
+  </g>
+
+  <!-- half-wave dipole: figure-eight, 2.15 dBi -->
+  <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-opacity="0.7">
+    <circle cx="325" cy="395" r="34"/>
+    <circle cx="395" cy="395" r="34"/>
+  </g>
+  <line x1="360" y1="352" x2="360" y2="438" stroke="currentColor" stroke-width="3" fill="none"/>
+  <line x1="360" y1="395" x2="360" y2="395.1" stroke="none"/>
+  <g fill="currentColor" stroke="none" text-anchor="middle">
+    <text x="360" y="462" font-size="10.5" font-weight="bold">half-wave dipole</text>
+    <text x="360" y="478" font-size="9.5">= 2.15 dBi = 0 dBd — the dipole is</text>
+    <text x="360" y="492" font-size="9.5">2.15 dB up on isotropic</text>
+  </g>
+
+  <!-- the conversion -->
+  <g fill="currentColor" stroke="none">
+    <text x="500" y="370" font-size="12" font-weight="bold">gain in dBd = gain in dBi &#8722; 2.15</text>
+    <text x="500" y="395" font-size="10.5">gain in dBi = gain in dBd + 2.15</text>
+    <text x="500" y="425" font-size="11">6 dBi &#8594; 6 &#8722; 2.15 = <tspan font-weight="bold">3.85 dBd</tspan> (E9A12)</text>
+    <text x="500" y="450" font-size="10" font-style="italic">same antenna, two rulers — the dBi number</text>
+    <text x="500" y="465" font-size="10" font-style="italic">is always 2.15 bigger</text>
+  </g>
+
+  <!-- ===== Section 3: two more worked examples ===== -->
+  <text x="40" y="530" font-size="12.5" font-weight="bold" fill="currentColor" stroke="none">3 &#183; TWO MORE FROM THE POOL — same recipe, watch the reference</text>
+
+  <!-- E9A06 row -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <rect x="40" y="548" width="86" height="42" rx="7"/>
+    <rect x="146" y="548" width="86" height="42" rx="7"/>
+    <rect x="252" y="548" width="86" height="42" rx="7"/>
+    <rect x="358" y="548" width="86" height="42" rx="7"/>
+    <rect x="464" y="548" width="86" height="42" rx="7"/>
+    <rect x="614" y="548" width="110" height="42" rx="7"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle" font-size="11">
+    <text x="83" y="573">200 W</text>
+    <text x="189" y="573">&#8722;4 dB</text>
+    <text x="295" y="573">&#8722;3.2 dB</text>
+    <text x="401" y="573">&#8722;0.8 dB</text>
+    <text x="507" y="573" font-weight="bold">+10 dBd</text>
+    <text x="669" y="573" font-weight="bold">317 W ERP</text>
+  </g>
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
+    <line x1="128" y1="569" x2="142" y2="569"/>
+    <line x1="234" y1="569" x2="248" y2="569"/>
+    <line x1="340" y1="569" x2="354" y2="569"/>
+    <line x1="446" y1="569" x2="460" y2="569"/>
+    <line x1="552" y1="569" x2="608" y2="569"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <polygon points="146,569 138,565.5 138,572.5"/>
+    <polygon points="252,569 244,565.5 244,572.5"/>
+    <polygon points="358,569 350,565.5 350,572.5"/>
+    <polygon points="464,569 456,565.5 456,572.5"/>
+    <polygon points="614,569 606,565.5 606,572.5"/>
+  </g>
+  <text x="40" y="612" font-size="10" fill="currentColor" stroke="none">E9A06: net = &#8722;4 &#8722; 3.2 &#8722; 0.8 + 10 = +2 dB &#8594; 200 &#215; 10^0.2 = 200 &#215; 1.585 &#8776; 317 W &#183; the 2,000 W choice treats 10 dB as a straight &#215;10</text>
+
+  <!-- E9A07 row -->
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <rect x="40" y="622" width="86" height="42" rx="7"/>
+    <rect x="146" y="622" width="86" height="42" rx="7"/>
+    <rect x="252" y="622" width="86" height="42" rx="7"/>
+    <rect x="358" y="622" width="86" height="42" rx="7"/>
+    <rect x="464" y="622" width="86" height="42" rx="7"/>
+    <rect x="614" y="622" width="110" height="42" rx="7"/>
+  </g>
+  <g fill="currentColor" stroke="none" text-anchor="middle" font-size="11">
+    <text x="83" y="647">200 W</text>
+    <text x="189" y="647">&#8722;2 dB</text>
+    <text x="295" y="647">&#8722;2.8 dB</text>
+    <text x="401" y="647">&#8722;1.2 dB</text>
+    <text x="507" y="647" font-weight="bold">+7 dBi</text>
+    <text x="669" y="647" font-weight="bold">252 W EIRP</text>
+  </g>
+  <g stroke="currentColor" stroke-width="1.6" fill="none">
+    <line x1="128" y1="643" x2="142" y2="643"/>
+    <line x1="234" y1="643" x2="248" y2="643"/>
+    <line x1="340" y1="643" x2="354" y2="643"/>
+    <line x1="446" y1="643" x2="460" y2="643"/>
+    <line x1="552" y1="643" x2="608" y2="643"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <polygon points="146,643 138,639.5 138,646.5"/>
+    <polygon points="252,643 244,639.5 244,646.5"/>
+    <polygon points="358,643 350,639.5 350,646.5"/>
+    <polygon points="464,643 456,639.5 456,646.5"/>
+    <polygon points="614,643 606,639.5 606,646.5"/>
+  </g>
+  <text x="40" y="676" font-size="10" fill="currentColor" stroke="none">E9A07: net = &#8722;2 &#8722; 2.8 &#8722; 1.2 + 7 = +1 dB &#8594; 200 &#215; 10^0.1 = 200 &#215; 1.259 &#8776; 252 W &#183; gain in dBi means the answer is EIRP</text>
+
+</svg>

@@ -1,0 +1,8 @@
+{
+  "id": "ch07-pool-fig-e72",
+  "chapter": 7,
+  "caption": "Pool figure E7-2, redrawn for this book: a linear voltage regulator turning +25 volts into +12. C1 (4000) is the brute-force input filter; R1 feeds current from the raw rail into the base node; D1, the Zener in the circle, holds that node at its Zener voltage; and C2 (4000) sits in parallel with D1, bypassing the rectifier-output ripple around the Zener so the reference stays clean - that parallel pair is the answer to E7D07. Q1 is the series-pass transistor: its emitter follows one base-emitter drop below the Zener voltage, controlling the current to keep the output voltage constant, the answer to E7D06 (and the reason a linear regulator dissipates the voltage difference times the load current - 25 minus 12 times 1 amp is 13 watts in Q1, E7D13's calculation done with this figure's own numbers). C3 (0.01) kills output transients and R2 is the load. The whole circuit type: a linear voltage regulator, the answer to E7D08.",
+  "kind": "original",
+  "source": "redrawn from NCVEC pool figure E7-2",
+  "spoken": "A left-to-right schematic. The plus 25 terminal opens at top left onto a rail; C1, a 4000 electrolytic, drops from the rail to ground; R1 drops from the rail to the base node; Q1, an NPN in a circle, sits on the rail with collector toward the input side, emitter toward the output, base straight down to the base node. From the base node, C2, another 4000 electrolytic, and D1, a Zener diode in a circle pointing up, both go to ground in parallel. The rail continues to the plus 12 terminal at top right, with C3, a 0.01 capacitor, and R2, the load resistor, each from rail to ground. Five ground symbols."
+}

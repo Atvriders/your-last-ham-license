@@ -1,0 +1,42 @@
+# Series site: all three "Your First Ham License" books behind one nginx
+# proxy, plus the landing page. All three books are live — the Extra book
+# (this repo) ships with its service active and completes the series site:
+#
+#   docker compose -f series-docker-compose.yml up -d
+#
+# Browse http://localhost:8080/         -> landing page (series/index.html)
+#        http://localhost:8080/tech/    -> the Technician book + audiobook
+#        http://localhost:8080/general/ -> the General book + audiobook
+#        http://localhost:8080/extra/   -> the Extra book + audiobook
+#
+# Ports:
+#   proxy                  -> host :8080 (the only published port)
+#   tech / general / extra -> container :80, internal only (the book images
+#                             are nginx:alpine listening on 80; not
+#                             host-published)
+
+services:
+  tech:
+    image: ghcr.io/atvriders/your-first-ham-license:latest
+    restart: unless-stopped
+
+  general:
+    image: ghcr.io/atvriders/your-next-ham-license:latest
+    restart: unless-stopped
+
+  extra:
+    image: ghcr.io/atvriders/your-last-ham-license:latest
+    restart: unless-stopped
+
+  proxy:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./series/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./series:/usr/share/nginx/html:ro
+    depends_on:
+      - tech
+      - general
+      - extra
+    restart: unless-stopped

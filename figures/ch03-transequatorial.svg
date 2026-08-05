@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 485" font-family="sans-serif">
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0,0 L 9,3 L 0,6 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <!-- ===== F region with the two equatorial-anomaly crests (trough over the equator) ===== -->
+  <path d="M 40,104 C 90,78 140,64 210,64 C 280,64 320,84 380,116 C 440,84 480,64 550,64 C 620,64 670,78 720,104"
+        fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="8,5"/>
+  <path d="M 40,124 C 90,98 140,84 210,84 C 280,84 320,104 380,136 C 440,104 480,84 550,84 C 620,84 670,98 720,124"
+        fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="8,5" opacity="0.5"/>
+
+  <!-- ===== Geomagnetic equator ===== -->
+  <line x1="380" y1="145" x2="380" y2="386" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6,5" opacity="0.7" fill="none"/>
+
+  <!-- ===== Ground with hatching ===== -->
+  <line x1="30" y1="390" x2="740" y2="390" stroke="currentColor" stroke-width="2.2" fill="none"/>
+  <g stroke="currentColor" stroke-width="1.2" opacity="0.7" fill="none">
+    <line x1="45" y1="390" x2="36" y2="401"/>
+    <line x1="75" y1="390" x2="66" y2="401"/>
+    <line x1="105" y1="390" x2="96" y2="401"/>
+    <line x1="135" y1="390" x2="126" y2="401"/>
+    <line x1="165" y1="390" x2="156" y2="401"/>
+    <line x1="195" y1="390" x2="186" y2="401"/>
+    <line x1="225" y1="390" x2="216" y2="401"/>
+    <line x1="255" y1="390" x2="246" y2="401"/>
+    <line x1="285" y1="390" x2="276" y2="401"/>
+    <line x1="315" y1="390" x2="306" y2="401"/>
+    <line x1="345" y1="390" x2="336" y2="401"/>
+    <line x1="375" y1="390" x2="366" y2="401"/>
+    <line x1="405" y1="390" x2="396" y2="401"/>
+    <line x1="435" y1="390" x2="426" y2="401"/>
+    <line x1="465" y1="390" x2="456" y2="401"/>
+    <line x1="495" y1="390" x2="486" y2="401"/>
+    <line x1="525" y1="390" x2="516" y2="401"/>
+    <line x1="555" y1="390" x2="546" y2="401"/>
+    <line x1="585" y1="390" x2="576" y2="401"/>
+    <line x1="615" y1="390" x2="606" y2="401"/>
+    <line x1="645" y1="390" x2="636" y2="401"/>
+    <line x1="675" y1="390" x2="666" y2="401"/>
+    <line x1="705" y1="390" x2="696" y2="401"/>
+    <line x1="735" y1="390" x2="726" y2="401"/>
+  </g>
+
+  <!-- ===== TX station (north side) ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="100" y1="390" x2="100" y2="322"/>
+    <line x1="100" y1="322" x2="89" y2="311"/>
+    <line x1="100" y1="322" x2="111" y2="311"/>
+    <line x1="100" y1="322" x2="100" y2="305"/>
+  </g>
+
+  <!-- ===== RX station (south side) ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <line x1="660" y1="390" x2="660" y2="322"/>
+    <line x1="660" y1="322" x2="649" y2="311"/>
+    <line x1="660" y1="322" x2="671" y2="311"/>
+    <line x1="660" y1="322" x2="660" y2="305"/>
+  </g>
+
+  <!-- ===== TE path: two F-region hops ducted between the crests, NO ground bounce ===== -->
+  <path d="M 107,318 L 190,100 Q 300,80 388,94" fill="none" stroke="currentColor" stroke-width="2.4" marker-end="url(#arrow)"/>
+  <path d="M 388,94 Q 470,80 570,100 L 653,318" fill="none" stroke="currentColor" stroke-width="2.4" marker-end="url(#arrow)"/>
+
+  <!-- ===== Contrast: ordinary multi-hop would bounce off the ground mid-path ===== -->
+  <path d="M 107,318 L 235,96 L 380,386 L 525,96 L 653,318" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="5,5" opacity="0.4"/>
+  <g stroke="currentColor" stroke-width="2" opacity="0.75" fill="none" stroke-linecap="round">
+    <line x1="374" y1="380" x2="386" y2="392"/>
+    <line x1="374" y1="392" x2="386" y2="380"/>
+  </g>
+
+  <!-- ===== Labels ===== -->
+  <g fill="currentColor" stroke="none">
+    <text x="108" y="46" font-size="11">N anomaly crest</text>
+    <text x="652" y="46" text-anchor="end" font-size="11">S anomaly crest</text>
+    <text x="380" y="42" text-anchor="middle" font-size="11.5">ducted between the crests</text>
+    <text x="398" y="370" font-size="10.5" opacity="0.8">skipped: the lossy ground bounce</text>
+    <text x="88" y="383" text-anchor="end" font-size="11.5" font-weight="bold">TX</text>
+    <text x="672" y="383" text-anchor="start" font-size="11.5" font-weight="bold">RX</text>
+    <text x="380" y="414" text-anchor="middle" font-size="11.5">geomagnetic equator - paths cross within &#177;20&#176; of a right angle</text>
+
+    <text x="380" y="438" text-anchor="middle" font-size="12">Stations sit ~1,500-2,500 miles north and south of the geomagnetic equator - typically 2,000-3,000 miles apart.</text>
+    <text x="380" y="457" text-anchor="middle" font-size="12">Two F-region hops ducted between the anomaly crests - no mid-path ground reflection; max range ~5,000 miles.</text>
+    <text x="380" y="476" text-anchor="middle" font-size="12">Most likely in the afternoon or early evening.</text>
+  </g>
+</svg>

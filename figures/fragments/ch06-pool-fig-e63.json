@@ -1,0 +1,8 @@
+{
+  "id": "ch06-pool-fig-e63",
+  "chapter": 6,
+  "caption": "Figure E6-3, the six logic gate symbols three exam questions ask you to name. Read them as a 2x2 matrix plus the triangle pair. Body shape names the family: the flat-left, round-right 'D' body is the AND family (1, 2); the curved-input, pointed-output body is the OR family (3, 4); the triangle is the buffer/inverter pair (5, 6). A small bubble on the output negates: 1 = AND, 2 = NAND (D body with bubble), 3 = OR, 4 = NOR (OR body with bubble), 5 = NOT (triangle with bubble), 6 = buffer (larger triangle with a swept back, no bubble). Gates 1-4 and the buffer 6 each show two input leads from the left; the inverter 5 shows one. The keyed answers: E6C08 (NAND) is symbol 2; E6C10 (NOR) is symbol 4; E6C11 (NOT) is symbol 5. E6C11's option pool deliberately mixes the bubbles of 2 and 4 with the triangles 5 and 6 - the triangle body is the discriminator. Redrawn from the NCVEC pool figure.",
+  "kind": "original",
+  "source": "redrawn from NCVEC pool figure E6-3",
+  "spoken": "Six logic gate symbols in two rows of three, numbered 1 to 6 beneath. Number 1 has a flat left side and a rounded right side, a D shape, with two input leads on the left and one output on the right - AND. Number 2 is the same D body with a small bubble on the output - NAND. Number 3 has a curved input side and a pointed output - OR. Number 4 is the OR body with an output bubble - NOR. Number 5 is a triangle with a single input lead and an output bubble - the NOT or inverter. Number 6 is a larger triangle with a swept, concave back edge, two input leads, and no bubble - the buffer. The exam keys: NAND is number 2, NOR is number 4, and NOT is number 5."
+}

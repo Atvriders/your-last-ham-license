@@ -1,0 +1,700 @@
+E1A01 (B)
+Which frequency segment is reserved exclusively for Amateur Extra class licensees?
+A. The entire 80 meter band
+B. 14.100 MHz to 14.150 MHz
+C. All frequencies above 30 MHz
+D. The 60 meter channels
+~~
+E1A03 (A)
+What is the maximum bandwidth for a data emission on the 20 meter band?
+A. 2.8 kHz
+B. 300 hertz
+C. 19.6 kHz
+D. 56 kHz
+~~
+E1B01 (A)
+Sample fixture question E1B01 for Extra pool group E1B?
+A. Fixture choice A for E1B01
+B. Fixture choice B for E1B01
+C. Fixture choice C for E1B01
+D. Fixture choice D for E1B01
+~~
+E1B02 (B)
+Sample fixture question E1B02 for Extra pool group E1B?
+A. Fixture choice A for E1B02
+B. Fixture choice B for E1B02
+C. Fixture choice C for E1B02
+D. Fixture choice D for E1B02
+~~
+E1C01 (A)
+Sample fixture question E1C01 for Extra pool group E1C?
+A. Fixture choice A for E1C01
+B. Fixture choice B for E1C01
+C. Fixture choice C for E1C01
+D. Fixture choice D for E1C01
+~~
+E1C02 (B)
+Sample fixture question E1C02 for Extra pool group E1C?
+A. Fixture choice A for E1C02
+B. Fixture choice B for E1C02
+C. Fixture choice C for E1C02
+D. Fixture choice D for E1C02
+~~
+E1D01 (A)
+Sample fixture question E1D01 for Extra pool group E1D?
+A. Fixture choice A for E1D01
+B. Fixture choice B for E1D01
+C. Fixture choice C for E1D01
+D. Fixture choice D for E1D01
+~~
+E1D02 (B)
+Sample fixture question E1D02 for Extra pool group E1D?
+A. Fixture choice A for E1D02
+B. Fixture choice B for E1D02
+C. Fixture choice C for E1D02
+D. Fixture choice D for E1D02
+~~
+E1E01 (A)
+Sample fixture question E1E01 for Extra pool group E1E?
+A. Fixture choice A for E1E01
+B. Fixture choice B for E1E01
+C. Fixture choice C for E1E01
+D. Fixture choice D for E1E01
+~~
+E1E02 (B)
+Sample fixture question E1E02 for Extra pool group E1E?
+A. Fixture choice A for E1E02
+B. Fixture choice B for E1E02
+C. Fixture choice C for E1E02
+D. Fixture choice D for E1E02
+~~
+E2A01 (A)
+Sample fixture question E2A01 for Extra pool group E2A?
+A. Fixture choice A for E2A01
+B. Fixture choice B for E2A01
+C. Fixture choice C for E2A01
+D. Fixture choice D for E2A01
+~~
+E2A02 (B)
+Sample fixture question E2A02 for Extra pool group E2A?
+A. Fixture choice A for E2A02
+B. Fixture choice B for E2A02
+C. Fixture choice C for E2A02
+D. Fixture choice D for E2A02
+~~
+E2B01 (A)
+Sample fixture question E2B01 for Extra pool group E2B?
+A. Fixture choice A for E2B01
+B. Fixture choice B for E2B01
+C. Fixture choice C for E2B01
+D. Fixture choice D for E2B01
+~~
+E2B02 (B)
+Sample fixture question E2B02 for Extra pool group E2B?
+A. Fixture choice A for E2B02
+B. Fixture choice B for E2B02
+C. Fixture choice C for E2B02
+D. Fixture choice D for E2B02
+~~
+E2C01 (A)
+Sample fixture question E2C01 for Extra pool group E2C?
+A. Fixture choice A for E2C01
+B. Fixture choice B for E2C01
+C. Fixture choice C for E2C01
+D. Fixture choice D for E2C01
+~~
+E2C02 (B)
+Sample fixture question E2C02 for Extra pool group E2C?
+A. Fixture choice A for E2C02
+B. Fixture choice B for E2C02
+C. Fixture choice C for E2C02
+D. Fixture choice D for E2C02
+~~
+E2D01 (A)
+Sample fixture question E2D01 for Extra pool group E2D?
+A. Fixture choice A for E2D01
+B. Fixture choice B for E2D01
+C. Fixture choice C for E2D01
+D. Fixture choice D for E2D01
+~~
+E2D02 (B)
+Sample fixture question E2D02 for Extra pool group E2D?
+A. Fixture choice A for E2D02
+B. Fixture choice B for E2D02
+C. Fixture choice C for E2D02
+D. Fixture choice D for E2D02
+~~
+E2E01 (A)
+Sample fixture question E2E01 for Extra pool group E2E?
+A. Fixture choice A for E2E01
+B. Fixture choice B for E2E01
+C. Fixture choice C for E2E01
+D. Fixture choice D for E2E01
+~~
+E2E02 (B)
+Sample fixture question E2E02 for Extra pool group E2E?
+A. Fixture choice A for E2E02
+B. Fixture choice B for E2E02
+C. Fixture choice C for E2E02
+D. Fixture choice D for E2E02
+~~
+E3A01 (A)
+Sample fixture question E3A01 for Extra pool group E3A?
+A. Fixture choice A for E3A01
+B. Fixture choice B for E3A01
+C. Fixture choice C for E3A01
+D. Fixture choice D for E3A01
+~~
+E3A02 (B)
+Sample fixture question E3A02 for Extra pool group E3A?
+A. Fixture choice A for E3A02
+B. Fixture choice B for E3A02
+C. Fixture choice C for E3A02
+D. Fixture choice D for E3A02
+~~
+E3B01 (A)
+Sample fixture question E3B01 for Extra pool group E3B?
+A. Fixture choice A for E3B01
+B. Fixture choice B for E3B01
+C. Fixture choice C for E3B01
+D. Fixture choice D for E3B01
+~~
+E3B02 (B)
+Sample fixture question E3B02 for Extra pool group E3B?
+A. Fixture choice A for E3B02
+B. Fixture choice B for E3B02
+C. Fixture choice C for E3B02
+D. Fixture choice D for E3B02
+~~
+E3C01 (A)
+Sample fixture question E3C01 for Extra pool group E3C?
+A. Fixture choice A for E3C01
+B. Fixture choice B for E3C01
+C. Fixture choice C for E3C01
+D. Fixture choice D for E3C01
+~~
+E3C02 (B)
+Sample fixture question E3C02 for Extra pool group E3C?
+A. Fixture choice A for E3C02
+B. Fixture choice B for E3C02
+C. Fixture choice C for E3C02
+D. Fixture choice D for E3C02
+~~
+E3D01 (A)
+Sample fixture question E3D01 for Extra pool group E3D?
+A. Fixture choice A for E3D01
+B. Fixture choice B for E3D01
+C. Fixture choice C for E3D01
+D. Fixture choice D for E3D01
+~~
+E3D02 (B)
+Sample fixture question E3D02 for Extra pool group E3D?
+A. Fixture choice A for E3D02
+B. Fixture choice B for E3D02
+C. Fixture choice C for E3D02
+D. Fixture choice D for E3D02
+~~
+E3E01 (A)
+Sample fixture question E3E01 for Extra pool group E3E?
+A. Fixture choice A for E3E01
+B. Fixture choice B for E3E01
+C. Fixture choice C for E3E01
+D. Fixture choice D for E3E01
+~~
+E3E02 (B)
+Sample fixture question E3E02 for Extra pool group E3E?
+A. Fixture choice A for E3E02
+B. Fixture choice B for E3E02
+C. Fixture choice C for E3E02
+D. Fixture choice D for E3E02
+~~
+E4A01 (A)
+Sample fixture question E4A01 for Extra pool group E4A?
+A. Fixture choice A for E4A01
+B. Fixture choice B for E4A01
+C. Fixture choice C for E4A01
+D. Fixture choice D for E4A01
+~~
+E4A02 (B)
+Sample fixture question E4A02 for Extra pool group E4A?
+A. Fixture choice A for E4A02
+B. Fixture choice B for E4A02
+C. Fixture choice C for E4A02
+D. Fixture choice D for E4A02
+~~
+E4B01 (A)
+Sample fixture question E4B01 for Extra pool group E4B?
+A. Fixture choice A for E4B01
+B. Fixture choice B for E4B01
+C. Fixture choice C for E4B01
+D. Fixture choice D for E4B01
+~~
+E4B02 (B)
+Sample fixture question E4B02 for Extra pool group E4B?
+A. Fixture choice A for E4B02
+B. Fixture choice B for E4B02
+C. Fixture choice C for E4B02
+D. Fixture choice D for E4B02
+~~
+E4C01 (A)
+Sample fixture question E4C01 for Extra pool group E4C?
+A. Fixture choice A for E4C01
+B. Fixture choice B for E4C01
+C. Fixture choice C for E4C01
+D. Fixture choice D for E4C01
+~~
+E4C02 (B)
+Sample fixture question E4C02 for Extra pool group E4C?
+A. Fixture choice A for E4C02
+B. Fixture choice B for E4C02
+C. Fixture choice C for E4C02
+D. Fixture choice D for E4C02
+~~
+E4D01 (A)
+Sample fixture question E4D01 for Extra pool group E4D?
+A. Fixture choice A for E4D01
+B. Fixture choice B for E4D01
+C. Fixture choice C for E4D01
+D. Fixture choice D for E4D01
+~~
+E4D02 (B)
+Sample fixture question E4D02 for Extra pool group E4D?
+A. Fixture choice A for E4D02
+B. Fixture choice B for E4D02
+C. Fixture choice C for E4D02
+D. Fixture choice D for E4D02
+~~
+E4E01 (A)
+Sample fixture question E4E01 for Extra pool group E4E?
+A. Fixture choice A for E4E01
+B. Fixture choice B for E4E01
+C. Fixture choice C for E4E01
+D. Fixture choice D for E4E01
+~~
+E4E02 (B)
+Sample fixture question E4E02 for Extra pool group E4E?
+A. Fixture choice A for E4E02
+B. Fixture choice B for E4E02
+C. Fixture choice C for E4E02
+D. Fixture choice D for E4E02
+~~
+E5A01 (A)
+Sample fixture question E5A01 for Extra pool group E5A?
+A. Fixture choice A for E5A01
+B. Fixture choice B for E5A01
+C. Fixture choice C for E5A01
+D. Fixture choice D for E5A01
+~~
+E5A02 (B)
+Sample fixture question E5A02 for Extra pool group E5A?
+A. Fixture choice A for E5A02
+B. Fixture choice B for E5A02
+C. Fixture choice C for E5A02
+D. Fixture choice D for E5A02
+~~
+E5B01 (B)
+What is the magnitude of the impedance of a series circuit with 50 ohms resistance and 50 ohms reactance?
+A. 50 ohms
+B. 70.7 ohms
+C. 100 ohms
+D. 2500 ohms
+~~
+E5B02 (C)
+What is the impedance of a circuit with 30 ohms resistance and 40 ohms reactance?
+A. 10 ohms
+B. 35 ohms
+C. 50 ohms
+D. 70 ohms
+~~
+E5C01 (A)
+Sample fixture question E5C01 for Extra pool group E5C?
+A. Fixture choice A for E5C01
+B. Fixture choice B for E5C01
+C. Fixture choice C for E5C01
+D. Fixture choice D for E5C01
+~~
+E5C02 (B)
+Sample fixture question E5C02 for Extra pool group E5C?
+A. Fixture choice A for E5C02
+B. Fixture choice B for E5C02
+C. Fixture choice C for E5C02
+D. Fixture choice D for E5C02
+~~
+E5D01 (A)
+Sample fixture question E5D01 for Extra pool group E5D?
+A. Fixture choice A for E5D01
+B. Fixture choice B for E5D01
+C. Fixture choice C for E5D01
+D. Fixture choice D for E5D01
+~~
+E5D02 (B)
+Sample fixture question E5D02 for Extra pool group E5D?
+A. Fixture choice A for E5D02
+B. Fixture choice B for E5D02
+C. Fixture choice C for E5D02
+D. Fixture choice D for E5D02
+~~
+E5E01 (A)
+Sample fixture question E5E01 for Extra pool group E5E?
+A. Fixture choice A for E5E01
+B. Fixture choice B for E5E01
+C. Fixture choice C for E5E01
+D. Fixture choice D for E5E01
+~~
+E5E02 (B)
+Sample fixture question E5E02 for Extra pool group E5E?
+A. Fixture choice A for E5E02
+B. Fixture choice B for E5E02
+C. Fixture choice C for E5E02
+D. Fixture choice D for E5E02
+~~
+E6A01 (A)
+Sample fixture question E6A01 for Extra pool group E6A?
+A. Fixture choice A for E6A01
+B. Fixture choice B for E6A01
+C. Fixture choice C for E6A01
+D. Fixture choice D for E6A01
+~~
+E6A02 (B)
+Sample fixture question E6A02 for Extra pool group E6A?
+A. Fixture choice A for E6A02
+B. Fixture choice B for E6A02
+C. Fixture choice C for E6A02
+D. Fixture choice D for E6A02
+~~
+E6B01 (A)
+Sample fixture question E6B01 for Extra pool group E6B?
+A. Fixture choice A for E6B01
+B. Fixture choice B for E6B01
+C. Fixture choice C for E6B01
+D. Fixture choice D for E6B01
+~~
+E6B02 (B)
+Sample fixture question E6B02 for Extra pool group E6B?
+A. Fixture choice A for E6B02
+B. Fixture choice B for E6B02
+C. Fixture choice C for E6B02
+D. Fixture choice D for E6B02
+~~
+E6C01 (A)
+Sample fixture question E6C01 for Extra pool group E6C?
+A. Fixture choice A for E6C01
+B. Fixture choice B for E6C01
+C. Fixture choice C for E6C01
+D. Fixture choice D for E6C01
+~~
+E6C02 (B)
+Sample fixture question E6C02 for Extra pool group E6C?
+A. Fixture choice A for E6C02
+B. Fixture choice B for E6C02
+C. Fixture choice C for E6C02
+D. Fixture choice D for E6C02
+~~
+E6D01 (A)
+Sample fixture question E6D01 for Extra pool group E6D?
+A. Fixture choice A for E6D01
+B. Fixture choice B for E6D01
+C. Fixture choice C for E6D01
+D. Fixture choice D for E6D01
+~~
+E6D02 (B)
+Sample fixture question E6D02 for Extra pool group E6D?
+A. Fixture choice A for E6D02
+B. Fixture choice B for E6D02
+C. Fixture choice C for E6D02
+D. Fixture choice D for E6D02
+~~
+E6E01 (A)
+Sample fixture question E6E01 for Extra pool group E6E?
+A. Fixture choice A for E6E01
+B. Fixture choice B for E6E01
+C. Fixture choice C for E6E01
+D. Fixture choice D for E6E01
+~~
+E6E02 (B)
+Sample fixture question E6E02 for Extra pool group E6E?
+A. Fixture choice A for E6E02
+B. Fixture choice B for E6E02
+C. Fixture choice C for E6E02
+D. Fixture choice D for E6E02
+~~
+E7A01 (A)
+Sample fixture question E7A01 for Extra pool group E7A?
+A. Fixture choice A for E7A01
+B. Fixture choice B for E7A01
+C. Fixture choice C for E7A01
+D. Fixture choice D for E7A01
+~~
+E7A02 (B)
+Sample fixture question E7A02 for Extra pool group E7A?
+A. Fixture choice A for E7A02
+B. Fixture choice B for E7A02
+C. Fixture choice C for E7A02
+D. Fixture choice D for E7A02
+~~
+E7B01 (A)
+Sample fixture question E7B01 for Extra pool group E7B?
+A. Fixture choice A for E7B01
+B. Fixture choice B for E7B01
+C. Fixture choice C for E7B01
+D. Fixture choice D for E7B01
+~~
+E7B02 (B)
+Sample fixture question E7B02 for Extra pool group E7B?
+A. Fixture choice A for E7B02
+B. Fixture choice B for E7B02
+C. Fixture choice C for E7B02
+D. Fixture choice D for E7B02
+~~
+E7C01 (A)
+Sample fixture question E7C01 for Extra pool group E7C?
+A. Fixture choice A for E7C01
+B. Fixture choice B for E7C01
+C. Fixture choice C for E7C01
+D. Fixture choice D for E7C01
+~~
+E7C02 (B)
+Sample fixture question E7C02 for Extra pool group E7C?
+A. Fixture choice A for E7C02
+B. Fixture choice B for E7C02
+C. Fixture choice C for E7C02
+D. Fixture choice D for E7C02
+~~
+E7D01 (A)
+Sample fixture question E7D01 for Extra pool group E7D?
+A. Fixture choice A for E7D01
+B. Fixture choice B for E7D01
+C. Fixture choice C for E7D01
+D. Fixture choice D for E7D01
+~~
+E7D02 (B)
+Sample fixture question E7D02 for Extra pool group E7D?
+A. Fixture choice A for E7D02
+B. Fixture choice B for E7D02
+C. Fixture choice C for E7D02
+D. Fixture choice D for E7D02
+~~
+E7E01 (A)
+Sample fixture question E7E01 for Extra pool group E7E?
+A. Fixture choice A for E7E01
+B. Fixture choice B for E7E01
+C. Fixture choice C for E7E01
+D. Fixture choice D for E7E01
+~~
+E7E02 (B)
+Sample fixture question E7E02 for Extra pool group E7E?
+A. Fixture choice A for E7E02
+B. Fixture choice B for E7E02
+C. Fixture choice C for E7E02
+D. Fixture choice D for E7E02
+~~
+E7F01 (A)
+Sample fixture question E7F01 for Extra pool group E7F?
+A. Fixture choice A for E7F01
+B. Fixture choice B for E7F01
+C. Fixture choice C for E7F01
+D. Fixture choice D for E7F01
+~~
+E7F02 (B)
+Sample fixture question E7F02 for Extra pool group E7F?
+A. Fixture choice A for E7F02
+B. Fixture choice B for E7F02
+C. Fixture choice C for E7F02
+D. Fixture choice D for E7F02
+~~
+E7G01 (A)
+Sample fixture question E7G01 for Extra pool group E7G?
+A. Fixture choice A for E7G01
+B. Fixture choice B for E7G01
+C. Fixture choice C for E7G01
+D. Fixture choice D for E7G01
+~~
+E7G02 (B)
+Sample fixture question E7G02 for Extra pool group E7G?
+A. Fixture choice A for E7G02
+B. Fixture choice B for E7G02
+C. Fixture choice C for E7G02
+D. Fixture choice D for E7G02
+~~
+E7H01 (A)
+Sample fixture question E7H01 for Extra pool group E7H?
+A. Fixture choice A for E7H01
+B. Fixture choice B for E7H01
+C. Fixture choice C for E7H01
+D. Fixture choice D for E7H01
+~~
+E7H02 (B)
+Sample fixture question E7H02 for Extra pool group E7H?
+A. Fixture choice A for E7H02
+B. Fixture choice B for E7H02
+C. Fixture choice C for E7H02
+D. Fixture choice D for E7H02
+~~
+E8A01 (A)
+Sample fixture question E8A01 for Extra pool group E8A?
+A. Fixture choice A for E8A01
+B. Fixture choice B for E8A01
+C. Fixture choice C for E8A01
+D. Fixture choice D for E8A01
+~~
+E8A02 (B)
+Sample fixture question E8A02 for Extra pool group E8A?
+A. Fixture choice A for E8A02
+B. Fixture choice B for E8A02
+C. Fixture choice C for E8A02
+D. Fixture choice D for E8A02
+~~
+E8B01 (A)
+Sample fixture question E8B01 for Extra pool group E8B?
+A. Fixture choice A for E8B01
+B. Fixture choice B for E8B01
+C. Fixture choice C for E8B01
+D. Fixture choice D for E8B01
+~~
+E8B02 (B)
+Sample fixture question E8B02 for Extra pool group E8B?
+A. Fixture choice A for E8B02
+B. Fixture choice B for E8B02
+C. Fixture choice C for E8B02
+D. Fixture choice D for E8B02
+~~
+E8C01 (A)
+Sample fixture question E8C01 for Extra pool group E8C?
+A. Fixture choice A for E8C01
+B. Fixture choice B for E8C01
+C. Fixture choice C for E8C01
+D. Fixture choice D for E8C01
+~~
+E8C02 (B)
+Sample fixture question E8C02 for Extra pool group E8C?
+A. Fixture choice A for E8C02
+B. Fixture choice B for E8C02
+C. Fixture choice C for E8C02
+D. Fixture choice D for E8C02
+~~
+E8D01 (A)
+Sample fixture question E8D01 for Extra pool group E8D?
+A. Fixture choice A for E8D01
+B. Fixture choice B for E8D01
+C. Fixture choice C for E8D01
+D. Fixture choice D for E8D01
+~~
+E8D02 (B)
+Sample fixture question E8D02 for Extra pool group E8D?
+A. Fixture choice A for E8D02
+B. Fixture choice B for E8D02
+C. Fixture choice C for E8D02
+D. Fixture choice D for E8D02
+~~
+E9A01 (A)
+Sample fixture question E9A01 for Extra pool group E9A?
+A. Fixture choice A for E9A01
+B. Fixture choice B for E9A01
+C. Fixture choice C for E9A01
+D. Fixture choice D for E9A01
+~~
+E9A02 (B)
+Sample fixture question E9A02 for Extra pool group E9A?
+A. Fixture choice A for E9A02
+B. Fixture choice B for E9A02
+C. Fixture choice C for E9A02
+D. Fixture choice D for E9A02
+~~
+E9B01 (A)
+Sample fixture question E9B01 for Extra pool group E9B?
+A. Fixture choice A for E9B01
+B. Fixture choice B for E9B01
+C. Fixture choice C for E9B01
+D. Fixture choice D for E9B01
+~~
+E9B02 (B)
+Sample fixture question E9B02 for Extra pool group E9B?
+A. Fixture choice A for E9B02
+B. Fixture choice B for E9B02
+C. Fixture choice C for E9B02
+D. Fixture choice D for E9B02
+~~
+E9C01 (A)
+Sample fixture question E9C01 for Extra pool group E9C?
+A. Fixture choice A for E9C01
+B. Fixture choice B for E9C01
+C. Fixture choice C for E9C01
+D. Fixture choice D for E9C01
+~~
+E9C02 (B)
+Sample fixture question E9C02 for Extra pool group E9C?
+A. Fixture choice A for E9C02
+B. Fixture choice B for E9C02
+C. Fixture choice C for E9C02
+D. Fixture choice D for E9C02
+~~
+E9D01 (A)
+Sample fixture question E9D01 for Extra pool group E9D?
+A. Fixture choice A for E9D01
+B. Fixture choice B for E9D01
+C. Fixture choice C for E9D01
+D. Fixture choice D for E9D01
+~~
+E9D02 (B)
+Sample fixture question E9D02 for Extra pool group E9D?
+A. Fixture choice A for E9D02
+B. Fixture choice B for E9D02
+C. Fixture choice C for E9D02
+D. Fixture choice D for E9D02
+~~
+E9E01 (A)
+Sample fixture question E9E01 for Extra pool group E9E?
+A. Fixture choice A for E9E01
+B. Fixture choice B for E9E01
+C. Fixture choice C for E9E01
+D. Fixture choice D for E9E01
+~~
+E9E02 (B)
+Sample fixture question E9E02 for Extra pool group E9E?
+A. Fixture choice A for E9E02
+B. Fixture choice B for E9E02
+C. Fixture choice C for E9E02
+D. Fixture choice D for E9E02
+~~
+E9F01 (A)
+Sample fixture question E9F01 for Extra pool group E9F?
+A. Fixture choice A for E9F01
+B. Fixture choice B for E9F01
+C. Fixture choice C for E9F01
+D. Fixture choice D for E9F01
+~~
+E9F02 (B)
+Sample fixture question E9F02 for Extra pool group E9F?
+A. Fixture choice A for E9F02
+B. Fixture choice B for E9F02
+C. Fixture choice C for E9F02
+D. Fixture choice D for E9F02
+~~
+E0A01 (A)
+Sample fixture question E0A01 for Extra pool group E0A?
+A. Fixture choice A for E0A01
+B. Fixture choice B for E0A01
+C. Fixture choice C for E0A01
+D. Fixture choice D for E0A01
+~~
+E0A02 (B)
+Sample fixture question E0A02 for Extra pool group E0A?
+A. Fixture choice A for E0A02
+B. Fixture choice B for E0A02
+C. Fixture choice C for E0A02
+D. Fixture choice D for E0A02
+~~
+E0B01 (A)
+Sample fixture question E0B01 for Extra pool group E0B?
+A. Fixture choice A for E0B01
+B. Fixture choice B for E0B01
+C. Fixture choice C for E0B01
+D. Fixture choice D for E0B01
+~~
+E0B02 (B)
+Sample fixture question E0B02 for Extra pool group E0B?
+A. Fixture choice A for E0B02
+B. Fixture choice B for E0B02
+C. Fixture choice C for E0B02
+D. Fixture choice D for E0B02
+~~

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- Elevation radiation pattern, "Over Real Ground", redrawn from NCVEC
+       pool figure E9-2 (canon 1.4 binding spec). Semicircular polar plot
+       above a horizontal baseline (the ground): 180 deg at the left end,
+       0 deg at the right end, 90 deg at the zenith; labeled radials
+       0/30/60/90/120/150/180 with subdivision spokes every 15 deg.
+       Concentric dB arcs at the official radii, labeled along the baseline
+       right of center in the published order -40 -30 -20 -10 (left to
+       right toward the 0 end); the outer semicircle is 0 dB. The heavy
+       trace is the official vector geometry transcribed: largest lobe
+       hugs the horizon, peaking at 7.5 deg elevation and reaching the
+       outer arc (E9B06), successively smaller lobes above it, small rear
+       lobes toward 150-180 deg down about -28 dB (front-to-back, E9B04);
+       the semicircle-above-ground format is the elevation-pattern tell
+       (E9B05). Map: center (400,475), R = 350. -->
+
+  <!-- ===== Title ===== -->
+  <text x="400" y="55" font-size="32" font-weight="bold" text-anchor="middle"
+        fill="currentColor" stroke="none">Figure E9-2</text>
+
+  <!-- ===== Caption text, upper right ===== -->
+  <text x="590" y="130" font-size="22" font-weight="bold" text-anchor="start"
+        fill="currentColor" stroke="none">Over Real Ground</text>
+
+  <!-- ===== Baseline (the ground) ===== -->
+  <line x1="50" y1="475" x2="750" y2="475" fill="none" stroke="currentColor"
+        stroke-width="1.8" stroke-opacity="0.85"/>
+
+  <!-- ===== dB arcs (official radii) ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.5">
+    <path d="M612.6,475 A212.6,212.6 0 0 0 187.4,475"/>
+    <path d="M528.7,475 A128.7,128.7 0 0 0 271.3,475"/>
+    <path d="M468.6,475 A68.6,68.6 0 0 0 331.4,475"/>
+    <path d="M443.3,475 A43.3,43.3 0 0 0 356.7,475"/>
+  </g>
+
+  <!-- ===== Subdivision spokes every 15 degrees ===== -->
+  <g fill="none" stroke="currentColor" stroke-width="1" stroke-opacity="0.5">
+    <line x1="442.5" y1="463.6" x2="738.1" y2="384.4"/>
+    <line x1="438.1" y1="453.0" x2="703.1" y2="300.0"/>
+    <line x1="431.1" y1="443.9" x2="647.5" y2="227.5"/>
+    <line x1="422.0" y1="436.9" x2="575.0" y2="171.9"/>
+    <line x1="411.4" y1="432.5" x2="490.6" y2="136.9"/>
+    <line x1="400.0" y1="125.0" x2="400.0" y2="475.0"/>
+    <line x1="388.6" y1="432.5" x2="309.4" y2="136.9"/>
+    <line x1="378.0" y1="436.9" x2="225.0" y2="171.9"/>
+    <line x1="368.9" y1="443.9" x2="152.5" y2="227.5"/>
+    <line x1="361.9" y1="453.0" x2="96.9" y2="300.0"/>
+    <line x1="357.5" y1="463.6" x2="61.9" y2="384.4"/>
+  </g>
+
+  <!-- ===== Outer semicircle: the 0 dB reference ===== -->
+  <path d="M750,475 A350,350 0 0 0 50,475" fill="none" stroke="currentColor"
+        stroke-width="1.8" stroke-opacity="0.85"/>
+
+  <!-- ===== Radial labels ===== -->
+  <g fill="currentColor" stroke="none" font-size="18">
+    <text x="776" y="481" text-anchor="start">0</text>
+    <text x="726" y="293" text-anchor="middle">30</text>
+    <text x="588" y="155" text-anchor="middle">60</text>
+    <text x="400" y="105" text-anchor="middle">90</text>
+    <text x="212" y="155" text-anchor="middle">120</text>
+    <text x="74" y="293" text-anchor="middle">150</text>
+    <text x="30" y="481" text-anchor="end">180</text>
+  </g>
+
+  <!-- ===== dB arc labels along the baseline, right of center ===== -->
+  <g fill="currentColor" stroke="none" font-size="15" text-anchor="end">
+    <text x="435" y="497">&#8722;40</text>
+    <text x="460" y="497">&#8722;30</text>
+    <text x="520" y="497">&#8722;20</text>
+    <text x="604" y="497">&#8722;10</text>
+  </g>
+
+  <!-- ===== The pattern trace (official geometry, scaled) ===== -->
+  <path d="M406.4,475.4c49.3,-2.3,142.0,-3.4,206.1,-9.6c54.3,-5.2,86.5,-14.9,93.4,-17.9s37.3,-12.3,38.2,-20.9c1.2,-11.0,-35.0,-14.2,-53.4,-14.1c-32.9,0.2,-54.1,5.1,-71.3,8.4c-25.1,4.7,-78.0,15.1,-79.2,10.4c-2.0,-8.0,49.8,-26.0,83.2,-41.4c32.4,-14.9,67.2,-40.6,65.7,-53.4s-47.7,-1.6,-75.3,10.2s-35.2,16.4,-47.4,22.5s-40.0,23.5,-46.6,23.9c-10.4,0.6,7.0,-18.3,25.5,-35.8s41.7,-40.0,47.6,-58.5c5.0,-15.6,7.4,-35.3,-30.5,-17.1c-23.2,11.1,-58.3,52.5,-71.8,67.3c-23.4,25.5,-42.1,34.3,-33.9,9.8c4.2,-12.7,9.4,-37.6,4.8,-45.2c-4.6,-7.6,-12.9,-15.9,-35.6,3.4c-22.7,19.3,-37.8,54.7,-39.6,79.4c-2.4,33.5,0.5,40.3,-4.2,43.4c-4.7,3.1,-26.7,-21.1,-30.9,-16.4c-4.5,5.1,18.1,22.3,14.1,28.0c-1.9,2.8,-25.5,-13.0,-28.5,-6.8c-3.0,6.2,28.7,15.4,27.3,19.3c-2.0,5.4,-33.5,-5.7,-32.7,1.0C332.3,471.4 380.5,476.6 406.4,475.4z"
+        fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+
+</svg>

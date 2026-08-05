@@ -1,0 +1,392 @@
+{
+  "ch00-what-extra-opens": {
+    "id": "ch00-what-extra-opens",
+    "chapter": 0,
+    "number": "0.1",
+    "caption": "What the Amateur Extra upgrade opens: the Extra-only slices of four HF bands — 3.500–3.525 and 3.600–3.800 MHz on 80/75 m, 7.000–7.025 and 7.125–7.175 MHz on 40 m, 14.000–14.025 and 14.150–14.225 MHz on 20 m (the DX-heavy bottom of the phone band), and 21.000–21.025 and 21.200–21.275 MHz on 15 m — lighting up on top of everything General already had. Extra adds spectrum and takes nothing away: all of 160, 60, 30, 17, 12, and 10 m and every VHF/UHF band stay exactly as they were. Edges per §97.301(b) vs §97.301(d), ITU Region 2.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch00-what-extra-opens.svg",
+    "spoken": "four horizontal band bars — 80/75, 40, 20, and 15 meters — with the Extra-only slices filled in at the bottom of each band and their exact frequency edges labeled, above a note that everything General had remains"
+  },
+  "ch00-upgrade-journey-ae": {
+    "id": "ch00-upgrade-journey-ae",
+    "chapter": 0,
+    "number": "0.2",
+    "caption": "The upgrade path to Extra: pass Element 4 (50 questions, 37 correct to pass, Elements 2 and 3 already credited); at the session the Form 605 is properly submitted to the administering VEs and the CSCE is in your hand — and from that moment you may use Extra privileges immediately under §97.9(b), signing /AE on every transmission (§97.119(f)(3)). When the ULS record shows Amateur Extra — typically within days — you drop the suffix; privileges then rest on the license itself and you keep your call sign. The interim authority ends at final disposition of the application or 365 days after passing, whichever comes first.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch00-upgrade-journey-ae.svg",
+    "spoken": "five boxes — pass Element 4; CSCE plus Form 605; on the air at once signing slash A E; ULS shows Amateur Extra; drop the A E"
+  },
+  "ch01-extra-band-chart": {
+    "id": "ch01-extra-band-chart",
+    "chapter": 1,
+    "number": "1.1",
+    "caption": "Amateur Extra HF privileges band by band (ITU Region 2, §97.301(b)/§97.305(c)(3)): CW+data and phone+CW segments on 80/75, 40, 20, 15, and 10 m with the Extra-only slices drawn darker with their exact edges in bold — 3.500–3.525, 3.600–3.800, 7.000–7.025, 7.125–7.175, 14.000–14.025, 14.150–14.225, 21.000–21.025, and 21.200–21.275 MHz; 17 and 12 m entire; 30 m CW and data only at the 200 W PEP limit; 60 m in its current two-part form (contiguous 5351.5–5366.5 kHz at 9.15 W ERP plus four channels at 100 W ERP); up to 1.5 kW PEP everywhere else; VHF/UHF unchanged. CW is permitted on every authorized frequency.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch01-extra-band-chart.svg",
+    "spoken": "one bar per HF band from 80 meters to 10 meters showing the Extra CW-and-data and phone segments with the Extra-only slices highlighted and their exact edges in bold, plus each band's power limit and a VHF-UHF row marked unchanged"
+  },
+  "ch01-cept-carry": {
+    "id": "ch01-cept-carry",
+    "chapter": 1,
+    "number": "1.2",
+    "caption": "Operating in CEPT countries under Recommendation T/R 61-01: the three documents a US Amateur Extra operator carries — evidence of the FCC license grant (your license), proof of U.S. citizenship (your passport), and a copy of FCC Public Notice DA 16-1048 itself. An Amateur Extra or Advanced grant earns full CEPT Radio Amateur License privileges, while a General grant earns CEPT Novice privileges only (ECC Recommendation (05)06). No “/CEPT” suffix and no local-language ID requirement exists; in the Americas the counterpart permit is the IARP.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch01-cept-carry.svg",
+    "spoken": "three document cards — FCC license, passport, and the FCC public notice D A 16-1048 — above a comparison showing Amateur Extra and Advanced earn full CEPT privileges while General earns CEPT Novice only"
+  },
+  "ch02-satellite-modes": {
+    "id": "ch02-satellite-modes",
+    "chapter": 2,
+    "number": "2.2",
+    "caption": "A satellite's mode designator is a pair of letters naming its uplink and downlink bands, uplink first: V = 2 m, U = 70 cm, L = 23 cm, S = 13 cm, and X = 3 cm (10 GHz, e.g. QO-100's downlink). In the worked example, mode U/V means you transmit up on 70 cm (435–438 MHz) and your friend listens down on 2 m (145.8–146 MHz). The mode is a band pair — not FM versus SSB and not an orbit class.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch02-satellite-modes.svg",
+    "spoken": "A satellite's mode designator is two letters: the uplink band first, then the downlink band. V is 2 meters, U is 70 centimeters, L is 23 centimeters, S is 13 centimeters, and X is 3 centimeters at 10 gigahertz. So mode U slash V means you transmit up on 70 centimeters and listen down on 2 meters. The mode is a band pair — not F M versus S S B, and not an orbit class."
+  },
+  "ch02-linear-transponder": {
+    "id": "ch02-linear-transponder",
+    "chapter": 2,
+    "number": "2.1",
+    "caption": "A linear transponder is a bent pipe: the whole uplink passband is mixed with a local oscillator and the difference product retransmitted on the downlink band, so any mode — CW, SSB, FM, SSTV, data — passes through. A non-inverting transponder preserves band order and sideband; an inverting one swaps sidebands (USB in becomes LSB out), reverses band positions, and its uplink and downlink Doppler shifts move in opposite directions so they partially cancel. Typical LEO Doppler is about ±3.5 kHz on 2 m and ±10 kHz on 70 cm, so you tune the higher-frequency link — and you run your uplink power so your downlink is about as strong as the satellite's beacon, because downlink power is shared.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch02-linear-transponder.svg",
+    "spoken": "A linear transponder is a bent pipe in the sky: it mixes the whole uplink passband with a local oscillator and retransmits the difference product, so any mode passes — C W, S S B, F M, or data. A non-inverting transponder keeps everything in the same order. An inverting one swaps the sidebands, reverses the band positions, and its uplink and downlink Doppler shifts move in opposite directions, so they partially cancel. L E O Doppler runs about plus or minus 3.5 kilohertz on 2 meters and plus or minus 10 kilohertz on 70 centimeters — tune the higher-frequency link. And share: run your uplink so your downlink is about as strong as the satellite's beacon."
+  },
+  "ch02-eme-path": {
+    "id": "ch02-eme-path",
+    "chapter": 2,
+    "number": "2.3",
+    "caption": "Earth–Moon–Earth: any two stations that can both see the Moon — up to about 12,000 miles apart along the surface — can use it as a passive reflector. The round trip takes about 2.5 seconds at the Moon's average 384,400 km distance (WSJT-X's Echo mode exists so you can hear your own echo), the path loss is about 252 dB at 144 MHz (271 dB at 1296 MHz, and about 2 dB better at perigee than apogee), and the Moon reflects only about 6 percent of the power that reaches it. The answer is antenna gain on both ends, a low-noise preamp at the antenna, and patience — digital modes like JT65 and Q65 decode 10–15 dB below CW, on 2 m, the most active EME band.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch02-eme-path.svg",
+    "spoken": "Earth-Moon-Earth: two stations that can both see the moon — up to about 12,000 miles apart — use it as a passive reflector. Your signal's round trip takes about two and a half seconds, the path loss is about 252 decibels at 144 megahertz, and the moon reflects only about 6 percent of the power that hits it. The answer is antenna gain on both ends, a low-noise preamp at the antenna, and patience. Digital modes like J T 65 and Q 65 decode 10 to 15 decibels below what C W needs."
+  },
+  "ch03-aurora-geometry": {
+    "id": "ch03-aurora-geometry",
+    "chapter": 3,
+    "number": "3.3",
+    "caption": "Auroral propagation, seen from above. After a severe geomagnetic storm both stations beam NORTH at the auroral curtain - never at each other - and the moving curtain scatters VHF signals back down. Erratic Doppler spreads a carrier into a buzz a few kHz wide, so signals arrive fluttery and phase-distorted and CW is the most usable mode.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch03-aurora-geometry.svg",
+    "spoken": "A map view of an auroral contact, with north at the top, marked by a compass rose. Across the top of the map hangs the auroral curtain, drawn as wavy vertical ribbons, far to the north of both stations. The transmitting station, at the lower left, points its beam north, up at the curtain; the signal scatters off the curtain and comes back down to the receiving station at the lower right, which is beaming north too. A dashed line drawn directly between the two stations is crossed out: they never point at each other - both point at the curtain. Because the curtain keeps moving, the returned signal is phase-distorted: a pure carrier spreads into a buzz a few kilohertz wide, SSB turns to mushy garble, and CW is the most usable mode. Auroral propagation follows severe geomagnetic storms."
+  },
+  "ch03-meteor-scatter": {
+    "id": "ch03-meteor-scatter",
+    "chapter": 3,
+    "number": "3.2",
+    "caption": "Meteor scatter. Top: a meteor's ionized trail at E-region height briefly reflects VHF between two stations whose beams meet at the trail - best from 28 to 148 MHz, any day of the year, out to about 1,300 miles. Bottom: what the receiver hears - fraction-of-a-second pings and rare multi-second bursts - and how MSK144 rides them, repeating a complete 72 ms message through each 15-second slot.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch03-meteor-scatter.svg",
+    "spoken": "Two panels. The top panel shows the geometry: a meteor streaks in at E-region height, leaving an ionized trail, and two stations far apart on the ground both aim their beams at that same trail - the signal goes up from the transmitter, off the trail, and down to the receiver. Meteor scatter works best from 28 to 148 megahertz, which is why 6 meters and 2 meters dominate, and modern digital modes work it any day of the year out to about 1,300 miles. The bottom panel shows what the receiver hears over time: mostly silence, broken by narrow pings lasting a fraction of a second - under a tenth of a second - and, rarely, a longer burst of a few seconds. Beneath the timeline, one 15-second MSK144 transmit slot is drawn packed with repeats of the same message: 144 bits at 2000 baud make a complete message every 72 milliseconds, so even a single brief ping can carry a whole exchange. A 20-millisecond short format exists for the briefest 2-meter pings."
+  },
+  "ch03-transequatorial": {
+    "id": "ch03-transequatorial",
+    "chapter": 3,
+    "number": "3.4",
+    "caption": "Transequatorial propagation (TE). Stations about 1,500-2,500 miles north and south of the geomagnetic equator - typically 2,000-3,000 miles apart on a path crossing it within 20 degrees of a right angle - complete two F-region hops ducted between the equatorial-anomaly crests with no mid-path ground reflection. Maximum range is about 5,000 miles, most likely in the afternoon or early evening.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch03-transequatorial.svg",
+    "spoken": "A cross-section of the transequatorial path. The F region is drawn as a dashed band with two humps - the north and south equatorial-anomaly crests - with a trough directly above the geomagnetic equator, which is marked by a vertical dashed line at the middle of the ground. The transmitting station sits on the left, the receiving station on the right, each about 1,500 to 2,500 miles from the equator. The signal rises to the north crest, ducts across to the south crest high above the equator, and comes back down - two F-region hops with no ground reflection in the middle. A faint dashed zigzag shows what ordinary multi-hop would do: bounce off the ground mid-path, and a cross marks that skipped, lossy bounce. Stations are typically 2,000 to 3,000 miles apart on a path crossing the equator within 20 degrees of a right angle; the maximum range is about 5,000 miles, and the path is most likely in the afternoon or early evening."
+  },
+  "ch03-ducting": {
+    "id": "ch03-ducting",
+    "chapter": 3,
+    "number": "3.1",
+    "caption": "Tropospheric ducting. A temperature inversion - warm air over cool surface air - traps VHF and UHF signals against the surface and carries them far beyond the normal horizon, over water and over land, for hundreds of miles. Microwave ducts form over large bodies of water with a typical range of 100 to 300 miles; the high-pressure inversion weather that builds them is the 'lift' operators watch for.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch03-ducting.svg",
+    "spoken": "A cross-section of a tropospheric duct. Aloft, a dashed double line marks a temperature inversion - warm air sitting over cool surface air. From the transmitter at the left, one dashed ray at a steeper angle passes through the layer and escapes to space: that is what happens without an inversion. The ducted ray, launched at a shallow angle, bends over beneath the inversion, returns to the surface, reflects, and bends over again - trapped between the surface and the layer, hopping along over a large body of water in the middle of the path and over land beyond it, until it reaches a receiver hundreds of miles away, far past the normal horizon. A circled H marks the high-pressure weather behind it: inversion weather is the 'lift' VHF operators watch for. The exam pins microwave ducts forming over large bodies of water, with a typical range of 100 to 300 miles."
+  },
+  "ch04-receiver-performance": {
+    "id": "ch04-receiver-performance",
+    "chapter": 4,
+    "number": "4.2",
+    "caption": "The three receiver numbers that matter. Sensitivity says how weak a signal still clears the noise: the floor starts at the physical -174 dBm in a 1 Hz bandwidth, and widening the filter from 50 to 1,000 Hz raises it 13 dB. Dynamic range spans from that floor to the level causing 1 dB of gain compression; past it come cross-modulation and desense, and the third-order intercept (40 dBm) is an extrapolated yardstick, never a working level, while odd-order products such as 2f1 - f2 land back in-band. Selectivity is the filter passband stripping a strong adjacent signal: a narrow roofing filter works early, IF Shift slides the passband, and a preselector removes out-of-band signals before they can intermod.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch04-receiver-performance.svg",
+    "spoken": "Three panels translate the spec sheet. First, sensitivity: a tiny signal pokes above a wiggling noise floor and a dashed MDS line - minimum discernible signal - while the notes give the physics floor of minus 174 dBm per hertz and the 13 dB penalty for widening from 50 to 1,000 hertz. Second, dynamic range: two loud neighbor signals rise toward a dashed 1 dB compression line, and the arrow from the noise floor to that line is the blocking dynamic range; beyond it come cross-modulation and desense, the 40 dBm third-order intercept is an extrapolation, and odd-order intermod products land back in-band. Third, selectivity: a filter passband keeps the wanted signal while a much taller adjacent signal sits outside the skirt and is stripped away, with the roofing filter, IF Shift, and preselector listed as the tools."
+  },
+  "ch04-link-budget": {
+    "id": "ch04-link-budget",
+    "chapter": 4,
+    "number": "4.3",
+    "caption": "A link budget is pure dB bookkeeping. The chain adds transmit power and antenna gains and subtracts path loss: 40 dBm (10 W) plus 6 dB of transmit gain, minus 100 dB of path loss, plus 3 dB of receive gain delivers -51 dBm, and each pool distractor drops exactly one gain. The margin then compares the arrival with the receiver's noise: on a longer path the same bookkeeping gives -89 dBm, which is 14 dB above a -103 dBm MDS, and holding back the required 6 dB SNR leaves +8 dB of margin - the link works with room to spare. (Pool E4D13, E4D12.)",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch04-link-budget.svg",
+    "spoken": "The top chain walks the signal left to right: the transmitter makes 40 dBm, ten watts; the transmit antenna adds 6 dB for a running total of 46; the path takes away 100 dB, dropping the total to minus 54; the receive antenna adds 3, and the receiver sees minus 51 dBm. The wrong exam answers each omit one gain. Below, a dBm thermometer shows the margin example: the received level sits at minus 89 dBm, the receiver's MDS noise floor at minus 103, fourteen dB below it; holding back a 6 dB SNR reserve leaves plus 8 dB of margin. A footnote anchors dBm to real watts: 40 dBm is 10 watts and minus 100 dBm is a tenth of a picowatt."
+  },
+  "ch04-noise-cascade": {
+    "id": "ch04-noise-cascade",
+    "chapter": 4,
+    "number": "4.1",
+    "caption": "Why the first stage sets the system noise figure. Signal and atmospheric noise enter the antenna together, and once mixed no later stage can strip the noise back out. Referred to the input, stage one's noise counts at full strength and is amplified by everything after it, while stage two's contribution is divided by stage one's gain and stage three's by all the gain ahead of it - the Friis idea without the formula - so the low-noise budget belongs in the preamp. Noise figure is the dB ratio of a receiver's noise to the theoretical minimum, a -174 dBm floor in a 1 Hz bandwidth; and on the low HF bands the atmosphere is noisier than the receiver, so front-end attenuation there costs almost nothing.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch04-noise-cascade.svg",
+    "spoken": "The receiver chain runs antenna to preamp to mixer to IF amplifier, each stage tagged with its gain and noise figure. Below, three bars show each stage's noise as heard at the input: the preamp's bar towers at full strength because every later stage amplifies it, the mixer's bar is cut down by the preamp's gain, and the IF amp's bar is a sliver, divided by both gains ahead of it. The rules of thumb follow: noise figure is the dB ratio over the theoretical minimum, the floor is minus 174 dBm per hertz, a preamp cannot beat noise the antenna already hears, and on the low HF bands the atmosphere out-noises the receiver so attenuation costs almost nothing."
+  },
+  "ch05-complex-plane": {
+    "id": "ch05-complex-plane",
+    "chapter": 5,
+    "number": "5.3",
+    "caption": "One impedance, two spellings. Rectangular form plots the parts: Z = R plus-or-minus jX, resistance across and reactance up or down, with +j inductive (up) and -j capacitive (down). Polar form states the whole: magnitude |Z| and phase angle theta. The worked value is the pool's own (E5C06): 50 - j25 ohms becomes |Z| = sqrt(50^2 + 25^2) = 55.9 ohms at theta = atan(-25/50) = -26.6 degrees, written 55.9 angle -26.6 degrees. Right panel: the j-operator is a 90-degree rotation - multiplying a resistance by +j spins it counterclockwise to the inductive axis, by -j clockwise to the capacitive axis (E5C01, E5C03). On the E5-1 chart this is why capacitive impedances always plot in the lower half.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch05-complex-plane.svg",
+    "spoken": "Left panel: a complex plane with resistance R on the horizontal axis and reactance jX on the vertical. A dashed rectangular construction drops from fifty on the R axis over and down to minus twenty-five on the jX axis, ending at a dot labeled Z equals 50 minus j25 ohms. A bold vector from the origin to that dot is labeled magnitude of Z equals 55.9 ohms, with an arc at the origin marking theta equals minus 26.6 degrees. Right panel: a horizontal R vector with two rotation arcs - one swings it up ninety degrees to the plus-j inductive axis, one swings it down ninety degrees to the minus-j capacitive axis - multiplying by j is a ninety-degree rotation. A bottom band gives the conversion rules: magnitude equals the square root of R squared plus X squared, theta equals the arctangent of X over R."
+  },
+  "ch05-q-bandwidth": {
+    "id": "ch05-q-bandwidth",
+    "chapter": 5,
+    "number": "5.1",
+    "caption": "Half-power bandwidth is BW = f0/Q: one resonance, and Q alone decides how wide the window is. All three curves share the pool's own f0 = 3.56 MHz (E5A02's 50 uH + 40 pF tank), drawn as relative response in dB against frequency offset. At Q = 35.6 the -3 dB half-power points sit 100 kHz apart; at Q = 75.3 they sit 47.3 kHz apart; at Q = 113.4 just 31.4 kHz. Those two tighter widths are the pool's computed answers - E5A11 divides 7.1 MHz by 150 to get 47.3 kHz and E5A12 divides 3.7 MHz by 118 to get 31.4 kHz - redrawn at the shared f0 so the same law compares side by side. Higher Q, narrower passband: Q is selectivity.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch05-q-bandwidth.svg",
+    "spoken": "Three single-tuned response curves in dB against frequency offset from f zero in kilohertz, all peaking at zero dB at the same center frequency, f zero equals 3.56 megahertz. A dotted line marks half power, minus 3 dB. The widest curve, dash-dotted, is Q equals 35.6 with a double-arrow spanning its minus-3-dB width of 100 kilohertz. The middle dashed curve, Q equals 75.3, spans 47.3 kilohertz. The narrowest solid curve, Q equals 113.4, spans 31.4 kilohertz. Annotations note that higher Q means a narrower passband - the same resonance seen through a tighter window - and the footnote gives the pool's own divisions: 7.1 megahertz over 150 equals 47.3 kilohertz, 3.7 megahertz over 118 equals 31.4 kilohertz."
+  },
+  "ch05-time-constants-e": {
+    "id": "ch05-time-constants-e",
+    "chapter": 5,
+    "number": "5.2",
+    "caption": "One time constant, two numbers to know cold. A capacitor charges toward the source voltage as V = Vs(1 - e^(-t/tau)) and discharges as V = V0 e^(-t/tau), with tau = R times C (or L/R for an inductor). After exactly one tau the charge curve reaches 63.2% of the applied voltage and the discharge curve has 36.8% of its initial voltage left - E5B01's definition of the time constant. By five tau the capacitor is at 99.3%, called fully charged. The top axis prices the curves in seconds for the pool's own circuit: E5B04 parallels two 220 uF capacitors and two 1 megohm resistors, so tau = 440 uF times 500 kohm = 220 s, and the 63.2% point lands at 220 seconds.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch05-time-constants-e.svg",
+    "spoken": "Two exponential curves on axes of percent voltage against time in time constants, zero to five tau. A solid charge curve rises steeply and flattens toward one hundred percent; a dashed discharge curve falls from one hundred toward zero. Crosshairs at one tau mark the two keyed percentages: 63.2 percent charged on the rising curve, 36.8 percent remaining on the falling curve. A dot at five tau marks 99.3 percent - called full. A second axis along the top converts the scale to seconds for E5B04's exact circuit - 440 microfarads times 500 kilohms gives tau equals 220 seconds - so one tau on the bottom axis lines up with 220 seconds on top."
+  },
+  "ch05-swr-gamma": {
+    "id": "ch05-swr-gamma",
+    "chapter": 5,
+    "number": "5.5",
+    "caption": "SWR and return loss are the same mismatch read two ways, both driven by the reflection coefficient magnitude. Gamma = (Z_L - Z_0)/(Z_L + Z_0), and from a wattmeter |Gamma| = sqrt(P_reflected / P_forward). The solid curve is SWR = (1 + |Gamma|)/(1 - |Gamma|); the dashed curve is return loss = -20 log10 |Gamma| in dB. The marked dot is the pool's own arithmetic: 100 W forward and 25 W reflected (E4B06) give |Gamma| = sqrt(25/100) = 0.5, hence SWR = 3:1 and return loss of about 6 dB. Landmarks: a perfect match is Gamma = 0, SWR 1:1; the classic tuner threshold 2:1 sits at |Gamma| = 1/3. SWR blows up as |Gamma| approaches 1 - the curve is gentle until about 0.5, then vertical.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch05-swr-gamma.svg",
+    "spoken": "A graph against the magnitude of the reflection coefficient, zero to 0.85. The solid SWR curve, read on the left axis, hugs one-to-one until about 0.3, then climbs ever more steeply toward ten-to-one. The dashed return-loss curve, read on the right axis in dB, falls the whole way. A marked dot at Gamma equals 0.5 shows the pool point: the square root of 25 watts over 100 watts equals 0.5, giving SWR equals 3-to-1 and, at the same x, a return loss of about 6 dB. Two more dots mark landmarks: Gamma equals zero is a perfect 1-to-1 match, and Gamma equals one-third is the classic 2-to-1 tuner threshold."
+  },
+  "ch06-depletion-region": {
+    "id": "ch06-depletion-region",
+    "chapter": 6,
+    "number": "6.1",
+    "caption": "The PN junction at the physics level the Extra pool tests, in three panels. At rest: the P region (acceptor-doped) holds majority holes with a few minority electrons, the N region (donor-doped) holds majority free electrons with a few minority holes, and near the junction the two recombine, leaving a depletion region containing only fixed ions - negative acceptor ions on the P side, positive donor ions on the N side - whose charge opposes further flow. Forward bias (+ to the P side, - to the N side): the battery pushes holes and electrons toward the junction, the depletion region narrows, and current flows as carriers cross and recombine. Reverse bias (- to the P side, + to the N side): the battery pulls majority carriers away from the junction, the depletion region widens, and essentially no current flows (E6A03). The doping facts anchor E6A02 and E6A04: donor impurities add free electrons (N-type), acceptor impurities add holes (P-type).",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch06-depletion-region.svg",
+    "spoken": "Three panels of a PN junction. A legend marks open circles as holes, filled dots as electrons, and boxed minus and plus signs as fixed acceptor and donor ions. Panel one, at rest: a P-type block full of holes and an N-type block full of electrons meet at a shaded depletion region holding only fixed ions, minus on the P side and plus on the N side. Panel two, forward bias: a battery with its plus terminal to the P side pushes holes and electrons toward the junction; the depletion region is narrow and a bold arrow shows current flowing across. Panel three, reverse bias: the battery is flipped, plus to the N side; carriers are pulled away from the junction, the depletion region is wide, and a crossed-out dashed arrow reads essentially no current."
+  },
+  "ch07-active-filters": {
+    "id": "ch07-active-filters",
+    "chapter": 7,
+    "number": "7.2",
+    "caption": "Active filters against the passive shapes from the General course. Each panel draws the passive prototype (dotted: a single RC low-pass or high-pass, a single-tuned band-pass hump) beside two active 2nd-order stages: Q = 0.7 (dash-dot, maximally flat, the Butterworth member of the pool's filter ladder) and Q = 4 (solid, peaking). The active lessons: each reactive section adds 6 dB per octave, so the two-pole active stage falls at 40 dB/decade where the passive RC manages 20, and a high Q lifts the corner above 0 dB - peaking - while an active stage can add real passband gain besides (every curve here is normalized so the shapes compare). In the band-pass panel the same Q law reads as a narrower window, BW = f0/Q. The pool ties: Butterworth is maximally flat, Chebyshev trades passband ripple for a sharper cutoff, and the elliptical filter is sharpest with stop-band notches (E7C05, E7C06); shape factor measures adjacent-channel rejection (E7C11); and a capacitor across RF in Figure E7-3 turns the inverting op-amp into exactly the low-pass shape in the first panel (E7G02).",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch07-active-filters.svg",
+    "spoken": "Three response panels - low-pass, high-pass, band-pass - plotting relative response in dB against frequency normalized to f0 on a log scale from a tenth to ten times f0. In every panel a dotted passive curve, a dash-dot active curve with Q of 0.7, and a solid active curve with Q of 4. In the low-pass panel the passive RC falls gently at 20 dB per decade while the active curves fall at 40, and the Q of 4 curve peaks above plus 12 dB at the corner, marked peaking: Q lifts the corner above 0 dB. The high-pass panel mirrors it. In the band-pass panel all curves peak at 0 dB at f0, and higher Q simply narrows the window: bandwidth equals f0 over Q. A footnote gives the pool's filter ladder - Butterworth maximally flat, Chebyshev passband ripple with sharper cutoff, elliptical sharpest with stop-band notches - and notes that a capacitor across R F in Figure E7-3 makes the low-pass shape."
+  },
+  "ch07-pll-block": {
+    "id": "ch07-pll-block",
+    "chapter": 7,
+    "number": "7.6",
+    "caption": "The phase-locked loop as the pool defines it - an electronic servo loop (E7H03). A stable reference oscillator and the divided-down output meet in the phase detector; the loop filter (a low-pass) smooths the detector's error voltage; that control voltage steers the VCO until the divided output matches the reference exactly, and then the loop is locked with f_out = N times f_ref - pick N, get an exact crystal-referenced frequency. That is why a PLL can perform frequency synthesis and FM demodulation (E7H06). Below, the contrast the same group tests: a direct digital synthesizer has no loop and no VCO - a phase accumulator steps phase each clock, a lookup table turns the phase into amplitude values representing the desired waveform (E7H10), a DAC makes it analog, and a low-pass anti-alias filter strips the sampling artifacts (E7H09). The DDS's major spectral impurities are spurious signals at discrete frequencies, not broadband noise (E7H11).",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch07-pll-block.svg",
+    "spoken": "A block diagram in two parts. Top: the PLL loop - reference oscillator feeding a phase detector, then a loop filter, then a VCO whose output leaves to the right; a feedback wire samples the output, runs down and through a divide-by-N block, and returns up into the phase detector. A lock box reads: locked, f out equals N times f ref. Bottom: the DDS chain for contrast - phase accumulator, lookup table, DAC, low-pass filter - with the note that DDS spurious signals sit at discrete frequencies."
+  },
+  "ch07-sdr-iq": {
+    "id": "ch07-sdr-iq",
+    "chapter": 7,
+    "number": "7.4",
+    "caption": "A software-defined radio's quadrature architecture. The antenna feeds a low-noise amplifier, and the amplified RF splits into two mixers driven by the same local oscillator in two phases exactly 90 degrees apart, producing the I (in-phase) and Q (quadrature) baseband channels. Each channel is low-pass filtered and digitized by its own ADC, and the DSP block demodulates, filters, and decodes in software - any mode the math can describe. The sampling numbers the pool tests: Nyquist says the sample rate must be at least twice the highest frequency component, so 15 kHz of content needs at least a 30 kHz sample rate (E7F05); the sample rate sets the maximum receive bandwidth of a direct-sampling SDR (E7F10); and undersampled signals fold back as aliases, which is why anti-alias filtering must come before decimation (E7F09). In the direct-sampling variant (E7F01) the ADC digitizes the RF straight from the LNA - no mixers, no local oscillator at all.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch07-sdr-iq.svg",
+    "spoken": "A block diagram: antenna to LNA, then the RF splits to two circle-cross mixer symbols stacked vertically. A local oscillator below feeds the top mixer directly, marked zero degrees, and the bottom mixer through a 90-degree phase-shift box. The top path is labeled I, the bottom Q; each runs through a low-pass filter and an ADC into a tall DSP block, and out to audio or data. Beneath, four sampling notes: Nyquist requires twice the highest component - 15 kilohertz of content needs a 30 kilohertz rate - the sample rate sets the maximum receive bandwidth, anti-alias filtering comes before decimation, and the direct-sampling variant digitizes RF right from the LNA with no mixers."
+  },
+  "ch08-modulation-index": {
+    "id": "ch08-modulation-index",
+    "chapter": 8,
+    "number": "8.2",
+    "caption": "FM modulation index at depth. Top panel: the carrier and each sideband pair trade power as the index grows - their amplitudes are the Bessel functions Jn(index), so the carrier shrinks (and even phase-reverses) while more sideband pairs become significant. The pool's numbers are dashed: deviation ratios 1.67 (5 kHz / 3 kHz, E8B05) and 2.14 (7.5 kHz / 3.5 kHz, E8B06), and index 3. Bottom panel: the line spectrum at index 3 - both pool index calculations land here (3000/1000 = 3, E8B03; 6000/2000 = 3, E8B04). The carrier drops to 0.26 of its unmodulated strength, sideband pairs sit at fc plus-or-minus n times the modulating frequency, and the significant sidebands reach about plus-or-minus (index + 1) times f_mod. Index = deviation / modulating frequency; deviation ratio is the same shape built from the MAXIMUM deviation and HIGHEST modulating frequency - and every calculation question offers the inverted ratio as the distractor.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch08-modulation-index.svg",
+    "spoken": "The top panel plots five curves against modulation index: the carrier's amplitude and the first four sideband pairs, each a Bessel function of the index. The carrier starts at full strength and falls, crossing through zero into a phase-reversed lobe, while the sideband pairs rise one after another - power is leaving the carrier for the sidebands. Three dashed vertical lines mark the pool's own numbers: deviation ratio 1.67, deviation ratio 2.14, and index 3. The bottom panel draws the actual spectrum at index 3, the value both pool index calculations key to: eleven lines spaced by the modulating frequency around the carrier. The center line, the carrier, is down to 0.26 of its unmodulated strength; the second sideband pair is the tallest at 0.49; and the significant lines reach out to about plus-or-minus four times the modulating frequency - index plus one. The exam arithmetic sits underneath: index equals deviation divided by modulating frequency, deviation ratio equals maximum deviation divided by highest modulating frequency, and the inverted ratio is always a distractor - divide deviation by the modulating frequency, never the reverse."
+  },
+  "ch08-sampling-aliasing": {
+    "id": "ch08-sampling-aliasing",
+    "chapter": 8,
+    "number": "8.1",
+    "caption": "Sampling and the Nyquist limit in the frequency domain, with a worked example at fs = 48 kHz. Sampling copies the signal's spectrum around every multiple of the sample rate. Top panel: a signal band-limited to 20 kHz sampled at 48 kHz - the copies sit far away, so a low-pass filter lifts the original back out. Bottom panel: the band now reaches 30 kHz, past fs/2 = 24 kHz - the copy centered at 48 kHz folds back inside the band, and a 30 kHz tone is heard as an alias at 48 - 30 = 18 kHz. The fix is the anti-alias filter before the sampler: cut everything above fs/2 first, because after sampling an alias can never be filtered out. The same copy-removal logic sits after a DAC - its output low-pass filter removes the spurious sampling artifacts (pool E8A10) - and flash converters serve SDRs because their very high speed digitizes high frequencies (E8A08).",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch08-sampling-aliasing.svg",
+    "spoken": "Two spectrum panels share one frequency axis, drawn for a 48 kilohertz sample rate. In the top panel the signal is band-limited to 20 kHz. Its spectrum is a smooth bump near zero, and faint dashed copies of that bump sit centered on 48 and 96 kHz, far from the original - nothing overlaps, so a low-pass filter can recover the signal cleanly. A solid line marks fs over 2, 24 kHz, the Nyquist limit. In the bottom panel the band reaches 30 kHz, past that limit. Now the dashed copy centered on 48 kHz reaches back across 24 kHz and lands inside the band - the overlap is shaded. A tone at 30 kHz folds back around the Nyquist line and is heard at 48 minus 30, 18 kHz: an alias that was never really there, and that no filter can remove afterward. The fix is drawn as a dashed low-pass shape, the anti-alias filter before the sampler: cut everything above half the sample rate first. The same idea in reverse is the pool's DAC output filter, which removes the spurious sampling copies."
+  },
+  "ch08-spread-spectrum": {
+    "id": "ch08-spread-spectrum",
+    "chapter": 8,
+    "number": "8.3",
+    "caption": "The two spread-spectrum techniques of pool group E8D. Direct sequence (top): each data bit is multiplied by a high-speed binary code - many chips per bit - so the transmitted signal's transitions come at the fast chip rate. A spectrum sketch shows the trade: the data alone is narrow and tall; spread, it carries the same total power over a much wider band at lower density. At the receiver the same code collapses the wanted signal back to narrow - that recovery is the process gain - while signals not using the code stay spread and are suppressed. Frequency hopping (bottom): the carrier jumps channel to channel on a grid of frequency versus time, following a pseudorandom sequence transmitter and receiver share; interference parked on one channel costs at most the hops that land on it. The pool's memory hook: the fast code shifts the carrier's PHASE in direct sequence (E8D02) and varies the carrier's FREQUENCY in hopping (E8D03) - the two definitions appear swapped as each other's distractors - and spread-spectrum receivers suppress signals not using the spreading algorithm, which is the interference resistance (E8D01).",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch08-spread-spectrum.svg",
+    "spoken": "Two panels. The top panel, direct sequence: three waveforms. The data is three slow bits - one, zero, one. The spreading code is a fast binary stream with many narrow chips inside every bit. Multiply them chip by chip and the result is a fast waveform whose transitions come at the chip rate. Beside it, a spectrum sketch: the data alone is a narrow, tall hump; the spread signal is a wide, low, dashed hump - the same total power, thinned out across a much wider band. At the receiver, multiplying by the same code collapses the wanted signal back down, the process gain, while everything without the code stays spread and is suppressed. The bottom panel, frequency hopping: a grid of eight channels against ten time slots, with a heavy trace hopping channel to channel in a pseudorandom pattern. One channel row is shaded as parked interference - only the single hop that lands there is touched. The footer carries the exam hooks: phase means direct sequence, frequency means hopping - the pool swaps them as distractors - and the receiver suppresses every signal not using the spreading algorithm, which is why spread spectrum resists interference."
+  },
+  "ch09-stub-matching": {
+    "id": "ch09-stub-matching",
+    "chapter": 9,
+    "number": "9.5",
+    "caption": "Matching with transmission lines, with the pool's worked numbers. Section 1: the quarter-wave transformer (Q-section) inverts its load, Z_in = Z0 squared over Z_load, so the section's impedance is the geometric mean of line and load - matching a 100-ohm feed point to a 50-ohm line wants sqrt(50 x 100) = 70.7 ohms, and the suitable line is 75 ohms (E9E06; the 62-ohm choice is the arithmetic-mean trap). Section 2: the half-wave line repeats its termination - the input sees the load unchanged, so a shorted far end shows up as very low impedance (E9F04); an air-insulated half-wave line at 14.10 MHz is 300/14.10 = 21.3 m over 2 = 10.6 m (E9F06). Section 3: a stub match is a short length of line connected in parallel with the feed line at or near the feed point (E9E03), and its behavior follows the same rules - lambda/8 shorted is inductive (E9F10), lambda/8 open is capacitive (E9F11), lambda/4 shorted is very high impedance (E9F09), lambda/4 open is very low (E9F12), lambda/2 shorted is very low (E9F04). Finding where the stub goes and how long to cut it is the Smith chart's classic job (E9G05).",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch09-stub-matching.svg",
+    "spoken": "Three panels. First, the quarter-wave transformer: a 50-ohm feed line runs into a heavier quarter-wave Q-section of 75-ohm line, then a 100-ohm load; the quarter wave inverts, so the section impedance is the square root of 50 times 100, about 70.7 ohms - use 75-ohm line. Second, the half-wave line: it repeats its termination, so the input sees the load unchanged; at 14.10 MHz a wavelength is 21.3 meters, so a half-wave air-insulated line is 10.6 meters. Third, a grid of stubs: shorted stubs are inductive at one-eighth wave, very high impedance at one-quarter, very low at one-half; open stubs are capacitive at one-eighth, very low at one-quarter, very high at one-half. A stub is just a short piece of line in parallel at the feed point, and the Smith chart tells you where to put it and how long to cut it."
+  },
+  "ch09-phased-array": {
+    "id": "ch09-phased-array",
+    "chapter": 9,
+    "number": "9.4",
+    "caption": "Two quarter-wave verticals seen from above: spacing and drive phase pick the pattern, the pool's three combinations. Spaced a half wavelength and fed IN PHASE, the pair makes a figure-eight broadside to the array axis (E9C03). Same spacing, fed 180 degrees OUT OF PHASE, the pattern flips to a figure-eight oriented along the array axis - end-fire (E9C01); at half-wave spacing the phase and the pattern orientation move together. Spaced a quarter wavelength and fed 90 degrees out of phase, the pair makes a cardioid, its maximum toward the element with the lagging phase (E9C02). The phase itself comes from the feed system: multiple driven elements connected through phasing lines are used to control the antenna's radiation pattern (E9E11).",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch09-phased-array.svg",
+    "spoken": "Three panels, each showing two vertical antennas as dots on a horizontal axis with the resulting azimuth pattern around them. Left: elements a half wave apart, both driven at zero degrees - the pattern is a figure-eight with lobes above and below, broadside to the array. Middle: same half-wave spacing, but the right element driven at 180 degrees - the figure-eight flips to lie along the array axis, end-fire. Right: elements a quarter wave apart, the right one lagging by 90 degrees - the pattern is a cardioid with its maximum toward the lagging element. The phase and the pattern orientation move together: at half-wave spacing, in-phase and out-of-phase swap broadside for end-fire, and the phasing lines in the feed system are what set the phase."
+  },
+  "ch09-eirp-erp-chain": {
+    "id": "ch09-eirp-erp-chain",
+    "chapter": 9,
+    "number": "9.1",
+    "caption": "ERP and EIRP as dB bookkeeping from transmitter to antenna. Section 1 walks the pool's repeater example (E9A02): 150 watts out, minus 2 dB of feed line loss, minus 2.2 dB of duplexer loss, plus 7 dBd of antenna gain - net plus 2.8 dB, so ERP = 150 x 10^0.28 = 150 x 1.905, about 286 watts (adding the losses instead lands on the 469-watt distractor). Section 2 sets the two gain rulers side by side: the hypothetical isotropic radiator (0 dBi, equal in all directions) and the half-wave dipole (2.15 dBi = 0 dBd), so gain in dBd = gain in dBi minus 2.15 - 6 dBi is 3.85 dBd (E9A12). Section 3 runs two more pool chains: E9A06's 200 watts with minus 4, minus 3.2, minus 0.8 dB and plus 10 dBd nets plus 2 dB for about 317 W ERP (the 2,000-watt choice treats 10 dB as a straight times-ten), and E9A07's 200 watts with minus 2, minus 2.8, minus 1.2 dB and plus 7 dBi nets plus 1 dB for about 252 W EIRP. The reference decides the name: dBd gives ERP, dBi gives EIRP.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch09-eirp-erp-chain.svg",
+    "spoken": "The figure builds radiated-power math as a chain. Four boxes - transmitter 150 watts, feed line minus 2 dB, duplexer minus 2.2 dB, antenna plus 7 dBd - run into a result bar: net plus 2.8 dB, so ERP is 150 times 10 to the 0.28, about 286 watts. Then the two gain rulers: an isotropic point source inside a dashed circle, 0 dBi, and a half-wave dipole with its figure-eight, 2.15 dBi or 0 dBd - gain in dBd equals gain in dBi minus 2.15, so 6 dBi is 3.85 dBd. Finally two compact chains from the pool: 200 watts through minus 4, minus 3.2, and minus 0.8 dB with a plus-10-dBd antenna nets plus 2 dB, about 317 watts ERP; and 200 watts through minus 2, minus 2.8, and minus 1.2 dB with a plus-7-dBi antenna nets plus 1 dB, about 252 watts EIRP. dBd pairs with ERP, dBi with EIRP."
+  },
+  "ch10-mpe-math": {
+    "id": "ch10-mpe-math",
+    "chapter": 10,
+    "number": "10.1",
+    "caption": "MPE evaluation at depth - enrichment, since every pool E0A question is conceptual. The uncontrolled MPE limit, the one that applies at a neighbor's home, falls from 100 mW/cm2 below 1.34 MHz as 180/f2 to its 0.2 mW/cm2 floor across 30-300 MHz, the body-resonance region where the limits are most restrictive, then climbs through f/1500 to 1.0 above 1,500 MHz; controlled limits run five times higher. The limit is judged against the time average over one 30-minute uncontrolled window: 100 W ERP at 10 m peaks near 0.08 W/m2 (0.008 mW/cm2), SSB-voice duty pulls that to about 0.016, and half-time keying pulls the window average to about 0.008 W/m2 - even the 0.08 peak sits about 25 times under the 2 W/m2 (0.2 mW/cm2) limit.",
+    "kind": "original",
+    "source": "original",
+    "file": "figures/ch10-mpe-math.svg",
+    "spoken": "The top panel plots the FCC MPE limits against frequency on log scales, with amateur bands dotted along the curve. The uncontrolled limit - general population, a neighbor's home - slides down the one-eighty-over-f-squared slope to its floor of two-tenths of a milliwatt per square centimeter, flat from 30 to 300 MHz, the shaded body-resonance region where exposure limits are most restrictive, then climbs back to one above 1,500 MHz; the dashed controlled curve sits five times higher. The bottom panel shows one 30-minute uncontrolled averaging window for a 100-watt-ERP station ten meters away on 2 meters: key-down bursts peak at about 0.016 watts per square meter after speech duty, the dashed window average sits near 0.008, and the solid MPE limit line at 2 watts per square meter leaves roughly twenty-five times of headroom against the peak - the average, not the peak, is what is judged."
+  },
+  "ch05-pool-fig-e51": {
+    "id": "ch05-pool-fig-e51",
+    "chapter": 5,
+    "number": "5.4",
+    "caption": "Figure E5-1, the rectangular-coordinate impedance chart three exam questions plot on. The horizontal axis is resistance and the vertical axis is reactance, both scaled -600 to +600 ohms with numeric labels every 100 ohms and light gridlines every 200; bold axes cross at the origin and the tips are labeled +X, -X, +Y, -Y. Eight labeled points: Point 1 (+300, -400), Point 2 (+400, +300), Point 3 (+300, +400), Point 4 (+400, -300), Point 5 (-400, -300), Point 6 (+400, on the axis), Point 7 (-300, -400), Point 8 (+300, on the axis). The plotting questions key to the right half-plane: E5C10's 400 - j300 is Point 4, E5C11's 300 + j400 is Point 3, E5C12's 300 - j400 is Point 1. Points 5 and 7 have negative resistance - impossible for a passive series circuit - and Points 6 and 8 sit on the axis: all four are pure distractors. Redrawn from the NCVEC pool figure.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E5-1",
+    "file": "figures/ch05-pool-fig-e51.svg",
+    "spoken": "A square chart titled Figure E5-1. Bold horizontal and vertical axes cross at the center, their tips labeled plus X, minus X, plus Y, and minus Y; both scales run minus 600 to plus 600 ohms, numbered every 100, with faint gridlines every 200. Eight dots carry labels: Point 3 at plus 300, plus 400 and Point 2 at plus 400, plus 300 in the upper right; Points 6 and 8 on the positive horizontal axis at 400 and 300; Point 4 at plus 400, minus 300 and Point 1 at plus 300, minus 400 in the lower right; Point 5 at minus 400, minus 300 and Point 7 at minus 300, minus 400 in the lower left. The three keyed answers - Point 4, Point 3, and Point 1 - all sit in the right half-plane; the negative-resistance and on-axis points are distractors."
+  },
+  "ch06-pool-fig-e61": {
+    "id": "ch06-pool-fig-e61",
+    "chapter": 6,
+    "number": "6.2",
+    "caption": "Figure E6-1, the six FET schematic symbols two exam questions ask you to identify. Every symbol is a circle around a vertical channel bar: the drain lead leaves the top of the bar to the right (D), the source lead leaves the bottom (S), and gate leads enter from the left. Three independent discriminators resolve every option mechanically. (1) JFET vs MOSFET: on the JFETs (1, 6) the arrow sits ON the gate lead, which runs continuously to the channel bar; on the MOSFETs (2-5) the gate is an insulated plate parallel to the bar and the arrow is internal, on the substrate-source connection with a connection dot to the S lead. (2) arrow-in = N-channel, arrow-out = P-channel. (3) dual-gate parts carry two gate leads labeled G2 over G1 (4, 5). So: 1 = P-channel JFET (gate arrow points away from the channel), 2 = N-channel single-gate MOSFET (internal arrow in), 3 = P-channel single-gate MOSFET (arrow out), 4 = N-channel dual-gate MOSFET, 5 = P-channel dual-gate MOSFET, 6 = N-channel JFET (gate arrow into the channel). The keyed answers: E6A10 (N-channel dual-gate MOSFET) is symbol 4; E6A11 (P-channel junction FET) is symbol 1. Redrawn from the NCVEC pool figure.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E6-1",
+    "file": "figures/ch06-pool-fig-e61.svg",
+    "spoken": "Six circled transistor symbols in two rows of three, numbered 1 to 6 beneath. In every symbol a vertical channel bar sits inside the circle with the drain lead leaving the top right, labeled D, and the source lead leaving the bottom right, labeled S. Symbol 1: a single gate lead from the left, labeled G, carries a filled arrowhead pointing left, away from the channel - the P-channel JFET. Symbol 2: the gate is an insulated plate parallel to the bar, and a small internal arrow near the bar points in toward the channel, with a connection dot on the source lead - N-channel single-gate MOSFET. Symbol 3 is the same construction with the internal arrow pointing out - P-channel. Symbol 4 has two insulated gate leads labeled G2 over G1 and the arrow points in - the N-channel dual-gate MOSFET. Symbol 5 is the dual-gate construction with the arrow out. Symbol 6 is a JFET whose gate arrow points right, into the channel - N-channel. The exam keys: the N-channel dual-gate MOSFET is number 4, and the P-channel junction FET is number 1."
+  },
+  "ch06-pool-fig-e62": {
+    "id": "ch06-pool-fig-e62",
+    "chapter": 6,
+    "number": "6.3",
+    "caption": "Figure E6-2, the eight diode schematic symbols; the exam asks only for the Schottky. All eight are horizontal two-lead devices built on a filled triangle against a cathode bar. 1 = varactor-style (a bowed line sweeps across the triangle, bulging toward the cathode); 2 = bidirectional back-to-back pair (two triangles point-to-point at a capped central bar); 3 = Zener-style (angled wings bent at both ends of the cathode bar); 4 = plain junction diode; 5 = LED (two small arrows pointing away up-right - light leaving); 6 = Schottky (the cathode bar ends bend back in squared S-hooks: the top steps left then down, the bottom steps right then up); 7 = point-contact-style device (the diode inside a circle, an angled whisker lead leaving the cathode bar out the upper right); 8 = a circle enclosing two opposed diodes plus the same whisker. The keyed answer: E6B10 (Schottky diode) is symbol 6. The distractors are well chosen - 1, 2, and 3 also carry 'something extra on the cathode bar', so drill the tell: only the Schottky has the pair of squared S-hooks curling back at BOTH bar ends. Redrawn from the NCVEC pool figure.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E6-2",
+    "file": "figures/ch06-pool-fig-e62.svg",
+    "spoken": "Eight diode symbols in two rows of four, numbered 1 to 8 beneath. Each is a filled triangle pointing into a vertical cathode bar with leads left and right, with variations. Number 1 adds a curved bow sweeping across the triangle near the cathode - the varactor-style symbol. Number 2 shows two triangles point to point sharing a central bar with small caps - a bidirectional pair. Number 3 has angled wings bent off both ends of the cathode bar - the Zener. Number 4 is the plain junction diode. Number 5, the LED, has two small arrows leaving upward to the right - light emitted. Number 6, the Schottky, has squared S-shaped hooks curling back at both ends of the cathode bar. Number 7 puts the diode inside a circle with an angled whisker lead from the cathode bar out the upper right - a point-contact-style device. Number 8 encloses two opposed diodes, one pointing right above the axis and one pointing left below, in a circle with the same whisker. The exam keys the Schottky diode to number 6."
+  },
+  "ch06-pool-fig-e63": {
+    "id": "ch06-pool-fig-e63",
+    "chapter": 6,
+    "number": "6.4",
+    "caption": "Figure E6-3, the six logic gate symbols three exam questions ask you to name. Read them as a 2x2 matrix plus the triangle pair. Body shape names the family: the flat-left, round-right 'D' body is the AND family (1, 2); the curved-input, pointed-output body is the OR family (3, 4); the triangle is the buffer/inverter pair (5, 6). A small bubble on the output negates: 1 = AND, 2 = NAND (D body with bubble), 3 = OR, 4 = NOR (OR body with bubble), 5 = NOT (triangle with bubble), 6 = buffer (larger triangle with a swept back, no bubble). Gates 1-4 and the buffer 6 each show two input leads from the left; the inverter 5 shows one. The keyed answers: E6C08 (NAND) is symbol 2; E6C10 (NOR) is symbol 4; E6C11 (NOT) is symbol 5. E6C11's option pool deliberately mixes the bubbles of 2 and 4 with the triangles 5 and 6 - the triangle body is the discriminator. Redrawn from the NCVEC pool figure.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E6-3",
+    "file": "figures/ch06-pool-fig-e63.svg",
+    "spoken": "Six logic gate symbols in two rows of three, numbered 1 to 6 beneath. Number 1 has a flat left side and a rounded right side, a D shape, with two input leads on the left and one output on the right - AND. Number 2 is the same D body with a small bubble on the output - NAND. Number 3 has a curved input side and a pointed output - OR. Number 4 is the OR body with an output bubble - NOR. Number 5 is a triangle with a single input lead and an output bubble - the NOT or inverter. Number 6 is a larger triangle with a swept, concave back edge, two input leads, and no bubble - the buffer. The exam keys: NAND is number 2, NOR is number 4, and NOT is number 5."
+  },
+  "ch07-pool-fig-e71": {
+    "id": "ch07-pool-fig-e71",
+    "chapter": 7,
+    "number": "7.1",
+    "caption": "Pool figure E7-1, redrawn for this book: a single-stage NPN transistor amplifier. R1 (from the positive rail to the base) and R2 (base to ground) form a voltage divider that sets the base's DC operating point - voltage divider bias, the answer to E7B10. R3 sits in the emitter lead and carries the full emitter current, giving emitter-degeneration self bias, the answer to E7B11 - and note the classic misread: C3, the capacitor in parallel with R3, is the emitter bypass (for AC only), not R3. Signal enters at IN through coupling capacitor C1 to the base and leaves at OUT through C2 from the collector, with the unlabeled resistor in the collector lead as the load. Input at the base, output at the collector, emitter common to both: a common-emitter amplifier, the answer to E7B12.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E7-1",
+    "file": "figures/ch07-pool-fig-e71.svg",
+    "spoken": "A schematic: across the top a positive supply rail ending in an open-circle plus terminal. R1 drops from the rail to the base node, R2 from the base node to ground. The input terminal couples through capacitor C1 to the base of an NPN transistor drawn in a circle, emitter arrow pointing outward. An unlabeled resistor drops from the rail to the collector, and capacitor C2 couples the collector to the output terminal. From the emitter, R3 goes down to ground with capacitor C3 in parallel beside it. Three ground symbols."
+  },
+  "ch07-pool-fig-e72": {
+    "id": "ch07-pool-fig-e72",
+    "chapter": 7,
+    "number": "7.3",
+    "caption": "Pool figure E7-2, redrawn for this book: a linear voltage regulator turning +25 volts into +12. C1 (4000) is the brute-force input filter; R1 feeds current from the raw rail into the base node; D1, the Zener in the circle, holds that node at its Zener voltage; and C2 (4000) sits in parallel with D1, bypassing the rectifier-output ripple around the Zener so the reference stays clean - that parallel pair is the answer to E7D07. Q1 is the series-pass transistor: its emitter follows one base-emitter drop below the Zener voltage, controlling the current to keep the output voltage constant, the answer to E7D06 (and the reason a linear regulator dissipates the voltage difference times the load current - 25 minus 12 times 1 amp is 13 watts in Q1, E7D13's calculation done with this figure's own numbers). C3 (0.01) kills output transients and R2 is the load. The whole circuit type: a linear voltage regulator, the answer to E7D08.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E7-2",
+    "file": "figures/ch07-pool-fig-e72.svg",
+    "spoken": "A left-to-right schematic. The plus 25 terminal opens at top left onto a rail; C1, a 4000 electrolytic, drops from the rail to ground; R1 drops from the rail to the base node; Q1, an NPN in a circle, sits on the rail with collector toward the input side, emitter toward the output, base straight down to the base node. From the base node, C2, another 4000 electrolytic, and D1, a Zener diode in a circle pointing up, both go to ground in parallel. The rail continues to the plus 12 terminal at top right, with C3, a 0.01 capacitor, and R2, the load resistor, each from rail to ground. Five ground symbols."
+  },
+  "ch07-pool-fig-e73": {
+    "id": "ch07-pool-fig-e73",
+    "chapter": 7,
+    "number": "7.5",
+    "caption": "Pool figure E7-3, redrawn for this book: the inverting operational-amplifier stage, one formula behind five pool questions. R1 carries the input signal to the inverting (-) input, RF feeds the output back to that same node across the top, and the non-inverting (+) input is grounded, so the voltage gain is -RF/R1. Compute the ratio exactly, because the distractors are arithmetic slips: 470 over 10 gives a gain of 47 (E7G07); 10,000 over 1,000 times 0.23 volts in gives -2.3 volts out, sign and all (E7G09); 68 k over 1.8 k is about 38 (E7G10); 47 k over 3.3 k is about 14 (E7G11). Add a capacitor across RF and the feedback impedance falls as frequency rises - the stage becomes a low-pass filter (E7G02). (The pool's own stems carry two printed quirks - \"in E7-3\" with no \"Figure\" in E7G02 and \"Figure E73\" missing its hyphen in E7G07; the figure itself keeps the official's Figure E7-3 caption.)",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E7-3",
+    "file": "figures/ch07-pool-fig-e73.svg",
+    "spoken": "An op-amp triangle pointing right. From the open-circle input terminal at the left, resistor R1 runs to a node at the triangle's upper input, marked minus. Feedback resistor R F runs across the top from the output node back to that same minus node. The lower input, marked plus, ties down to ground. The output leaves the triangle's apex through a node dot to an open-circle terminal at the right, and a second open-circle terminal near the output ties to ground as the output reference. Two ground symbols."
+  },
+  "ch09-pool-fig-e91": {
+    "id": "ch09-pool-fig-e91",
+    "chapter": 9,
+    "number": "9.2",
+    "caption": "Figure E9-1, the free-space azimuth pattern three exam questions read. A full-circle polar plot with 0 degrees at the right, radial spokes every 15 degrees, and concentric dB rings labeled -3, -6, -12, and -24 stacked near the top; the outer circle is the 0 dB reference. The heavy trace is the antenna pattern: the main lobe centered on 0 degrees touches the outer ring and crosses the -3 dB ring at about plus and minus 25 degrees, so the 3 dB beamwidth is 2 x 25 = 50 degrees (E9B01). The rear lobe at 180 degrees sits at about -18 dB, so the front-to-back ratio is 18 dB (E9B02). The trace level at plus and minus 90 degrees is about -14 dB, so the front-to-side ratio is 14 dB (E9B03) - read the 90-degree value, not the -12 dB sidelobe level near plus and minus 55 degrees, which is the trap. Redrawn from the NCVEC pool figure.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E9-1",
+    "file": "figures/ch09-pool-fig-e91.svg",
+    "spoken": "A circular polar plot titled Figure E9-1, captioned Free-Space Pattern at the upper right. Zero degrees is at the right, 180 at the left, with spokes every 15 degrees; concentric rings are labeled minus 3, minus 6, minus 12, and minus 24 dB from outside in, and the outer circle is the 0 dB reference. A heavy trace shows the pattern: a large main lobe pointing right touches the outer ring and crosses the minus 3 dB ring at plus and minus 25 degrees - a 50 degree beamwidth. Small sidelobes sit near plus and minus 55 degrees at about minus 12 dB, deep nulls drop below minus 24 near plus and minus 75 degrees and flanking the rear, the trace reads about minus 14 dB straight up and down at 90 degrees, and the small rear lobe at 180 degrees sits at about minus 18 dB. Those three reads answer the three figure questions: 50 degrees, 18 dB front-to-back, 14 dB front-to-side."
+  },
+  "ch09-pool-fig-e92": {
+    "id": "ch09-pool-fig-e92",
+    "chapter": 9,
+    "number": "9.3",
+    "caption": "Figure E9-2, the elevation pattern over real ground three exam questions read. A semicircular polar plot above a horizontal baseline (the ground): 180 degrees at the left end of the baseline, 0 at the right end, 90 at the zenith, with labeled radials every 30 degrees and subdivision spokes every 15. Concentric dB arcs are labeled along the baseline right of center in the published order -40, -30, -20, -10; the outer semicircle is 0 dB. The semicircle-above-ground format is the tell that this is an elevation pattern, not an azimuth pattern (E9B05). The largest lobe hugs the horizon, peaking at 7.5 degrees elevation - halfway to the first subdivision spoke - and reaching the outer arc (E9B06); successively smaller lobes sit above it, and the small rear lobes toward 150-180 degrees are down about 28 dB, giving the 28 dB front-to-back ratio (E9B04). Redrawn from the NCVEC pool figure.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E9-2",
+    "file": "figures/ch09-pool-fig-e92.svg",
+    "spoken": "A semicircular polar plot titled Figure E9-2, captioned Over Real Ground at the upper right. The flat baseline is the ground: 180 degrees at its left end, 0 at its right end, 90 at the top, with spokes every 15 degrees and labels every 30. Arc labels minus 40, minus 30, minus 20, and minus 10 dB sit along the baseline to the right of center; the outer semicircle is 0 dB. The heavy trace is a fan of lobes: the biggest hugs the horizon and peaks at 7.5 degrees elevation, touching the outer arc; three more lobes step down as they climb toward 60 degrees; and a cluster of small rear lobes toward 180 is down about 28 dB. The three figure questions read: elevation pattern, 7.5 degree peak, 28 dB front-to-back."
+  },
+  "ch09-pool-fig-e93": {
+    "id": "ch09-pool-fig-e93",
+    "chapter": 9,
+    "number": "9.6",
+    "caption": "Figure E9-3, the simplified normalized Smith chart two exam questions name parts of. Infinity (the open-circuit point) is at the RIGHT end of the horizontal diameter and zero (the short circuit) at the left - the corrected orientation from the pool's first errata. The horizontal diameter is the chart's only straight line and carries the resistance-circle labels 0, 0.2, 0.5, 1.0, 2.0, 5.0, 20 from left to right; the 1.0 point at mid-chart is the prime center (the normalized system impedance, e.g. 50 ohms). That single straight line is the resistance axis (E9G07). The constant-resistance circles are all tangent at the infinity point and bulge left; the constant-reactance arcs sweep from the rim into the infinity point, labeled 0.2 through 5.0 above the axis (inductive, +jX) with matching magnitudes below (capacitive, -jX), and every arc terminates on the large outer circle - which is the reactance axis (E9G06). As published, there are no wavelength scales around the rim. Redrawn from the NCVEC pool figure.",
+    "kind": "original",
+    "source": "redrawn from NCVEC pool figure E9-3",
+    "file": "figures/ch09-pool-fig-e93.svg",
+    "spoken": "A Smith chart titled Figure E9-3: one large circle with a single straight horizontal line through its middle. Infinity is marked at the right end of that line, zero at the left. Along the line, reading left to right, the labels run 0, 0.2, 0.5, 1.0, 2.0, 5.0, 20 - the 1.0 point at the center is the prime center. Circles of constant resistance nest inside the big circle, all tangent at the infinity point and bulging left. Arcs of constant reactance curve from the rim down into the infinity point, labeled 0.2, 0.5, 1.0, 2.0, and 5.0 above the line (inductive) and the same below (capacitive). Every arc ends on the big outer circle. The two tested names: the outer circle where the arcs terminate is the reactance axis; the only straight line, the horizontal diameter, is the resistance axis."
+  }
+}

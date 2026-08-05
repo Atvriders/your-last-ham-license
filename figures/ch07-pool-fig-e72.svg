@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 580" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Pool figure E7-2: linear voltage regulator with series-pass transistor Q1 and Zener reference D1">
+  <title>Pool figure E7-2 — linear voltage regulator (+25 in, +12 out; Q1 series-pass, D1 Zener reference, C2 bypassing ripple around D1), redrawn from the NCVEC 2024–2028 Extra pool</title>
+  <defs>
+    <!-- ground symbol per canon §1.4: three slanted strokes of decreasing length, longest on top; wire enters at (0,0) -->
+    <g id="gnd" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+      <line x1="14.7" y1="-0.5" x2="-14.7" y2="16.5"/>
+      <line x1="10.5" y1="14.5" x2="-8.5" y2="25.5"/>
+      <line x1="7.2" y1="26" x2="-3.2" y2="32"/>
+    </g>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- broken top rail: +25 segment feeds the collector, +12 segment leaves the emitter -->
+    <circle cx="63" cy="120" r="12"/>
+    <line x1="75" y1="121" x2="293" y2="121"/>
+    <line x1="395" y1="121" x2="576" y2="121"/>
+    <circle cx="588" cy="120" r="12"/>
+
+    <!-- C1 "4000" electrolytic: input rail to ground (straight plate, then curved) -->
+    <line x1="63" y1="132" x2="63" y2="205"/>
+    <line x1="44" y1="205" x2="81" y2="205"/>
+    <path d="M44,214 Q62.5,227 81,214"/>
+    <line x1="62.5" y1="221" x2="62.5" y2="291"/>
+
+    <!-- R1: from the +25 rail down through the base node to C2 -->
+    <line x1="197.5" y1="121" x2="197.5" y2="166"/>
+    <path d="M197.5,166 L197.5,172 L206.5,178 L188.5,188 L206.5,198 L188.5,208 L206.5,218 L188.5,228 L206.5,238 L197.5,244"/>
+    <line x1="197.5" y1="244" x2="197.5" y2="402"/>
+
+    <!-- C2 "4000" electrolytic: from the base node to ground -->
+    <line x1="179" y1="402" x2="216" y2="402"/>
+    <path d="M179,411 Q197.5,424 216,411"/>
+    <line x1="197.5" y1="418" x2="197.5" y2="475"/>
+
+    <!-- base node wire across to the Q1 base / D1 cathode node -->
+    <line x1="197.5" y1="313" x2="344" y2="313"/>
+
+    <!-- Q1: NPN series-pass transistor in a circle, base bar horizontal, base lead straight down -->
+    <circle cx="346" cy="166" r="60"/>
+    <line x1="329" y1="186" x2="293" y2="121"/>
+    <line x1="359" y1="186" x2="395" y2="121"/>
+    <line x1="344" y1="313" x2="344" y2="190"/>
+
+    <!-- C3 "0.01": output rail to ground -->
+    <line x1="449" y1="121" x2="449" y2="190"/>
+    <line x1="431" y1="190" x2="467" y2="190"/>
+    <path d="M431,199 Q449,212 467,199"/>
+    <line x1="449" y1="206" x2="449" y2="290"/>
+
+    <!-- R2: output rail to ground (the load) -->
+    <line x1="588" y1="132" x2="588" y2="169"/>
+    <path d="M588,169 L588,175 L597,181 L579,191 L597,201 L579,211 L597,221 L579,231 L597,241 L588,247"/>
+    <line x1="588" y1="247" x2="588" y2="290"/>
+
+    <!-- D1: Zener diode in a circle, from the base node to ground (parallel with C2) -->
+    <circle cx="343" cy="401" r="60"/>
+    <line x1="344" y1="313" x2="344" y2="382"/>
+    <path d="M318,393 L325,382 L362,382 L369,371"/>
+    <line x1="344" y1="420" x2="344" y2="506"/>
+  </g>
+
+  <g fill="currentColor" stroke="none">
+    <!-- Q1 base bar and emitter arrowhead (pointing outward, up-right = NPN) -->
+    <rect x="311" y="183.5" width="66" height="7"/>
+    <path d="M353.9,162.2 L380.7,147.8 L381.9,178.1 Z"/>
+    <!-- D1 Zener filled triangle, pointing UP into the winged cathode bar -->
+    <path d="M325.5,419.6 L362.3,419.6 L343.9,382.1 Z"/>
+    <!-- junction dots: R1 rail tap, C3 rail tap, base node, Q1-base/D1 node -->
+    <circle cx="197.5" cy="120.5" r="6"/>
+    <circle cx="449" cy="121" r="6"/>
+    <circle cx="197.5" cy="313" r="6"/>
+    <circle cx="344" cy="313" r="6"/>
+  </g>
+
+  <!-- official-style rules between each capacitor designator and its value -->
+  <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <line x1="96" y1="214" x2="152" y2="214"/>
+    <line x1="85" y1="418" x2="141" y2="418"/>
+    <line x1="477" y1="208" x2="533" y2="208"/>
+  </g>
+
+  <use href="#gnd" transform="translate(62.5 291)"/>
+  <use href="#gnd" transform="translate(197.5 475)"/>
+  <use href="#gnd" transform="translate(449 290)"/>
+  <use href="#gnd" transform="translate(588 290)"/>
+  <use href="#gnd" transform="translate(344 506)"/>
+
+  <g fill="currentColor" stroke="none" font-weight="bold">
+    <text x="330" y="52" font-size="24" text-anchor="middle">Figure E7-2</text>
+    <text x="33" y="103" font-size="21">+25</text>
+    <text x="559" y="104" font-size="21">+12</text>
+    <text x="326" y="97" font-size="21">Q1</text>
+    <text x="218" y="215" font-size="21">R1</text>
+    <text x="113" y="201" font-size="21">C1</text>
+    <text x="98" y="238" font-size="21">4000</text>
+    <text x="99" y="405" font-size="21">C2</text>
+    <text x="87" y="442" font-size="21">4000</text>
+    <text x="489" y="196" font-size="21">C3</text>
+    <text x="479" y="233" font-size="21">0.01</text>
+    <text x="608" y="221" font-size="21">R2</text>
+    <text x="415" y="414" font-size="21">D1</text>
+  </g>
+</svg>

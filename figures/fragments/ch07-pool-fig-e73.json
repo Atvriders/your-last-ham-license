@@ -1,0 +1,8 @@
+{
+  "id": "ch07-pool-fig-e73",
+  "chapter": 7,
+  "caption": "Pool figure E7-3, redrawn for this book: the inverting operational-amplifier stage, one formula behind five pool questions. R1 carries the input signal to the inverting (-) input, RF feeds the output back to that same node across the top, and the non-inverting (+) input is grounded, so the voltage gain is -RF/R1. Compute the ratio exactly, because the distractors are arithmetic slips: 470 over 10 gives a gain of 47 (E7G07); 10,000 over 1,000 times 0.23 volts in gives -2.3 volts out, sign and all (E7G09); 68 k over 1.8 k is about 38 (E7G10); 47 k over 3.3 k is about 14 (E7G11). Add a capacitor across RF and the feedback impedance falls as frequency rises - the stage becomes a low-pass filter (E7G02). (The pool's own stems carry two printed quirks - \"in E7-3\" with no \"Figure\" in E7G02 and \"Figure E73\" missing its hyphen in E7G07; the figure itself keeps the official's Figure E7-3 caption.)",
+  "kind": "original",
+  "source": "redrawn from NCVEC pool figure E7-3",
+  "spoken": "An op-amp triangle pointing right. From the open-circle input terminal at the left, resistor R1 runs to a node at the triangle's upper input, marked minus. Feedback resistor R F runs across the top from the output node back to that same minus node. The lower input, marked plus, ties down to ground. The output leaves the triangle's apex through a node dot to an open-circle terminal at the right, and a second open-circle terminal near the output ties to ground as the output reference. Two ground symbols."
+}

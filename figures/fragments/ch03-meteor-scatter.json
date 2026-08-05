@@ -1,0 +1,8 @@
+{
+  "id": "ch03-meteor-scatter",
+  "chapter": 3,
+  "caption": "Meteor scatter. Top: a meteor's ionized trail at E-region height briefly reflects VHF between two stations whose beams meet at the trail - best from 28 to 148 MHz, any day of the year, out to about 1,300 miles. Bottom: what the receiver hears - fraction-of-a-second pings and rare multi-second bursts - and how MSK144 rides them, repeating a complete 72 ms message through each 15-second slot.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "Two panels. The top panel shows the geometry: a meteor streaks in at E-region height, leaving an ionized trail, and two stations far apart on the ground both aim their beams at that same trail - the signal goes up from the transmitter, off the trail, and down to the receiver. Meteor scatter works best from 28 to 148 megahertz, which is why 6 meters and 2 meters dominate, and modern digital modes work it any day of the year out to about 1,300 miles. The bottom panel shows what the receiver hears over time: mostly silence, broken by narrow pings lasting a fraction of a second - under a tenth of a second - and, rarely, a longer burst of a few seconds. Beneath the timeline, one 15-second MSK144 transmit slot is drawn packed with repeats of the same message: 144 bits at 2000 baud make a complete message every 72 milliseconds, so even a single brief ping can carry a whole exchange. A 20-millisecond short format exists for the briefest 2-meter pings."
+}

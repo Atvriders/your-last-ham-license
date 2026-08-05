@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Pool figure E6-1: six FET schematic symbols numbered 1 to 6">
+
+  <!-- Six FET schematic symbols, redrawn from NCVEC pool figure E6-1
+       (canon 1.4 binding spec; geometry scaled x2.5 from the published
+       vector art). Grid 2 rows x 3 columns, numbered beneath (top row
+       1-3, bottom row 4-6). Every symbol: a circle enclosing a vertical
+       channel bar; D lead exits right from the top of the bar, S lead
+       exits right from the bottom; gate lead(s) enter from the left.
+       1 = P-channel JFET (gate line continuous to the bar, arrow on the
+           gate lead points AWAY from the channel) - E6A11;
+       2 = N-channel single-gate MOSFET (insulated gate plate, internal
+           substrate arrow points IN, source connection dot);
+       3 = P-channel single-gate MOSFET (internal arrow OUT);
+       4 = N-channel dual-gate MOSFET (G2 over G1, arrow IN) - E6A10;
+       5 = P-channel dual-gate MOSFET (arrow OUT);
+       6 = N-channel JFET (gate arrow points INTO the channel). -->
+
+  <!-- ===== Title, centered above as published ===== -->
+  <text x="390" y="44" font-size="30" font-weight="bold" text-anchor="middle"
+        fill="currentColor" stroke="none">Figure E6-1</text>
+
+  <!-- ================= Symbol 1: P-channel JFET ================= -->
+  <g transform="translate(150 170)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <circle cx="0" cy="0" r="43" stroke-width="5"/>
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="0" y1="-20" x2="59" y2="-20"/>
+      <line x1="0" y1="21" x2="59" y2="21"/>
+      <!-- gate lead runs continuously from the channel bar to the left;
+           the filled arrowhead sits on it pointing AWAY from the channel -->
+      <line x1="0" y1="0" x2="-62" y2="0"/>
+    </g>
+    <path d="M-11,-12 L-11,12 L-29,0 Z" fill="currentColor" stroke="none"/>
+    <g fill="currentColor" stroke="none" font-size="22" font-weight="bold">
+      <text x="-67" y="7" text-anchor="end">G</text>
+      <text x="64" y="-16" text-anchor="start">D</text>
+      <text x="64" y="29" text-anchor="start">S</text>
+      <text x="0" y="102" text-anchor="middle" font-size="26">1</text>
+    </g>
+  </g>
+
+  <!-- ================= Symbol 2: N-channel single-gate MOSFET ================= -->
+  <g transform="translate(395 170)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <circle cx="0" cy="0" r="43" stroke-width="5"/>
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="0" y1="-20" x2="59" y2="-20"/>
+      <line x1="0" y1="21" x2="59" y2="21"/>
+      <!-- insulated gate plate parallel to the bar, L-shaped lead enters low -->
+      <line x1="-7" y1="-20" x2="-7" y2="19"/>
+      <line x1="-62" y1="19" x2="-7" y2="19"/>
+      <!-- substrate stub from the bar, dropping to the S lead at the dot -->
+      <line x1="0" y1="0" x2="21" y2="0"/>
+      <line x1="21" y1="0" x2="21" y2="21"/>
+    </g>
+    <!-- internal arrow points IN, toward the channel bar -->
+    <path d="M15,-7 L15,7 L5,0 Z" fill="currentColor" stroke="none"/>
+    <circle cx="21" cy="21" r="3" fill="currentColor" stroke="none"/>
+    <g fill="currentColor" stroke="none" font-size="22" font-weight="bold">
+      <text x="-67" y="26" text-anchor="end">G</text>
+      <text x="64" y="-16" text-anchor="start">D</text>
+      <text x="64" y="29" text-anchor="start">S</text>
+      <text x="0" y="102" text-anchor="middle" font-size="26">2</text>
+    </g>
+  </g>
+
+  <!-- ================= Symbol 3: P-channel single-gate MOSFET ================= -->
+  <g transform="translate(640 170)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <circle cx="0" cy="0" r="43" stroke-width="5"/>
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="0" y1="-20" x2="59" y2="-20"/>
+      <line x1="0" y1="21" x2="59" y2="21"/>
+      <line x1="-7" y1="-20" x2="-7" y2="19"/>
+      <line x1="-62" y1="19" x2="-7" y2="19"/>
+      <line x1="0" y1="0" x2="21" y2="0"/>
+      <line x1="21" y1="0" x2="21" y2="21"/>
+    </g>
+    <!-- internal arrow points OUT, away from the channel bar -->
+    <path d="M5,-7 L5,7 L15,0 Z" fill="currentColor" stroke="none"/>
+    <circle cx="21" cy="21" r="3" fill="currentColor" stroke="none"/>
+    <g fill="currentColor" stroke="none" font-size="22" font-weight="bold">
+      <text x="-67" y="26" text-anchor="end">G</text>
+      <text x="64" y="-16" text-anchor="start">D</text>
+      <text x="64" y="29" text-anchor="start">S</text>
+      <text x="0" y="102" text-anchor="middle" font-size="26">3</text>
+    </g>
+  </g>
+
+  <!-- ================= Symbol 4: N-channel dual-gate MOSFET ================= -->
+  <g transform="translate(150 420)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <circle cx="0" cy="0" r="43" stroke-width="5"/>
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="0" y1="-20" x2="59" y2="-20"/>
+      <line x1="0" y1="21" x2="59" y2="21"/>
+      <!-- two insulated gate plates, G2 (upper) over G1 (lower) -->
+      <line x1="-7" y1="-23" x2="-7" y2="-9"/>
+      <line x1="-62" y1="-9" x2="-7" y2="-9"/>
+      <line x1="-7" y1="5" x2="-7" y2="19"/>
+      <line x1="-62" y1="19" x2="-7" y2="19"/>
+      <line x1="0" y1="0" x2="21" y2="0"/>
+      <line x1="21" y1="0" x2="21" y2="21"/>
+    </g>
+    <path d="M15,-7 L15,7 L5,0 Z" fill="currentColor" stroke="none"/>
+    <circle cx="21" cy="21" r="3" fill="currentColor" stroke="none"/>
+    <g fill="currentColor" stroke="none" font-size="22" font-weight="bold">
+      <text x="-67" y="-2" text-anchor="end">G2</text>
+      <text x="-67" y="26" text-anchor="end">G1</text>
+      <text x="64" y="-16" text-anchor="start">D</text>
+      <text x="64" y="29" text-anchor="start">S</text>
+      <text x="0" y="102" text-anchor="middle" font-size="26">4</text>
+    </g>
+  </g>
+
+  <!-- ================= Symbol 5: P-channel dual-gate MOSFET ================= -->
+  <g transform="translate(395 420)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <circle cx="0" cy="0" r="43" stroke-width="5"/>
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="0" y1="-20" x2="59" y2="-20"/>
+      <line x1="0" y1="21" x2="59" y2="21"/>
+      <line x1="-7" y1="-23" x2="-7" y2="-9"/>
+      <line x1="-62" y1="-9" x2="-7" y2="-9"/>
+      <line x1="-7" y1="5" x2="-7" y2="19"/>
+      <line x1="-62" y1="19" x2="-7" y2="19"/>
+      <line x1="0" y1="0" x2="21" y2="0"/>
+      <line x1="21" y1="0" x2="21" y2="21"/>
+    </g>
+    <path d="M5,-7 L5,7 L15,0 Z" fill="currentColor" stroke="none"/>
+    <circle cx="21" cy="21" r="3" fill="currentColor" stroke="none"/>
+    <g fill="currentColor" stroke="none" font-size="22" font-weight="bold">
+      <text x="-67" y="-2" text-anchor="end">G2</text>
+      <text x="-67" y="26" text-anchor="end">G1</text>
+      <text x="64" y="-16" text-anchor="start">D</text>
+      <text x="64" y="29" text-anchor="start">S</text>
+      <text x="0" y="102" text-anchor="middle" font-size="26">5</text>
+    </g>
+  </g>
+
+  <!-- ================= Symbol 6: N-channel JFET ================= -->
+  <g transform="translate(640 420)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <circle cx="0" cy="0" r="43" stroke-width="5"/>
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="0" y1="-20" x2="59" y2="-20"/>
+      <line x1="0" y1="21" x2="59" y2="21"/>
+      <!-- gate lead continuous from the bar; arrowhead points INTO the channel -->
+      <line x1="0" y1="0" x2="-62" y2="0"/>
+    </g>
+    <path d="M-25,-12 L-25,12 L-7,0 Z" fill="currentColor" stroke="none"/>
+    <g fill="currentColor" stroke="none" font-size="22" font-weight="bold">
+      <text x="-67" y="7" text-anchor="end">G</text>
+      <text x="64" y="-16" text-anchor="start">D</text>
+      <text x="64" y="29" text-anchor="start">S</text>
+      <text x="0" y="102" text-anchor="middle" font-size="26">6</text>
+    </g>
+  </g>
+</svg>

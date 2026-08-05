@@ -1,0 +1,8 @@
+{
+  "id": "ch05-swr-gamma",
+  "chapter": 5,
+  "caption": "SWR and return loss are the same mismatch read two ways, both driven by the reflection coefficient magnitude. Gamma = (Z_L - Z_0)/(Z_L + Z_0), and from a wattmeter |Gamma| = sqrt(P_reflected / P_forward). The solid curve is SWR = (1 + |Gamma|)/(1 - |Gamma|); the dashed curve is return loss = -20 log10 |Gamma| in dB. The marked dot is the pool's own arithmetic: 100 W forward and 25 W reflected (E4B06) give |Gamma| = sqrt(25/100) = 0.5, hence SWR = 3:1 and return loss of about 6 dB. Landmarks: a perfect match is Gamma = 0, SWR 1:1; the classic tuner threshold 2:1 sits at |Gamma| = 1/3. SWR blows up as |Gamma| approaches 1 - the curve is gentle until about 0.5, then vertical.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "A graph against the magnitude of the reflection coefficient, zero to 0.85. The solid SWR curve, read on the left axis, hugs one-to-one until about 0.3, then climbs ever more steeply toward ten-to-one. The dashed return-loss curve, read on the right axis in dB, falls the whole way. A marked dot at Gamma equals 0.5 shows the pool point: the square root of 25 watts over 100 watts equals 0.5, giving SWR equals 3-to-1 and, at the same x, a return loss of about 6 dB. Two more dots mark landmarks: Gamma equals zero is a perfect 1-to-1 match, and Gamma equals one-third is the classic 2-to-1 tuner threshold."
+}

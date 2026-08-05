@@ -1,0 +1,8 @@
+{
+  "id": "ch04-noise-cascade",
+  "chapter": 4,
+  "caption": "Why the first stage sets the system noise figure. Signal and atmospheric noise enter the antenna together, and once mixed no later stage can strip the noise back out. Referred to the input, stage one's noise counts at full strength and is amplified by everything after it, while stage two's contribution is divided by stage one's gain and stage three's by all the gain ahead of it - the Friis idea without the formula - so the low-noise budget belongs in the preamp. Noise figure is the dB ratio of a receiver's noise to the theoretical minimum, a -174 dBm floor in a 1 Hz bandwidth; and on the low HF bands the atmosphere is noisier than the receiver, so front-end attenuation there costs almost nothing.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "The receiver chain runs antenna to preamp to mixer to IF amplifier, each stage tagged with its gain and noise figure. Below, three bars show each stage's noise as heard at the input: the preamp's bar towers at full strength because every later stage amplifies it, the mixer's bar is cut down by the preamp's gain, and the IF amp's bar is a sliver, divided by both gains ahead of it. The rules of thumb follow: noise figure is the dB ratio over the theoretical minimum, the floor is minus 174 dBm per hertz, a preamp cannot beat noise the antenna already hears, and on the low HF bands the atmosphere out-noises the receiver so attenuation costs almost nothing."
+}

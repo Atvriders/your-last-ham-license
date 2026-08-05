@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="Pool figure E6-2: eight diode schematic symbols numbered 1 to 8">
+
+  <!-- Eight diode symbols, redrawn from NCVEC pool figure E6-2
+       (canon 1.4 binding spec; geometry scaled x3 from the published
+       vector art). Grid 2 rows x 4 columns, numbered beneath (top row
+       1-4, bottom row 5-8). All are horizontal two-lead devices: a
+       filled triangle against a cathode bar unless noted.
+       1 = varactor-style (bowed line sweeping across the triangle,
+           bulging toward the cathode);
+       2 = bidirectional back-to-back pair (triangles point-to-point at
+           a capped central bar);
+       3 = Zener-style (angled wings at both bar ends);
+       4 = plain junction diode;
+       5 = LED (two straight light arrows leaving up-right);
+       6 = Schottky (squared S-hooks at both bar ends) - E6B10;
+       7 = circled point-contact-style diode, whisker from the cathode
+           bar out the upper right with a vertical tip;
+       8 = circle with two opposed diodes (upper points right, lower
+           points left) plus the same whisker from the right bar. -->
+
+  <!-- ===== Title, centered above as published ===== -->
+  <text x="400" y="42" font-size="30" font-weight="bold" text-anchor="middle"
+        fill="currentColor" stroke="none">Figure E6-2</text>
+
+  <!-- ================= Symbol 1: varactor-style ================= -->
+  <g transform="translate(115 160)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <line x1="-75" y1="0" x2="50" y2="0"/>
+      <line x1="0" y1="-25" x2="0" y2="25" stroke-width="4"/>
+      <!-- the bow sweeps across the triangle, bulging toward the cathode -->
+      <path d="M-31,41 C-25,29 -22,15 -22,0 C-22,-15 -25,-28 -31,-41"/>
+    </g>
+    <path d="M-45,-25 L-45,25 L0,0 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="97" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">1</text>
+  </g>
+
+  <!-- ================= Symbol 2: back-to-back pair ================= -->
+  <g transform="translate(310 160)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <line x1="-64" y1="0" x2="64" y2="0"/>
+      <!-- central bar with caps at both ends (caps extend toward the left triangle) -->
+      <path d="M-11,-26 L2,-26 M0,-28 L0,28 M-11,26 L2,26" stroke-width="4"/>
+    </g>
+    <!-- two triangles point-to-point at the central bar -->
+    <path d="M-37,-26 L-37,26 L0,0 Z" fill="currentColor" stroke="none"/>
+    <path d="M37,-26 L37,26 L0,0 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="97" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">2</text>
+  </g>
+
+  <!-- ================= Symbol 3: Zener-style ================= -->
+  <g transform="translate(505 160)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <line x1="-73" y1="0" x2="35" y2="0"/>
+      <!-- cathode bar with angled wings: top bends up-left, bottom bends down-right -->
+      <path d="M-12.5,-34 L0,-26 L0,25 L13,34" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+    <path d="M-45,-25 L-45,25 L0,0 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="97" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">3</text>
+  </g>
+
+  <!-- ================= Symbol 4: plain junction diode ================= -->
+  <g transform="translate(700 160)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <line x1="-73" y1="0" x2="24" y2="0"/>
+      <line x1="0" y1="-25" x2="0" y2="25" stroke-width="4"/>
+    </g>
+    <path d="M-45,-25 L-45,25 L0,0 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="97" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">4</text>
+  </g>
+
+  <!-- ================= Symbol 5: LED ================= -->
+  <g transform="translate(115 400)">
+    <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+      <line x1="-74" y1="0" x2="51" y2="0" stroke-width="3.5"/>
+      <line x1="0" y1="-25" x2="0" y2="25" stroke-width="4"/>
+      <!-- two straight light arrows leaving up-right -->
+      <line x1="9" y1="-35" x2="34.5" y2="-55"/>
+      <line x1="17.7" y1="-20" x2="43.2" y2="-40"/>
+    </g>
+    <path d="M-44,-25 L-44,25 L0,0 Z" fill="currentColor" stroke="none"/>
+    <path d="M31.2,-60.1 L53.6,-70.2 L37.7,-50.4 Z" fill="currentColor" stroke="none"/>
+    <path d="M39.9,-45.4 L62.6,-55.1 L46.7,-34.9 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="102" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">5</text>
+  </g>
+
+  <!-- ================= Symbol 6: Schottky ================= -->
+  <g transform="translate(310 400)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <line x1="-94" y1="0" x2="58" y2="0"/>
+      <!-- cathode bar with squared S-hooks: top steps left then down,
+           bottom steps right then up -->
+      <path d="M-9,-20 L-9,-37 L0,-37 L0,37 L9,37 L9,20" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+    <path d="M-45,-25 L-45,25 L0,0 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="102" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">6</text>
+  </g>
+
+  <!-- ================= Symbol 7: circled diode with whisker ================= -->
+  <g transform="translate(505 400)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <line x1="-82" y1="0" x2="79" y2="0"/>
+      <line x1="16" y1="-25" x2="16" y2="25" stroke-width="4"/>
+      <!-- whisker: from the cathode bar at the axis, diagonal up-right
+           out of the circle, ending in a vertical tip -->
+      <polyline points="16,0 61,-24 61,-66"/>
+      <circle cx="0" cy="0" r="52" stroke-width="6.5"/>
+    </g>
+    <path d="M-21,-25 L-21,25 L16,0 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="102" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">7</text>
+  </g>
+
+  <!-- ================= Symbol 8: circle with two opposed diodes + whisker ================= -->
+  <g transform="translate(700 400)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round">
+      <line x1="-78" y1="0" x2="-16" y2="0"/>
+      <line x1="15" y1="0" x2="76" y2="0"/>
+      <!-- left bar (lower half) and right bar (upper half) -->
+      <line x1="-16" y1="0" x2="-16" y2="43"/>
+      <line x1="15" y1="-41" x2="15" y2="0"/>
+      <!-- same whisker, from the middle of the right bar -->
+      <polyline points="15,-20 52,-44 52,-69"/>
+      <circle cx="0" cy="0" r="52" stroke-width="6.5"/>
+    </g>
+    <!-- upper diode points right into the right bar; lower points left
+         into the left bar -->
+    <path d="M-16,-41 L-16,0 L15,-20 Z" fill="currentColor" stroke="none"/>
+    <path d="M15,0 L15,43 L-16,22 Z" fill="currentColor" stroke="none"/>
+    <text x="0" y="102" text-anchor="middle" font-size="26" font-weight="bold" fill="currentColor" stroke="none">8</text>
+  </g>
+</svg>

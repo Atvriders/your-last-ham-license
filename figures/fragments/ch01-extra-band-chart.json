@@ -1,0 +1,8 @@
+{
+  "id": "ch01-extra-band-chart",
+  "chapter": 1,
+  "caption": "Amateur Extra HF privileges band by band (ITU Region 2, §97.301(b)/§97.305(c)(3)): CW+data and phone+CW segments on 80/75, 40, 20, 15, and 10 m with the Extra-only slices drawn darker with their exact edges in bold — 3.500–3.525, 3.600–3.800, 7.000–7.025, 7.125–7.175, 14.000–14.025, 14.150–14.225, 21.000–21.025, and 21.200–21.275 MHz; 17 and 12 m entire; 30 m CW and data only at the 200 W PEP limit; 60 m in its current two-part form (contiguous 5351.5–5366.5 kHz at 9.15 W ERP plus four channels at 100 W ERP); up to 1.5 kW PEP everywhere else; VHF/UHF unchanged. CW is permitted on every authorized frequency.",
+  "kind": "original",
+  "source": "original",
+  "spoken": "one bar per HF band from 80 meters to 10 meters showing the Extra CW-and-data and phone segments with the Extra-only slices highlighted and their exact edges in bold, plus each band's power limit and a VHF-UHF row marked unchanged"
+}
