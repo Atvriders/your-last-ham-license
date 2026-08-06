@@ -455,7 +455,7 @@ and as an imported module.
   (1968–1983) unchanged from Book 1.
 - **`tools/narration.py`** / **`tools/make_audiobook.py`** — the 8-voice edge-tts
   audiobook pipeline (US/British/Australian/Irish × male/female), **chapters 00–10
-  only** (the verbatim pool appendix is never narrated); ID3 `artist=Claude Opus 4.8`,
+  only** (the verbatim pool appendix is never narrated); ID3 `artist=Kimi K3`,
   `album=Your Last Ham License`. `speak_math`'s formula-token table was **extended for
   this book** with the Extra Greek (Γ→"gamma", ρ→"rho", τ→"tau", ω→"omega", φ→"phi")
   and ∠→"angle" on top of the carried set (π, Ω, ×, ≈, √, fractions, subscripts); the

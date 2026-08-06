@@ -3,8 +3,8 @@
 A short spoken preface that opens the audiobook: a welcome to the
 experienced General upgrading to Extra — the last license class, what Extra
 opens (the Extra-only HF segments and full amateur privileges), what Your
-Last Ham License is, that it was written by Claude Opus 4.8 running in
-Claude Code, a word on how it was made (the multi-agent workflow and its
+Last Ham License is, that it was written by Kimi K3 running in
+Kimi Code, a word on how it was made (the multi-agent workflow and its
 estimated token cost), and how to use the eight-voice edition. Kept separate
 from the chapter tracks so it can be regenerated on its own.
 
@@ -28,7 +28,7 @@ OUT = Path(__file__).resolve().parent.parent / "audiobook" / "intro.mp3"
 
 INTRO = """Your Last Ham License: The Extra Course, 2024 to 2028. A welcome to the top of the ladder.
 
-This audiobook was written by Claude Opus 4.8 — an artificial intelligence made by Anthropic — running inside the coding tool Claude Code.
+This audiobook was written by Kimi K3 — an artificial intelligence made by Moonshot AI — running inside the coding tool Kimi Code.
 
 You already hold your General license. You know your way around HF, you know the bands where contacts cross oceans — and you have probably noticed the segments your ticket does not quite reach. This course is your last upgrade: in eleven chapters it takes you from General to Amateur Extra, the highest license class the FCC grants. The Extra-only segments of the HF bands, operating at the edge — satellites, moonbounce, weak signal — the exotic propagation paths, complex impedance and the Smith chart, and safety math at full depth. Every fact and every practice question is checked against the official twenty twenty-four to twenty twenty-eight Extra question pool, so what you hear is what the exam asks.
 
@@ -62,7 +62,7 @@ async def main() -> None:
             "ffmpeg", "-y", "-loglevel", "error", "-i", str(raw),
             "-c", "copy",
             "-metadata", "title=Introduction",
-            "-metadata", "artist=Claude Opus 4.8",
+            "-metadata", "artist=Kimi K3",
             "-metadata", "album=Your Last Ham License",
             "-metadata", "track=0/11",
             "-metadata", "genre=Audiobook",

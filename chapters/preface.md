@@ -12,7 +12,7 @@ Like its siblings, the book is aligned to the official question pool — the NCV
 
 ### How This Book Was Made
 
-The book was built by a multi-agent AI workflow — one orchestrating agent and roughly fifty subagents, all instances of Claude Opus 4.8 running inside the Claude Code tool — working from a single source of truth. The official, public-domain NCVEC pool was ingested verbatim and double-parsed from the two published formats until the parses agreed, and all four errata were incorporated, including the four questions withdrawn across them. Around the pool grew an accuracy canon — the verified facts, notation, and rules that every writer had to obey — and the canon was treated as law.
+The book was built by a multi-agent AI workflow — one orchestrating agent and roughly fifty subagents, all instances of Kimi K3, an AI assistant made by Moonshot AI, running inside the Kimi Code tool — working from a single source of truth. The official, public-domain NCVEC pool was ingested verbatim and double-parsed from the two published formats until the parses agreed, and all four errata were incorporated, including the four questions withdrawn across them. Around the pool grew an accuracy canon — the verified facts, notation, and rules that every writer had to obey — and the canon was treated as law.
 
 Against that canon, parallel agents wrote the chapters and drew the figures, while span auditors re-verified every factual claim against the canon and every quoted question against the pool, word by word. An eight-check automated audit gates the whole repository, and its heaviest check is mechanical verbatim-pool fidelity: all 599 active questions quoted exactly, every answer key matching the official key.
 

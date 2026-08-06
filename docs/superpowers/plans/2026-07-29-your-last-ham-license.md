@@ -20,7 +20,7 @@
 - **Depth law:** the book **assumes Book 3 (General) knowledge — no more, no less**, calibrated **peer-level with an experienced General, exam-aligned**: nothing taught beyond what the pool tests plus one sidebar. Concepts beyond General scope are taught before use; General-scope material gets at most a one-line refresher + pointer to Book 3. Span auditors enforce this per chapter (Task 4.4); **E5/E7/E9 are the textbook-drift risk chapters** — read them hardest.
 - **Self-contained output:** inline SVG figures, math pre-rendered to inline SVG, inline CSS; no external refs (`src="http"`, `<link rel="stylesheet">`, `@import` are failures; SVG `xmlns` URIs are fine). Book HTML uses only relative/anchor links; the only absolute links allowed are the three series paths.
 - **Environment:** `python3` (not `python`); `matplotlib`, `edge-tts`, `ffmpeg`, `google-chrome` present; no local Docker (CI builds the image).
-- **Naming:** title *Your Last Ham License: The Extra Course (2024–2028)* (US spelling); audio ID3 `artist=Claude Opus 4.8`, `album=Your Last Ham License`; GHCR image `ghcr.io/atvriders/your-last-ham-license`; audiobook player `localStorage` key **`ylhl-audio`**; series mount path `/extra/`.
+- **Naming:** title *Your Last Ham License: The Extra Course (2024–2028)* (US spelling); audio ID3 `artist=Kimi K3`, `album=Your Last Ham License`; GHCR image `ghcr.io/atvriders/your-last-ham-license`; audiobook player `localStorage` key **`ylhl-audio`**; series mount path `/extra/`.
 - **sys.path gotcha:** every runnable script keeps `sys.path.insert(0, str(Path(__file__).resolve().parent.parent))`.
 - **CI gotcha:** copy the General repo's *fixed* workflow (`seq -f "%02g"`, not `seq -w`), then adjust repo/image names and release URLs.
 - **Notation law (series consistency):** identical to Books 2–3 — prose uses V and ×, verbatim pool quotes keep the pool's own forms, unit case (kHz, MHz, mA, µV, pF) is load-bearing, λ(m) = 300 / f(MHz) taught as the approximation of c = f·λ. Extra adds complex-number notation; canon §3 pins the conventions (j-operator, $Z = R + jX$ rectangular/polar, ∠ phase, Γ reflection coefficient) before any chapter is written.
@@ -106,7 +106,7 @@ your-last-ham-license/
 - [x] **Verify:** `pytest tests/test_mathsvg.py tests/test_narration.py` green incl. the new formula tests.
 
 ### Task 1.5: `make_audiobook.py` + `make_intro.py` retarget
-- [x] Chapter range 00–10 (11 chapters); `spoken_heading()` for `## <N>. <Title>`; ID3 `album=Your Last Ham License`, `artist=Claude Opus 4.8`; exclude `appendices/` from narration (Appendix A is print-only — series decision); keep sys.path bootstrap, chunking/retries, ffmpeg stitch.
+- [x] Chapter range 00–10 (11 chapters); `spoken_heading()` for `## <N>. <Title>`; ID3 `album=Your Last Ham License`, `artist=Kimi K3`; exclude `appendices/` from narration (Appendix A is print-only — series decision); keep sys.path bootstrap, chunking/retries, ffmpeg stitch.
 - [x] New INTRO text (~1 min spoken): the capstone welcome — for experienced Generals, the last license class, what Extra opens (the Extra-only HF segments, full privileges), how the series fits together; keep `--dry`.
 - [x] **Verify:** `pytest tests/test_audiobook_prepare.py` green; `python3 tools/make_intro.py --dry` prints sane text.
 
@@ -209,7 +209,7 @@ your-last-ham-license/
 
 - [ ] Clean rebuild from scratch; `pytest` green; `audit_book.py` exit 0; human-style spot-read.
 - [ ] **Ship gate (human confirms before outward actions).**
-- [ ] One commit (trailer `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`).
+- [ ] One commit (trailer `Co-Authored-By: Kimi K3 <noreply@moonshot.cn>`).
 - [ ] Create GitHub repo via REST API (`POST /user/repos`, `private:false`; token from `~/.config/gh/hosts.yml`; never `gh`); push `master`.
 - [ ] Generate audiobook: `make_audiobook.py --all` (8 voices × 11 chapters, chapters only) + `make_intro.py`.
 - [ ] Create release **v1.0**; upload audio assets (audio ships on the release, not in git).
