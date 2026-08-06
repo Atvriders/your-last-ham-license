@@ -1,22 +1,24 @@
 """Build the audiobook editions of Your Last Ham License with edge-tts.
 
-Reads chapters/ch00.md .. ch10.md, prepares each for narration, synthesizes in
-chunks with retries, and stitches per-chapter MP3s (tagged) into audiobook/.
-Appendices are print-only and are never narrated.
+Reads chapters/preface.md and chapters/ch00.md .. ch10.md, prepares each for
+narration, synthesizes in chunks with retries, and stitches per-section MP3s
+(tagged) into audiobook/. Appendices are print-only and are never narrated.
 
 Eight voices in four accents are supported. The default voice (Ryan, British
-male) writes `chNN.mp3`; every other voice writes `<key>-chNN.mp3`, so all
-editions share one folder and one release.
+male) writes `preface.mp3`/`chNN.mp3`; every other voice writes
+`<key>-preface.mp3`/`<key>-chNN.mp3`, so all editions share one folder and
+one release.
 
 Usage:
   python tools/make_audiobook.py                 # default voice (ryan)
   python tools/make_audiobook.py --voice andrew  # one voice
-  python tools/make_audiobook.py --all           # every voice
+  python tools/make_audiobook.py --all           # every voice, preface included
+  python tools/make_audiobook.py --all --only preface         # just the preface
   python tools/make_audiobook.py --voice ava --chapters 0-4   # a subset
   python tools/make_audiobook.py --voice ryan --test          # short sample
 
 Cross-platform: needs edge-tts (pip install edge-tts) and ffmpeg on PATH.
-Resumable: a chapter whose MP3 already exists (> 100 KB) is skipped unless
+Resumable: a section whose MP3 already exists (> 100 KB) is skipped unless
 --force is given.
 """
 
@@ -58,8 +60,14 @@ RETRIES = 6
 
 CHAPTER_COUNT = 11  # ch00 .. ch10
 
+# A section is either a chapter number (0..10) or the string "preface".
+PREFACE = "preface"
+
 # Numbered-chapter heading, e.g. "4. Antennas & Feedlines".
 _CHAPTER_RE = re.compile(r"^(\d+)\.\s*(.+?)\s*$")
+
+# Preface heading, e.g. "Preface — Why & How This Book Was Made".
+_PREFACE_RE = re.compile(r"^Preface\s*[—–-]\s*(.+?)\s*$")
 
 
 def spoken_heading(raw: str) -> str:
@@ -67,6 +75,10 @@ def spoken_heading(raw: str) -> str:
     if m:
         num = NUMBER_WORDS[int(m.group(1))] or "Zero"
         return f"Chapter {num}. {m.group(2)}."
+    m = _PREFACE_RE.match(raw)
+    if m:
+        subtitle = re.sub(r"\s+", " ", m.group(1).replace("&", "and"))
+        return f"Preface: {subtitle}."
     return raw
 
 
@@ -93,8 +105,12 @@ def prepare_text(body: str, fig_desc: dict) -> str:
     return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
 
 
-def prepare(path: Path, n: int) -> tuple[str, str]:
-    """Return (spoken title, narration text) for one chapter file."""
+def prepare(path: Path, section: "int | str") -> tuple[str, str]:
+    """Return (spoken title, narration text) for one section file.
+
+    ``section`` is a chapter number (0..10) or ``"preface"``. Chapter 0 also
+    carries the book-title welcome; the preface speaks its own heading only.
+    """
     raw = path.read_text(encoding="utf-8").replace("\r\n", "\n").strip()
     lines = raw.split("\n")
     heading = re.sub(r"^##\s+", "", lines[0]).strip()
@@ -110,7 +126,7 @@ def prepare(path: Path, n: int) -> tuple[str, str]:
     text = prepare_text(body, fig_desc)
 
     intro = title
-    if n == 0:
+    if section == 0:
         intro = "Your Last Ham License. The Extra Course, 2024 to 2028.\n\n" + intro
     return title, intro + "\n\n" + text
 
@@ -128,9 +144,20 @@ def chunks(text: str) -> list[str]:
     return out
 
 
-def dest_name(voice_key: str, n: int) -> str:
-    stem = f"ch{n:02d}"
+def dest_name(voice_key: str, section: "int | str") -> str:
+    stem = f"ch{section:02d}" if isinstance(section, int) else section
     return f"{stem}.mp3" if voice_key == DEFAULT_VOICE else f"{voice_key}-{stem}.mp3"
+
+
+def source_path(section: "int | str") -> Path:
+    return CHAPTERS / (f"ch{section:02d}.md" if isinstance(section, int) else f"{section}.md")
+
+
+def sections_for(only: "str | None", chapter_nums: list[int]) -> "list[int | str]":
+    """Ordered sections to build: preface first, then the chapter numbers."""
+    preface = [PREFACE] if only in (None, PREFACE) else []
+    chaps = list(chapter_nums) if only in (None, "chapters") else []
+    return preface + chaps
 
 
 async def synth_chunk(text: str, voice: str, dest: Path) -> None:
@@ -171,41 +198,44 @@ def stitch(parts: list[Path], dest: Path, title: str, track: int, label: str,
     lst.unlink(missing_ok=True)
 
 
-async def build_chapter(n: int, voice_key: str, sem: asyncio.Semaphore,
+async def build_section(section: "int | str", voice_key: str, sem: asyncio.Semaphore,
                         parts_dir: Path, force: bool) -> str:
     voice, label, accent, gender = VOICES[voice_key]
-    dest = OUT / dest_name(voice_key, n)
+    dest = OUT / dest_name(voice_key, section)
     if not force and dest.exists() and dest.stat().st_size > 100_000:
         return f"skip  {dest.name} (exists)"
     async with sem:
-        src = CHAPTERS / f"ch{n:02d}.md"
-        title, text = prepare(src, n)
+        src = source_path(section)
+        stem = f"{section:02d}" if isinstance(section, int) else section
+        track = section + 1 if isinstance(section, int) else 0
+        title, text = prepare(src, section)
         parts = []
         for i, ck in enumerate(chunks(text)):
-            part = parts_dir / f"{voice_key}_{n:02d}_{i:03d}.mp3"
+            part = parts_dir / f"{voice_key}_{stem}_{i:03d}.mp3"
             await synth_chunk(ck, voice, part)
             parts.append(part)
-        await asyncio.to_thread(stitch, parts, dest, title, n + 1, label, accent, gender)
+        await asyncio.to_thread(stitch, parts, dest, title, track, label, accent, gender)
         for p in parts:
             p.unlink(missing_ok=True)
     return f"done  {dest.name} ({dest.stat().st_size/1e6:.1f} MB) — {label}"
 
 
-async def build_voice(voice_key: str, nums: list[int], concurrency: int,
+async def build_voice(voice_key: str, sections: "list[int | str]", concurrency: int,
                       force: bool) -> list[str]:
     sem = asyncio.Semaphore(concurrency)
     parts_dir = Path(tempfile.mkdtemp(prefix=f"tts_{voice_key}_"))
     try:
         results = await asyncio.gather(
-            *(build_chapter(n, voice_key, sem, parts_dir, force) for n in nums),
+            *(build_section(s, voice_key, sem, parts_dir, force) for s in sections),
             return_exceptions=True,
         )
     finally:
         shutil.rmtree(parts_dir, ignore_errors=True)
     lines, failed = [], []
-    for n, r in zip(nums, results):
+    for s, r in zip(sections, results):
         if isinstance(r, Exception):
-            failed.append(f"{voice_key} ch{n:02d}: {r}")
+            tag = f"ch{s:02d}" if isinstance(s, int) else s
+            failed.append(f"{voice_key} {tag}: {r}")
         else:
             lines.append(r)
     for line in lines:
@@ -233,6 +263,8 @@ async def main() -> None:
     ap.add_argument("--voice", choices=list(VOICES), default=DEFAULT_VOICE)
     ap.add_argument("--all", action="store_true", help="build every voice")
     ap.add_argument("--chapters", default="", help="e.g. 0-4 or 0,8,9")
+    ap.add_argument("--only", choices=["chapters", PREFACE], default=None,
+                    help="restrict to just the chapters or just the preface")
     ap.add_argument("--concurrency", type=int, default=3)
     ap.add_argument("--force", action="store_true", help="rebuild existing files")
     ap.add_argument("--test", action="store_true", help="one short sample only")
@@ -249,15 +281,15 @@ async def main() -> None:
         print(f"sample OK: {dest} ({dest.stat().st_size} bytes)")
         return
 
-    nums = parse_chapters(args.chapters)
+    sections = sections_for(args.only, parse_chapters(args.chapters))
     keys = list(VOICES) if args.all else [args.voice]
     all_failed: list[str] = []
     for key in keys:
         print(f"=== voice {key} ({VOICES[key][1]}, {VOICES[key][2]} {VOICES[key][3]}) "
-              f"— {len(nums)} chapters ===", flush=True)
-        all_failed += await build_voice(key, nums, args.concurrency, args.force)
+              f"— {len(sections)} sections ===", flush=True)
+        all_failed += await build_voice(key, sections, args.concurrency, args.force)
     if all_failed:
-        print(f"\n{len(all_failed)} chapter(s) failed", flush=True)
+        print(f"\n{len(all_failed)} section(s) failed", flush=True)
         sys.exit(1)
     print("\nALL DONE", flush=True)
 
