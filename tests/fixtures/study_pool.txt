@@ -1,0 +1,54 @@
+# sample published pool text for make_study tests (mirrors canon/pool-extra.txt layout)
+SUBELEMENT E1 - COMMISSION RULES [2 Exam Questions - 2 Groups]
+E1A Frequency privileges; signal frequency range; stations aboard ships or aircraft
+E1A01 (D) [97.9(a)]
+Which operator class conveys all available U.S. amateur operating privileges?
+A. Technician
+B. General
+C. Advanced
+D. Amateur Extra
+~~
+E1A02 (C) [97.313]
+What is the maximum transmitting power an amateur station may use on 20 meters?
+A. 200 watts PEP
+B. 500 watts PEP
+C. 1500 watts PEP
+D. 5000 watts PEP
+~~
+E1B Station restrictions and special operations: restrictions on station location; RACES operations
+E1B01 (B)
+When must an amateur station transmit its call sign?
+A. Every 5 minutes during a contact
+B. At least every 10 minutes during and at the end of a contact
+C. Once per hour while operating
+D. Only at the beginning of a contact
+~~
+SUBELEMENT E2 - OPERATING PROCEDURES [1 Exam Question - 1 Group]
+E2A Amateur radio in space: amateur satellites; orbital mechanics; frequencies and modes
+E2A01 (A)
+What is an amateur satellite?
+A. A station in space operating in the amateur-satellite service
+B. A radio that only receives weather broadcasts
+C. An antenna with more than one element
+D. A type of battery charger
+~~
+SUBELEMENT E5 - ELECTRICAL PRINCIPLES [1 Exam Question - 1 Group]
+E5A Resonance and Q: characteristics of resonant circuits; series and parallel resonance
+E5A01 (B)
+What is the unit of electrical current?
+A. Volt
+B. Ampere
+C. Ohm
+D. Watt
+~~
+SUBELEMENT E9 - ANTENNAS AND TRANSMISSION LINES [1 Exam Question - 1 Group]
+E9G The Smith chart
+E9G06 (A)
+On the Smith chart shown in Figure E9-3, what is the impedance at the center of the chart?
+A. 50 + j0 ohms
+B. 0 + j0 ohms
+C. 75 + j50 ohms
+D. Infinite impedance
+~~
+SUBELEMENT E0 - SAFETY - [1 exam question - 1 group]
+E0A Safety: RF radiation hazards; hazardous materials; grounding

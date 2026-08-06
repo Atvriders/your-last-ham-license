@@ -1,0 +1,80 @@
+{
+ "E1A01": {
+  "group": "E1A",
+  "subelement": "E1",
+  "question": "Which operator class conveys all available U.S. amateur operating privileges?",
+  "choices": {
+   "A": "Technician",
+   "B": "General",
+   "C": "Advanced",
+   "D": "Amateur Extra"
+  },
+  "answer": "D",
+  "figure": null
+ },
+ "E1A02": {
+  "group": "E1A",
+  "subelement": "E1",
+  "question": "What is the maximum transmitting power an amateur station may use on 20 meters?",
+  "choices": {
+   "A": "200 watts PEP",
+   "B": "500 watts PEP",
+   "C": "1500 watts PEP",
+   "D": "5000 watts PEP"
+  },
+  "answer": "C",
+  "figure": null
+ },
+ "E1B01": {
+  "group": "E1B",
+  "subelement": "E1",
+  "question": "When must an amateur station transmit its call sign?",
+  "choices": {
+   "A": "Every 5 minutes during a contact",
+   "B": "At least every 10 minutes during and at the end of a contact",
+   "C": "Once per hour while operating",
+   "D": "Only at the beginning of a contact"
+  },
+  "answer": "B",
+  "figure": null
+ },
+ "E2A01": {
+  "group": "E2A",
+  "subelement": "E2",
+  "question": "What is an amateur satellite?",
+  "choices": {
+   "A": "A station in space operating in the amateur-satellite service",
+   "B": "A radio that only receives weather broadcasts",
+   "C": "An antenna with more than one element",
+   "D": "A type of battery charger"
+  },
+  "answer": "A",
+  "figure": null
+ },
+ "E5A01": {
+  "group": "E5A",
+  "subelement": "E5",
+  "question": "What is the unit of electrical current?",
+  "choices": {
+   "A": "Volt",
+   "B": "Ampere",
+   "C": "Ohm",
+   "D": "Watt"
+  },
+  "answer": "B",
+  "figure": null
+ },
+ "E9G06": {
+  "group": "E9G",
+  "subelement": "E9",
+  "question": "On the Smith chart shown in Figure E9-3, what is the impedance at the center of the chart?",
+  "choices": {
+   "A": "50 + j0 ohms",
+   "B": "0 + j0 ohms",
+   "C": "75 + j50 ohms",
+   "D": "Infinite impedance"
+  },
+  "answer": "A",
+  "figure": "E9-3"
+ }
+}
