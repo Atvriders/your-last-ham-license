@@ -6,7 +6,7 @@
 **Date:** 2026-07-29
 **Status:** Draft — awaiting human sign-off before implementation planning.
 
-This is **Book 4 of the series** (Book 1: *200 Meters and Down*; Book 2: *Your First Ham License* — Technician; Book 3: *Your Next Ham License* — General). It reuses the series' production machinery and method end to end: toolchain, canon discipline, pool-fidelity audit, series-site machinery, multi-agent workflow. The series arc completes: First → Next → Last.
+This is **the capstone of the series** (following *Your First Ham License* — Technician, and *Your Next Ham License* — General). It reuses the series' production machinery and method end to end: toolchain, canon discipline, pool-fidelity audit, series-site machinery, multi-agent workflow. The series arc completes: First → Next → Last.
 
 > **Series note:** mounted at `/extra/` on the series site; the book-switcher bar shows Extra highlighted, Technician and General live. Shipping this book activates `/extra/` and completes the three-book series site.
 
@@ -14,7 +14,7 @@ This is **Book 4 of the series** (Book 1: *200 Meters and Down*; Book 2: *Your F
 
 ## 1. Purpose & audience
 
-A single-volume **capstone course** that takes a **General-class ham** to a passed **Amateur Extra exam (Element 4, 2024–2028 pool)**. The reader is an experienced operator with Book 3's theory under their belt — this is the deepest book in the series, at the technical-enthusiast level of *200 Meters and Down*: real math, real circuits, real propagation physics.
+A single-volume **capstone course** that takes a **General-class ham** to a passed **Amateur Extra exam (Element 4, 2024–2028 pool)**. The reader is an experienced operator with Book 3's theory under their belt — this is the deepest book in the series, at full technical-enthusiast depth: real math, real circuits, real propagation physics.
 
 Two jobs at once, same method as the series:
 - **Teaches** the advanced craft: complex impedance and phase, advanced filters and DSP/SDR, transmission lines and matching networks, the Smith chart properly, exotic propagation, EME/satellite/weak-signal operating.

@@ -19,13 +19,12 @@ the workbench of instruments and receivers, electrical principles, components,
 practical circuits, signals and emissions, antennas and transmission lines at
 Extra depth, and RF exposure and safety — and every teaching chapter ends with an
 **Exam Focus** section quoting the exact pool questions that chapter unlocks,
-verbatim, with the keyed answer and a one-line plain-language why. It is **Book 4
-— the capstone — of the three-book program** begun with *[200 Meters and
-Down](https://github.com/Atvriders/200-meters-and-down)*, *[Your First Ham
+verbatim, with the keyed answer and a one-line plain-language why. It is **the
+capstone of the three-book program**: *[Your First Ham
 License](https://github.com/Atvriders/your-first-ham-license)* (the Technician
-course), and *[Your Next Ham
+course), *[Your Next Ham
 License](https://github.com/Atvriders/your-next-ham-license)* (the General
-course). First → Next → Last: the series is complete.
+course), and this book. First → Next → Last: the series is complete.
 
 ## What's inside
 
@@ -221,9 +220,8 @@ the official .docx and .pdf and cross-checked to zero disagreement beyond the tw
 published figure-ID typos, with the four-errata ledger and the four withdrawn
 questions cataloged), pinned Part 97 facts, notation, glossary, the chapter map,
 and the copyright ledger — reusing the production machinery of its sibling
-projects, *[200 Meters and
-Down](https://github.com/Atvriders/200-meters-and-down)*, *[Your First Ham
-License](https://github.com/Atvriders/your-first-ham-license)*, and *[Your Next
+projects, *[Your First Ham
+License](https://github.com/Atvriders/your-first-ham-license)* and *[Your Next
 Ham License](https://github.com/Atvriders/your-next-ham-license)*.
 
 | | |

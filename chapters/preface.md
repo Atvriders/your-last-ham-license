@@ -6,7 +6,7 @@ Every course in this series opens by going straight to the work, and this one do
 
 This book exists to carry an experienced General to a passed Amateur Extra exam. The exam is 50 questions drawn one per group from a public pool, and 37 of 50 correct answers passes it; the prize is every operating privilege the FCC grants an amateur, including the Extra-only segments of five HF bands. Extra is the last license class — there is no element beyond Element 4 — and that makes this book the capstone: with it, the series arc completes, Technician to General to Extra.
 
-The series began with *200 Meters and Down*, a technical history of amateur radio, and continued through two course books — *Your First Ham License* for the Technician license and *Your Next Ham License* for the General. This is the third course and the end of the road: everything the service offers, taught to the depth the Extra pool demands.
+The series is exactly three course books: *Your First Ham License* for the Technician license, *Your Next Ham License* for the General, and this one. This is the third course and the end of the road: everything the service offers, taught to the depth the Extra pool demands.
 
 Like its siblings, the book is aligned to the official question pool — the NCVEC 2024–2028 Extra pool, valid for exams through 2028-06-30. After that date a successor pool takes over, and this book's pool-facing parts were designed from the start to be swapped to meet it.
 
@@ -34,7 +34,7 @@ The figures follow the same discipline. All 39 are original; the pool's ten offi
 
 - **Calendar span:** 2026-07-29 → 2026-07-31.
 
-- **Subagent tokens:** about 5.8 million (estimate). This runtime does not meter subagent tokens; the estimate models all agent reads of the canonical files plus written output volume at ~4 characters per token — Book 1's metered ~4.7M corroborates the scale.
+- **Subagent tokens:** about 5.8 million (estimate). This runtime does not meter subagent tokens; the estimate models all agent reads of the canonical files plus written output volume at ~4 characters per token.
 
 ### What You Can Trust
 

@@ -41,10 +41,9 @@ pool, 37 correct to pass** — the margin for half-learning is gone. Spine: *mas
 the last license class asks you to stop pattern-matching and start understanding: the
 same physics as the first two books, now all the way down.
 
-This is **Book 4 of the three-book "Your First Ham License" program — the capstone**,
-following Book 1 (*200 Meters and Down*, a technical history of amateur radio — not
-exam prep), Book 2 (*Your First Ham License: The Technician Course (2026–2030)*), and
-Book 3 (*Your Next Ham License: The General Course (2023–2027)*). The series arc
+This is **the capstone of the three-book "Your First Ham License" program**,
+following *Your First Ham License: The Technician Course (2026–2030)* and
+*Your Next Ham License: The General Course (2023–2027)*. The series arc
 completes: First → Next → Last. Production machinery (build, audit, figures,
 audiobook, Docker, series site) is inherited from Book 3 and retargeted; new here are
 the `make_exam.py` 50-question/37-to-pass parameterization, the E-ID letter class
@@ -452,7 +451,7 @@ and as an imported module.
   $\angle$, magnitude bars) so the whole Extra formula set renders (audit check #4 is
   the backstop).
 - **`tools/figreg.py`** — loads/validates `figures/figures.json`; protected-years set
-  (1968–1983) unchanged from Book 1.
+  (1968–1983) unchanged from the earlier books.
 - **`tools/narration.py`** / **`tools/make_audiobook.py`** — the 8-voice edge-tts
   audiobook pipeline (US/British/Australian/Irish × male/female), **chapters 00–10
   only** (the verbatim pool appendix is never narrated); ID3 `artist=Kimi K3`,
@@ -583,8 +582,8 @@ books live and Extra current — it completes the series site.**
 - **All ten pool figures are redrawn, not copied** (§6).
 - **Bare facts, frequencies, and formulas are not copyrightable**; all exam-prep
   explanations are written fresh.
-- **ARRL Handbook ledger (carried from Book 1, governs any optional archival
-  figure):** of the 13 owned editions (1927–1983), **7 are public domain and
+- **ARRL Handbook ledger (carried from an earlier book's canon, governs any optional
+  archival figure):** of the 13 owned editions (1927–1983), **7 are public domain and
   reproducible** (1927, 1931, 1933, 1936, 1940, 1941, 1951 — each affirmatively
   evidenced) and **6 are protected and never reproduced in any form** (1968, 1974,
   1976, 1977, 1981, 1983). `figreg.validate()` mechanically rejects any figure tagged
@@ -828,8 +827,7 @@ tiny human-approved commits. The gate the content was written into: **107 pytest
 tests, 8 audit checks** (including mechanical verification of all 599/599 pool quotes
 and answer keys), full HTML/PDF/TXT build. This runtime does not meter subagent
 tokens; the clearly-labeled estimate in the README's stats block (~5.8M) is
-modeled from agent reads + written volume at ~4 chars/token — Book 1's metered
-~4.7M corroborates the scale.
+modeled from agent reads + written volume at ~4 chars/token.
 
 ## 14. Commands
 
