@@ -258,7 +258,7 @@ def render_practice_html(records: list, figures: dict, subelements: list) -> str
 _HEAD_CSS = """
 :root {
   color-scheme: light dark;
-  --paper: #f7f3ec; --ink: #2b2620; --muted: #7a7060; --rule: #cfc6b6;
+  --paper: #f7f3ec; --ink: #2b2620; --muted: #706758; --rule: #cfc6b6;
   --link: #8a6a24; --panel: #efe9dd;
   --beam: #e8c877; --beam-hi: #ffe6ac; --glow: rgba(232,200,119,.55);
   --ok: #3f7d3f; --bad: #b04a32;
@@ -270,8 +270,6 @@ _HEAD_CSS = """
     --ok: #7fbf7f; --bad: #d98a76;
   }
 }
-:root[data-theme="light"] { --paper:#f7f3ec; --ink:#2b2620; --muted:#7a7060; --rule:#cfc6b6; --link:#8a6a24; --panel:#efe9dd; }
-:root[data-theme="dark"] { --paper:#131110; --ink:#ddd6c9; --muted:#968d7c; --rule:#322d25; --link:#d8c390; --panel:#1b1815; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -309,6 +307,8 @@ h1 { font-size: 2.5rem; font-weight: normal; letter-spacing: .05em; margin: .7re
 
 .btn { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: .7rem; text-transform: uppercase; letter-spacing: .14em;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 36px;
   color: var(--muted); background: none; border: 1px solid var(--rule);
   border-radius: 999px; padding: .55em 1.3em; cursor: pointer;
   transition: border-color .18s, color .18s, box-shadow .25s; }
@@ -349,6 +349,7 @@ _FLASHCARDS_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2314203a'/%3E%3Cpath d='M16 3 L19.5 16 L16 29 L12.5 16 Z' fill='%23e8c877'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23ffe6ac'/%3E%3C/svg%3E">
 <title>Your Last Ham License — Flashcards</title>
 <style>__HEAD_CSS__
 /* ---- flashcards ---- */
@@ -391,10 +392,10 @@ __SERIES_BAR__
   <p class="sub">The Extra Course (2024&ndash;2028)</p>
   <p class="tagline">all 599 pool questions &middot; hints &amp; explanations &middot; marks that stick</p>
   <p class="back">
-    <a href="../">&larr; Read the book</a> <span class="dot">&middot;</span>
-    <a href="practice.html">Practice exam</a> <span class="dot">&middot;</span>
-    <a href="../your-last-ham-license.pdf">PDF</a> <span class="dot">&middot;</span>
-    <a href="../your-last-ham-license.txt">Text</a>
+    <a href="./">&larr; Read the book</a> <span class="dot">&middot;</span>
+    <a href="practice.html">Practice test</a> <span class="dot">&middot;</span>
+    <a href="./your-last-ham-license.pdf">PDF</a> <span class="dot">&middot;</span>
+    <a href="./your-last-ham-license.txt">Text</a>
   </p>
 </header>
 
@@ -423,7 +424,7 @@ __SERIES_BAR__
 <section class="note">
   <h2 class="label">About these cards</h2>
   <p>Every question, choice, and answer key is verbatim from the NCVEC 2024&ndash;2028 Extra pool (public domain; valid for exams 2024-07-01 through 2028-06-30, all four errata incorporated). The one-line explanations are this book&rsquo;s own, and each card&rsquo;s hint names the published pool group and the chapter that teaches it. The ten pool figures (E5-1, E6-1&ndash;E6-3, E7-1&ndash;E7-3, E9-1&ndash;E9-3) are redrawn from the pool originals.</p>
-  <p><a href="../">Read the book</a> &middot; <a href="practice.html">Take a practice exam</a></p>
+  <p><a href="./">Read the book</a> &middot; <a href="practice.html">Take a practice test</a></p>
 </section>
 
 </div>
@@ -605,7 +606,8 @@ _PRACTICE_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Last Ham License — Practice Exam</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2314203a'/%3E%3Cpath d='M16 3 L19.5 16 L16 29 L12.5 16 Z' fill='%23e8c877'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23ffe6ac'/%3E%3C/svg%3E">
+<title>Your Last Ham License — Practice Test</title>
 <style>__HEAD_CSS__
 /* ---- practice exam ---- */
 .rule { text-align: center; color: var(--muted); max-width: 34em; margin: 0 auto 1.6rem; }
@@ -659,15 +661,15 @@ _PRACTICE_TEMPLATE = """<!DOCTYPE html>
 
 __SERIES_BAR__
 <header>
-  <p class="over label">Practice exam</p>
+  <p class="over label">Practice test</p>
   <h1>Your Last Ham License</h1>
   <p class="sub">The Extra Course (2024&ndash;2028)</p>
   <p class="tagline">drawn fresh every time &middot; graded with explanations</p>
   <p class="back">
-    <a href="../">&larr; Read the book</a> <span class="dot">&middot;</span>
+    <a href="./">&larr; Read the book</a> <span class="dot">&middot;</span>
     <a href="flashcards.html">Flashcards</a> <span class="dot">&middot;</span>
-    <a href="../your-last-ham-license.pdf">PDF</a> <span class="dot">&middot;</span>
-    <a href="../your-last-ham-license.txt">Text</a>
+    <a href="./your-last-ham-license.pdf">PDF</a> <span class="dot">&middot;</span>
+    <a href="./your-last-ham-license.txt">Text</a>
   </p>
 </header>
 
@@ -706,9 +708,9 @@ below, or drill a single subelement with immediate feedback.</p>
 </section>
 
 <section class="note">
-  <h2 class="label">About this exam</h2>
+  <h2 class="label">About this practice test</h2>
   <p>Every question, choice, and answer key is verbatim from the NCVEC 2024&ndash;2028 Extra pool (public domain; valid for exams 2024-07-01 through 2028-06-30, all four errata incorporated), drawn one per group exactly as the real exam does. The explanations are this book&rsquo;s own. The ten pool figures (E5-1, E6-1&ndash;E6-3, E7-1&ndash;E7-3, E9-1&ndash;E9-3) are redrawn from the pool originals.</p>
-  <p><a href="../">Read the book</a> &middot; <a href="flashcards.html">Study the flashcards</a></p>
+  <p><a href="./">Read the book</a> &middot; <a href="flashcards.html">Study the flashcards</a></p>
 </section>
 
 </div>
@@ -906,6 +908,11 @@ below, or drill a single subelement with immediate feedback.</p>
     renderDrill();
   }
 
+  function updateDrillTally() {
+    drillTally.textContent = drillCorrect + " / " + drillAnswered + " correct" +
+      " · question " + (drillIdx + 1) + " of " + drillQueue.length;
+  }
+
   function renderDrill() {
     drillLocked = false;
     drillNextBtn.style.display = "none";
@@ -942,13 +949,12 @@ below, or drill a single subelement with immediate feedback.</p>
           "Hint: this is " + rec.groupTheme + " — review chapter " + rec.chapter + "."));
         feedback.style.display = "";
         drillNextBtn.style.display = "";
-        drillTally.textContent = drillCorrect + " / " + drillAnswered + " correct";
+        updateDrillTally();
       }));
     });
     block.appendChild(feedback);
     drillCard.appendChild(block);
-    drillTally.textContent = drillCorrect + " / " + drillAnswered + " correct" +
-      " · question " + (drillIdx + 1) + " of " + drillQueue.length;
+    updateDrillTally();
   }
 
   document.getElementById("drillStartBtn").addEventListener("click", startDrill);

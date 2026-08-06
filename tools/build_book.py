@@ -7,8 +7,9 @@ inline math rendered as SVG, and produces:
   - build_html(chapter_paths, figreg) -> str
       A single self-contained HTML document. Every figure and math
       expression is embedded as inline ``<svg>``; all CSS is inline. No
-      external resource references (no ``<link>``, no ``@import``, no
-      ``src="http..."``), so the file works fully offline.
+      external resource references (no external ``<link>``, no ``@import``,
+      no ``src="http..."`` — the one ``<link>`` is a data-URI favicon), so
+      the file works fully offline.
 
   - build_txt(chapter_paths) -> str
       A plain-text edition: markdown markup stripped, math spoken as
@@ -379,24 +380,6 @@ _CSS = """
     --worked-bg: #332b1a;
   }
 }
-:root[data-theme="light"] {
-  --bg: #fdfaf3;
-  --fg: #1b1b1b;
-  --muted: #666666;
-  --rule: #cccccc;
-  --link: #2a5db0;
-  --sidebar-bg: #eef3f8;
-  --worked-bg: #fff7e6;
-}
-:root[data-theme="dark"] {
-  --bg: #181818;
-  --fg: #eaeaea;
-  --muted: #aaaaaa;
-  --rule: #444444;
-  --link: #8ab4f8;
-  --sidebar-bg: #1f2937;
-  --worked-bg: #332b1a;
-}
 * { box-sizing: border-box; }
 html, body { background: var(--bg); }
 body {
@@ -445,9 +428,22 @@ blockquote.worked-example {
   border-radius: 4px;
 }
 figure.figure { margin: 2rem 0; text-align: center; }
-figure.figure .figure-media { overflow-x: auto; }
-figure.figure svg { max-width: 100%; height: auto; }
-figure.figure .figure-media svg { max-width: none; }
+/* Figures: inline SVGs scale to the text column (max-width:100% wins over
+   fixed width="..." attributes on the SVG root; height:auto keeps the aspect
+   ratio from the viewBox). overflow-x:auto is the fallback for anything that
+   still overflows, made visible by a local/scroll edge-shadow cue that
+   appears only while there is something to scroll to. */
+figure.figure .figure-media { overflow-x: auto; padding-bottom: 0.5rem;
+  background:
+    linear-gradient(to right, var(--bg) 30%, rgba(0,0,0,0)),
+    linear-gradient(to left, var(--bg) 30%, rgba(0,0,0,0)),
+    linear-gradient(to right, rgba(0,0,0,.18), rgba(0,0,0,0)),
+    linear-gradient(to left, rgba(0,0,0,.18), rgba(0,0,0,0));
+  background-position: left, right, left, right;
+  background-repeat: no-repeat;
+  background-size: 2.5rem 100%, 2.5rem 100%, 0.8rem 100%, 0.8rem 100%;
+  background-attachment: local, local, scroll, scroll; }
+figure.figure .figure-media svg { max-width: 100%; height: auto; }
 figcaption { font-size: 0.85em; color: var(--muted); margin-top: 0.5rem; }
 span.math { display: inline-block; vertical-align: middle; line-height: 0; }
 span.math svg { height: 1em; width: auto; vertical-align: middle; }
@@ -525,6 +521,10 @@ def build_html(chapter_paths: list, figreg: dict) -> str:
         "<head>\n"
         '<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' '
+        "viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2314203a'/%3E"
+        "%3Cpath d='M16 3 L19.5 16 L16 29 L12.5 16 Z' fill='%23e8c877'/%3E"
+        "%3Ccircle cx='16' cy='16' r='2.4' fill='%23ffe6ac'/%3E%3C/svg%3E\">\n"
         "<title>Your Last Ham License</title>\n"
         f"<style>{_CSS}</style>\n"
         "</head>\n"

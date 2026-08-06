@@ -23,10 +23,33 @@ def test_build_html_embeds_figure_toc_and_math():
     assert 'Worked example' in html             # worked-example blockquote
     assert 'Exam Focus' in html and 'Key Takeaways' in html
     assert 'Your Last Ham License' in html      # retargeted title
-    # self-contained: no external RESOURCE fetches (namespace xmlns http URIs are fine)
+    # self-contained: no external RESOURCE fetches (namespace xmlns http URIs are fine;
+    # the one <link> is the inline data-URI favicon — no network fetch)
     assert 'src="http' not in html
-    assert '<link ' not in html.lower()
+    links = re.findall(r"<link [^>]*>", html.lower())
+    assert all('rel="icon" href="data:image/svg+xml,' in l for l in links), links
     assert '@import' not in html
+
+
+def test_figure_css_scales_svgs_to_column_with_visible_scroll_cue():
+    """UI audit: wide SVG figures (730–972px vs the 600px column) were clipped
+    with an invisible horizontal scroll (.figure-media svg{max-width:none}).
+    Inline SVGs now scale to the column — max-width:100% also wins over fixed
+    width="583.2pt"-style attributes on the SVG root — and any still-overflowing
+    figure gets overflow-x:auto plus a local/scroll edge-shadow affordance."""
+    figreg = {"sample": {"id":"sample","chapter":1,"number":"1.1","caption":"A sample",
+              "kind":"original","source":"authored","file":"tests/fixtures/fig_sample.svg"}}
+    html = build_html([pathlib.Path("tests/fixtures/ch_sample.md")], figreg)
+    assert "figure.figure .figure-media svg { max-width: 100%; height: auto; }" in html
+    assert "max-width: none" not in html
+    assert "overflow-x: auto" in html
+    assert "background-attachment: local, local, scroll, scroll" in html
+
+
+def test_book_has_inline_favicon_and_no_dead_theme_rules():
+    html = build_html([pathlib.Path("tests/fixtures/ch_sample.md")], {})
+    assert '<link rel="icon" href="data:image/svg+xml,' in html
+    assert "data-theme" not in html  # nothing sets data-theme; dead CSS removed
 
 
 def test_build_html_appendix_is_final_toc_section():
@@ -140,6 +163,8 @@ def test_title_block_links_audiobook_practice_and_flashcards():
     assert (html.index('class="title-block"')
             < html.index('class="book-extras"')
             < html.index('<nav class="toc"'))
+    # unified series naming (UI audit): class "book-extras", label "Book extras"
+    assert '<nav class="book-extras" aria-label="Book extras">' in html
 
 
 def test_no_absolute_links_beyond_series_paths():

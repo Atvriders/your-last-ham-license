@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2314203a'/%3E%3Cpath d='M16 3 L19.5 16 L16 29 L12.5 16 Z' fill='%23e8c877'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23ffe6ac'/%3E%3C/svg%3E">
 <title>Your Last Ham License — Audiobook</title>
 <style>
 :root {
   color-scheme: light dark;
-  --paper: #f7f3ec; --ink: #2b2620; --muted: #7a7060; --rule: #cfc6b6;
+  --paper: #f7f3ec; --ink: #2b2620; --muted: #706758; --rule: #cfc6b6;
   --link: #8a6a24; --panel: #efe9dd;
   --beam: #e8c877; --beam-hi: #ffe6ac; --glow: rgba(232,200,119,.55);
   --night-0: #05070d; --night-1: #14203a; --sea: #e8c877;
@@ -18,8 +19,6 @@
     --link: #d8c390; --panel: #1b1815;
   }
 }
-:root[data-theme="light"] { --paper:#f7f3ec; --ink:#2b2620; --muted:#7a7060; --rule:#cfc6b6; --link:#8a6a24; --panel:#efe9dd; }
-:root[data-theme="dark"] { --paper:#131110; --ink:#ddd6c9; --muted:#968d7c; --rule:#322d25; --link:#d8c390; --panel:#1b1815; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -95,15 +94,15 @@ h1 { font-size: 2.5rem; font-weight: normal; letter-spacing: .05em; margin: .7re
 .scrub { display: flex; align-items: center; gap: .8em; margin-top: 1.1rem; }
 .scrub .t { color: var(--muted); font-size: .82rem; min-width: 3.4em; }
 .scrub .t.right { text-align: right; }
-input[type="range"].seek { -webkit-appearance: none; appearance: none; flex: 1; height: 22px; background: none; cursor: pointer; }
+input[type="range"].seek { -webkit-appearance: none; appearance: none; flex: 1; height: 28px; background: none; cursor: pointer; }
 input[type="range"].seek::-webkit-slider-runnable-track { height: 3px; border-radius: 3px;
   background: linear-gradient(to right, var(--beam) var(--pct,0%), var(--rule) var(--pct,0%)); }
 input[type="range"].seek::-moz-range-track { height: 3px; border-radius: 3px; background: var(--rule); }
 input[type="range"].seek::-moz-range-progress { height: 3px; border-radius: 3px; background: var(--beam); }
-input[type="range"].seek::-webkit-slider-thumb { -webkit-appearance: none; margin-top: -5.5px;
-  width: 14px; height: 14px; border-radius: 50%; background: var(--beam-hi);
+input[type="range"].seek::-webkit-slider-thumb { -webkit-appearance: none; margin-top: -7.5px;
+  width: 18px; height: 18px; border-radius: 50%; background: var(--beam-hi);
   box-shadow: 0 0 8px var(--glow); }
-input[type="range"].seek::-moz-range-thumb { width: 14px; height: 14px; border: none; border-radius: 50%;
+input[type="range"].seek::-moz-range-thumb { width: 18px; height: 18px; border: none; border-radius: 50%;
   background: var(--beam-hi); box-shadow: 0 0 8px var(--glow); }
 input[type="range"].seek:focus-visible { outline: 2px solid var(--beam); outline-offset: 4px; border-radius: 6px; }
 
@@ -114,6 +113,8 @@ input[type="range"].seek:focus-visible { outline: 2px solid var(--beam); outline
 .autonext-row { display: flex; justify-content: center; margin-top: .9rem; }
 .autonext { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: .68rem; text-transform: uppercase; letter-spacing: .16em;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 36px;
   cursor: pointer; color: var(--muted); background: none;
   border: 1px solid var(--rule); border-radius: 999px; padding: .45em 1.1em;
   transition: border-color .18s, color .18s, box-shadow .25s; }
@@ -248,7 +249,7 @@ input[type="range"].seek:focus-visible { outline: 2px solid var(--beam); outline
   <h2 class="label">How this was made</h2>
   <p><b>Your Last Ham License</b> &mdash; the book and its narration alike &mdash; was written by <b>Kimi&nbsp;K3</b>, Moonshot AI&rsquo;s AI assistant, running in Kimi&nbsp;Code. A verified <em>accuracy canon</em> &mdash; pinned Part&nbsp;97 facts, a notation standard, and the complete 2024&ndash;2028 NCVEC Extra question pool carried verbatim &mdash; governed every chapter-writing and technical-accuracy-auditing agent in the build, so the eleven chapters agree on every rule, frequency, formula, and answer key.</p>
   <p>The narration is synthesized: eight neural voices &mdash; men and women in American, British, Australian, and Irish accents &mdash; each reading all eleven chapters, from the capstone welcome to safety at full depth. (The verbatim pool appendix is print-only and is not narrated.) Start with the <em>Introduction</em> for a one-minute welcome.</p>
-  <p class="links"><a href="https://github.com/Atvriders/your-last-ham-license">GitHub &amp; README</a> &middot; <a href="https://github.com/Atvriders/your-last-ham-license/blob/master/accuracy-canon.md">Accuracy canon</a> &middot; <a href="../">Read the book</a></p>
+  <p class="links"><a href="https://github.com/Atvriders/your-last-ham-license">GitHub &amp; README</a> &middot; <a href="https://github.com/Atvriders/your-last-ham-license/blob/master/accuracy-canon.md">Accuracy canon</a> &middot; <a href="../">Read the book</a> &middot; <a href="../practice.html">Practice test</a> &middot; <a href="../flashcards.html">Flashcards</a></p>
 </section>
 
 </div>
@@ -322,7 +323,7 @@ input[type="range"].seek:focus-visible { outline: 2px solid var(--beam); outline
       var input = document.createElement("input");
       input.type = "radio"; input.name = "voice"; input.value = v.key;
       input.checked = v.key === voiceKey;
-      input.addEventListener("change", function () { setVoice(v.key); });
+      input.addEventListener("change", function () { setVoice(v.key); input.blur(); });
       var span = document.createElement("span");
       span.innerHTML = v.name + ' <em>' + v.g + '</em>';
       label.appendChild(input); label.appendChild(span);

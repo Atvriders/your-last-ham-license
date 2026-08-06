@@ -32,11 +32,14 @@ def fixture_figures():
 
 
 def assert_self_contained(html):
-    """The pages must work under a strict CSP: nothing external, ever."""
+    """The pages must work under a strict CSP: nothing external, ever. The
+    only <link> allowed is the inline data-URI favicon (still fully
+    self-contained — it never hits the network)."""
     assert 'src="http' not in html and "src='http" not in html
     assert 'href="http' not in html and "href='http" not in html
     assert "<script src" not in html
-    assert "<link" not in html
+    links = re.findall(r"<link[^>]*>", html)
+    assert all('rel="icon" href="data:image/svg+xml,' in l for l in links), links
     assert "<img" not in html
 
 
@@ -288,6 +291,54 @@ def test_flashcards_page_contains_every_real_pool_id():
     for qid in ("E1A01", "E5C09", "E0A12", "E9G06", "E9G07"):
         assert qid in html
     assert_self_contained(html)
+
+
+# ---------- page chrome (UI audit regressions) ----------
+
+
+def render_both_fixture_pages():
+    records = build_fixture_records()
+    titles = make_study.parse_subelement_titles((FIX / "study_pool.txt").read_text(encoding="utf-8"))
+    subs = make_study.subelement_summaries(records, titles)
+    figs = fixture_figures()
+    return (make_study.render_practice_html(records, figs, subs),
+            make_study.render_flashcards_html(records, figs, subs))
+
+
+def test_link_rows_are_same_dir_relative():
+    """practice.html/flashcards.html sit at the site root next to the book,
+    so the book/PDF/TXT links must be same-dir ('./'), not '../' (which
+    escapes to the series landing and 404s the PDF/TXT)."""
+    for html in render_both_fixture_pages():
+        assert 'href="../"' not in html
+        assert 'href="../your-last-ham-license.pdf"' not in html
+        assert 'href="../your-last-ham-license.txt"' not in html
+        assert 'href="./"' in html
+        assert 'href="./your-last-ham-license.pdf"' in html
+        assert 'href="./your-last-ham-license.txt"' in html
+
+
+def test_pages_have_inline_favicon_and_no_dead_theme_rules():
+    for html in render_both_fixture_pages():
+        assert '<link rel="icon" href="data:image/svg+xml,' in html
+        assert "data-theme" not in html  # nothing sets data-theme; dead CSS removed
+
+
+def test_ui_chrome_says_practice_test_not_practice_exam():
+    practice, flashcards = render_both_fixture_pages()
+    assert "Practice exam" not in practice
+    assert "Practice exam" not in flashcards
+    assert ">Practice test<" in practice and ">Practice test<" in flashcards
+
+
+def test_drill_tally_keeps_question_position_after_answering():
+    """The drill answer handler used to overwrite the tally with just
+    'x / y correct', dropping 'question n of N'; both paths now share one
+    tally renderer."""
+    practice, _ = render_both_fixture_pages()
+    assert "updateDrillTally" in practice
+    assert practice.count("updateDrillTally()") >= 2
+    assert 'correct" +' in practice and '" · question "' in practice
 
 
 # ---------- CLI ----------
