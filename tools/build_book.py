@@ -31,6 +31,10 @@ Chapter markdown format (fixed; spec §5 skeleton):
              consecutive "| ... |" lines whose second line is a "|---|"-style
              separator renders as a real <table>.
 
+An optional chapters/preface.md is front matter, not a chapter: when present
+it renders FIRST — before ch00 — under the anchor id "preface" with the TOC
+entry "Preface: Why & How This Book Was Made" and no chapter number.
+
 Appendix files (appendices/pool.md, appendices/glossary-and-formulas.md)
 use the same dialect but head with "## Appendix A: ..." / "## Appendix B: ..."
 and render as the final TOC sections, after ch10, without chapter numbers.
@@ -93,6 +97,12 @@ _APPENDIX_HEADING_RE = re.compile(r"^Appendix\s+([A-Za-z])\b")
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 _TABLE_SEP_CELL_RE = re.compile(r"^:?-+:?$")
 
+# The optional front-matter preface (chapters/preface.md): its printed heading
+# uses an em dash ("## Preface — Why & How This Book Was Made"); the TOC entry
+# uses a colon.
+PREFACE_STEM = "preface"
+PREFACE_TOC_TITLE = "Preface: Why & How This Book Was Made"
+
 
 @dataclass
 class Chapter:
@@ -105,9 +115,12 @@ class Chapter:
 def compute_chapter_id(path: pathlib.Path, heading: str) -> str:
     """id = file stem if it matches ch\\d\\d; else ch + 2-digit chapter number
     parsed from a "<N>. <Title>" heading; else appendix-<letter> parsed from
-    an "Appendix X: ..." heading.
+    an "Appendix X: ..." heading. The front-matter preface (stem "preface")
+    takes the id "preface".
     """
     stem = pathlib.Path(path).stem
+    if stem == PREFACE_STEM:
+        return PREFACE_STEM
     if _CHAPTER_STEM_RE.match(stem):
         return stem
     h = heading.strip()
@@ -482,12 +495,18 @@ nav.series-bar span.soon em {
 """
 
 
+def _toc_title(c: Chapter) -> str:
+    """TOC display title: the preface's printed heading uses an em dash, its
+    TOC entry the colon form; every other section lists its heading as-is."""
+    return PREFACE_TOC_TITLE if c.id == PREFACE_STEM else c.heading
+
+
 def build_html(chapter_paths: list, figreg: dict) -> str:
     """Build a single self-contained HTML edition from chapter markdown files."""
     chapters = [parse_chapter(pathlib.Path(p)) for p in chapter_paths]
 
     toc_items = "".join(
-        f'<li><a href="#{c.id}">{html.escape(c.heading, quote=False)}</a></li>'
+        f'<li><a href="#{c.id}">{html.escape(_toc_title(c), quote=False)}</a></li>'
         for c in chapters
     )
     sections = "".join(_render_chapter(c, figreg) for c in chapters)
@@ -605,6 +624,23 @@ def build_pdf(html_path, out_pdf) -> bool:
 # CLI
 # --------------------------------------------------------------------------
 
+def section_paths() -> list:
+    """The book's sections in reading order: the optional front-matter
+    preface first, then ch00..chNN, then the appendices (pool, glossary)
+    when present.
+    """
+    paths = []
+    preface = pathlib.Path("chapters/preface.md")
+    if preface.exists():
+        paths.append(preface)
+    paths.extend(sorted(pathlib.Path("chapters").glob("ch*.md")))
+    for app in ("appendices/pool.md", "appendices/glossary-and-formulas.md"):
+        app_path = pathlib.Path(app)
+        if app_path.exists():
+            paths.append(app_path)
+    return paths
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Build the Your Last Ham License editions.")
     parser.add_argument("--html", action="store_true", help="build the HTML edition")
@@ -621,12 +657,9 @@ def main(argv=None) -> int:
     for err in errors:
         print(f"figure registry warning: {err}")
 
-    # Chapters first (ch00..ch10), then the appendices as final TOC sections.
-    chapter_paths = sorted(pathlib.Path("chapters").glob("ch*.md"))
-    for app in ("appendices/pool.md", "appendices/glossary-and-formulas.md"):
-        app_path = pathlib.Path(app)
-        if app_path.exists():
-            chapter_paths.append(app_path)
+    # Preface first (when present), then chapters (ch00..ch10), then the
+    # appendices as final TOC sections.
+    chapter_paths = section_paths()
 
     html_path = out_dir / "index.html"
     if args.html or args.pdf:

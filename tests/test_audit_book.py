@@ -85,6 +85,14 @@ def test_format_laws_fact_line_count():
     text = CH_SAMPLE.replace("**FACT:** Impedance combines resistance and reactance as the square root of the sum of their squares.\n", "")
     assert any("FACT" in e for e in check_format_laws("ch01", text))
 
+def test_format_laws_exempt_preface():
+    # the preface is front matter, not a teaching chapter: it is exempt from
+    # ALL chapter format laws — no numbered heading, no opener rule, no
+    # Exam Focus / worked-example / Key Takeaways / FACT requirements
+    preface = ("## Preface — Why & How This Book Was Made\n\n"
+               "Plain front-matter prose, none of the chapter apparatus.\n")
+    assert check_format_laws("preface", preface) == []
+
 
 # --- Check #8: pool fidelity -----------------------------------------------
 

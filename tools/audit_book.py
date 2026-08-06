@@ -16,6 +16,10 @@ Run as a script:
 Consumes (all optional at this stage of the project -- the checks that
 depend on missing inputs are skipped, not failed):
 
+    chapters/preface.md        -- optional front matter (renders first, before
+                                  ch00); EXEMPT from ALL chapter format laws --
+                                  the ch*.md chapter glob never picks it up, and
+                                  check_format_laws() refuses it explicitly
     chapters/ch*.md            -- chapter markdown files
     appendices/pool.md         -- Appendix A (the verbatim pool)
     figures/figures.json       -- figure registry (via figreg.load())
@@ -66,7 +70,7 @@ if str(_REPO_ROOT) not in sys.path:
 
 from tools.figreg import load, validate
 from tools.mathsvg import render
-from tools.build_book import build_html
+from tools.build_book import build_html, section_paths
 
 # --------------------------------------------------------------------------
 # Constants
@@ -77,8 +81,8 @@ BANNED_PHRASES = ("little did they know", "in that moment", "a testament to")
 _FIG_REF_RE = re.compile(r"\{\{fig:([^}]+)\}\}")
 _MATH_SPAN_RE = re.compile(r"\$(.+?)\$")
 _FACT_RE = re.compile(r"(?m)^\s*\*\*FACT:\*\*\s*(.+?)\s*$")
-_HREF_RE = re.compile(r'href="#(ch\d\d|appendix-[a-z])"')
-_ID_RE = re.compile(r'id="(ch\d\d|appendix-[a-z])"')
+_HREF_RE = re.compile(r'href="#(ch\d\d|appendix-[a-z]|preface)"')
+_ID_RE = re.compile(r'id="(ch\d\d|appendix-[a-z]|preface)"')
 _HEADING_RE = re.compile(r"^##\s+(\d+)\.\s+.+")
 _EXAM_FOCUS_RE = re.compile(r"(?m)^### Exam Focus\s*$")
 _KEY_TAKEAWAYS_RE = re.compile(r"(?m)^### Key Takeaways\s*$")
@@ -95,6 +99,11 @@ POOL_JSON_PATH = "canon/pool-extra.json"
 # ch00 welcome is not a teaching chapter here -- ch10 owns subelement E0 and
 # is a full teaching chapter in this book).
 _EXEMPT_FROM_TEACHING_LAWS = ("ch00",)
+
+# The front-matter preface (chapters/preface.md) is exempt from ALL chapter
+# format laws; the ch*.md glob above never matches it, and check_format_laws()
+# refuses it explicitly as a second line of defense.
+PREFACE_STEM = "preface"
 
 # Check #8: pool-quote markup (see module docstring for the convention).
 # The Extra pool's group letters reach H (E7/E9 historically run to group H),
@@ -154,9 +163,14 @@ def check_format_laws(stem: str, text: str) -> list[str]:
       - every chapter carries a ``### Key Takeaways`` section and 3–5
         ``**FACT:**`` lines.
 
+    The front-matter preface (stem ``preface``) is exempt from ALL of these
+    format laws: it is front matter, not a teaching chapter.
+
     Banned phrases are a separate check (check_banned_phrases).
     """
     errors = []
+    if stem == PREFACE_STEM:
+        return errors
     lines = text.splitlines()
 
     m = _HEADING_RE.match(lines[0]) if lines else None
@@ -320,7 +334,8 @@ def main() -> int:
     errors = []
     warnings = []
 
-    chapter_paths = sorted(glob(CHAPTERS_GLOB))
+    chapter_paths = sorted(glob(CHAPTERS_GLOB))  # ch*.md only: preface.md is
+                                                 # front matter, not a chapter
     chapter_texts = []
     for p in chapter_paths:
         chapter_texts.append(pathlib.Path(p).read_text(encoding="utf-8"))
@@ -366,10 +381,9 @@ def main() -> int:
 
     # 3. TOC/anchors ----------------------------------------------------
     print("[3/8] TOC/anchor consistency")
-    toc_paths = list(chapter_paths)
-    for app in ("appendices/pool.md", "appendices/glossary-and-formulas.md"):
-        if pathlib.Path(app).exists():
-            toc_paths.append(app)
+    # the same reading order the real build uses: preface (if present) first,
+    # then ch00..chNN, then the appendices
+    toc_paths = section_paths()
     if toc_paths:
         try:
             html = build_html(toc_paths, registry)

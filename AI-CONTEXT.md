@@ -827,8 +827,9 @@ current, and its ship flips Extra live in the Technician and General repos as tw
 tiny human-approved commits. The gate the content was written into: **107 pytest
 tests, 8 audit checks** (including mechanical verification of all 599/599 pool quotes
 and answer keys), full HTML/PDF/TXT build. This runtime does not meter subagent
-tokens, so no measured token total exists; the README's stats block carries a
-clearly-labeled estimate instead.
+tokens; the clearly-labeled estimate in the README's stats block (~5.8M) is
+modeled from agent reads + written volume at ~4 chars/token — Book 1's metered
+~4.7M corroborates the scale.
 
 ## 14. Commands
 

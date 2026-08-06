@@ -1,7 +1,13 @@
 import pathlib
 import re
 
-from tools.build_book import SERIES_BOOKS, build_html, build_txt, compute_chapter_id
+from tools.build_book import (
+    SERIES_BOOKS,
+    build_html,
+    build_txt,
+    compute_chapter_id,
+    section_paths,
+)
 
 
 def test_build_html_embeds_figure_toc_and_math():
@@ -42,6 +48,44 @@ def test_compute_chapter_id_numbered_and_appendix_headings():
                               "Appendix A: The Complete 2024–2028 Pool") == "appendix-a"
     assert compute_chapter_id("appendices/glossary-and-formulas.md",
                               "Appendix B: Glossary & Formulas") == "appendix-b"
+
+
+# --- Preface (front matter) -------------------------------------------------
+
+def test_compute_chapter_id_preface():
+    assert compute_chapter_id("chapters/preface.md",
+                              "Preface — Why & How This Book Was Made") == "preface"
+
+
+def test_preface_renders_first_with_working_toc_link():
+    html = build_html(
+        [pathlib.Path("tests/fixtures/preface.md"),
+         pathlib.Path("tests/fixtures/ch_sample.md")],
+        {},
+    )
+    assert 'id="preface"' in html                 # preface anchor
+    assert 'href="#preface"' in html              # TOC link resolves
+    # TOC entry uses the colon form, not the printed em-dash heading
+    assert '<a href="#preface">Preface: Why &amp; How This Book Was Made</a>' in html
+    # preface comes before the first chapter in both TOC and body
+    assert html.index('href="#preface"') < html.index('href="#ch01"')
+    assert html.index('id="preface"') < html.index('id="ch01"')
+
+
+def test_txt_includes_preface_first():
+    txt = build_txt([pathlib.Path("tests/fixtures/preface.md"),
+                     pathlib.Path("tests/fixtures/ch_sample.md")])
+    assert "Preface — Why & How This Book Was Made" in txt
+    assert txt.index("Preface") < txt.index("Complex Impedance")
+
+
+def test_section_paths_puts_real_preface_before_ch00():
+    # the real book on disk: preface first, then ch00..ch10, then appendices
+    stems = [p.stem for p in section_paths()]
+    assert stems[0] == "preface"
+    assert stems[1] == "ch00"
+    assert "ch10" in stems
+    assert stems.index("pool") > stems.index("ch10")  # Appendix A last but one
 
 
 def test_txt_strips_markup_and_math():

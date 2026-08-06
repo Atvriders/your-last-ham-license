@@ -4,8 +4,9 @@ A short spoken preface that opens the audiobook: a welcome to the
 experienced General upgrading to Extra — the last license class, what Extra
 opens (the Extra-only HF segments and full amateur privileges), what Your
 Last Ham License is, that it was written by Claude Opus 4.8 running in
-Claude Code, and how to use the eight-voice edition. Kept separate from
-the chapter tracks so it can be regenerated on its own.
+Claude Code, a word on how it was made (the multi-agent workflow and its
+estimated token cost), and how to use the eight-voice edition. Kept separate
+from the chapter tracks so it can be regenerated on its own.
 
 Usage:
   python tools/make_intro.py        # writes audiobook/intro.mp3
@@ -32,6 +33,8 @@ This audiobook was written by Claude Opus 4.8 — an artificial intelligence mad
 You already hold your General license. You know your way around HF, you know the bands where contacts cross oceans — and you have probably noticed the segments your ticket does not quite reach. This course is your last upgrade: in eleven chapters it takes you from General to Amateur Extra, the highest license class the FCC grants. The Extra-only segments of the HF bands, operating at the edge — satellites, moonbounce, weak signal — the exotic propagation paths, complex impedance and the Smith chart, and safety math at full depth. Every fact and every practice question is checked against the official twenty twenty-four to twenty twenty-eight Extra question pool, so what you hear is what the exam asks.
 
 This book completes the series that began with Your First Ham License and continued with Your Next Ham License: three courses, from your first contact to every privilege the service offers.
+
+It exists to carry an experienced General all the way to a passed Extra exam, and it was built by a multi-agent AI workflow: an accuracy canon as law, every fact audited against it, and all five hundred ninety-nine pool questions checked mechanically, verbatim, answer keys included. All told, the build consumed an estimated five point eight million subagent tokens.
 
 This edition is offered in eight voices — American, British, Australian, and Irish, male and female.
 
