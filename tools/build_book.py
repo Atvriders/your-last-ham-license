@@ -522,9 +522,12 @@ def build_html(chapter_paths: list, figreg: dict) -> str:
         '<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' '
-        "viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2314203a'/%3E"
-        "%3Cpath d='M16 3 L19.5 16 L16 29 L12.5 16 Z' fill='%23e8c877'/%3E"
-        "%3Ccircle cx='16' cy='16' r='2.4' fill='%23ffe6ac'/%3E%3C/svg%3E\">\n"
+        "viewBox='0 0 16 16'%3E%3Cpath d='M8 6.5 4 15h8z' fill='none' stroke='%238a6a24' "
+        "stroke-width='1.3' stroke-linejoin='round'/%3E%3Cpath d='M8 6.5V15M6.1 11h3.8' "
+        "stroke='%238a6a24' stroke-width='1.1'/%3E%3Ccircle cx='8' cy='4.8' r='1.3' "
+        "fill='%238a6a24'/%3E%3Cpath d='M5.7 2.4a3.3 3.3 0 0 1 4.6 0M4 .7a5.7 5.7 0 0 1 8 0' "
+        "fill='none' stroke='%238a6a24' stroke-width='1' stroke-linecap='round'/%3E"
+        "%3C/svg%3E\">\n"
         "<title>Your Last Ham License</title>\n"
         f"<style>{_CSS}</style>\n"
         "</head>\n"
