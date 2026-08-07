@@ -458,8 +458,7 @@ and as an imported module.
   `album=Your Last Ham License`. `speak_math`'s formula-token table was **extended for
   this book** with the Extra Greek (Γ→"gamma", ρ→"rho", τ→"tau", ω→"omega", φ→"phi")
   and ∠→"angle" on top of the carried set (π, Ω, ×, ≈, √, fractions, subscripts); the
-  j-operator and magnitude bars speak sanely as themselves. **`tools/make_intro.py`**
-  generates the spoken introduction (the capstone welcome).
+  j-operator and magnitude bars speak sanely as themselves.
   `docker/audiobook-index.html` is the player (§8).
 - **`tools/make_exam.py`** — the practice-exam generator:
   `python3 tools/make_exam.py [--seed N] [--out build/] [--pool canon/pool-extra.json]`
@@ -472,7 +471,7 @@ and as an imported module.
   `PASS_SCORE` constant (**37 of 50** — Technician/General were 26 of 35). The group
   model **tolerates the deleted-ID gaps** — one uniform-random draw per group from
   whatever ids exist (E4D draws from 13, not 14).
-- **`tests/`** — **107 pytest tests** covering all tooling (including the four
+- **`tests/`** — **161 pytest tests** covering all tooling (including the four
   check-#8 fixture tests: a correct quote passes; a one-word-off quote fails; a wrong
   answer letter fails; missing pool → skip — with a pool fixture that carries a
   **deleted-ID gap** so the coverage check is proven to tolerate non-contiguous
@@ -546,7 +545,7 @@ books live and Extra current — it completes the series site.**
   remains anywhere**. Each book's standalone image (`docker-compose.yml`, also :8080)
   runs fine alone.
 - **Audiobook player** (`docker/audiobook-index.html`) — themed page with 12 tracks
-  (intro + 11 chapters), a **voice switcher** grouped by accent (8 voices: Andrew,
+  (preface + 11 chapters), a **voice switcher** grouped by accent (8 voices: Andrew,
   Ava, Ryan, Sonia, William, Natasha, Connor, Emily), continuous chapter-to-chapter
   playback, a live visualizer, and **resume** (voice/track/position/auto-next
   persisted in `localStorage` under **`ylhl-audio`** — this book's key; Book 2 uses
@@ -556,7 +555,7 @@ books live and Extra current — it completes the series site.**
 - **Hosting/CI** — `Dockerfile` (nginx serving `build/index.html`, the TXT/PDF,
   `chapters/`, and `audiobook/` with the player at `/audiobook/`); GitHub Actions
   (`.github/workflows/build.yml`, push to `master`/`main` or `workflow_dispatch`,
-  GitHub-only — no Gitea path) fetches the audiobook from **release v1.0** (intro +
+  GitHub-only — no Gitea path) fetches the audiobook from **release v1.0** (preface +
   8 voices × 11 chapters; the fetch loop stays `seq -f "%02g" 0 10`), rebuilds the
   book, and pushes `ghcr.io/atvriders/your-last-ham-license:latest`. **Audio ships on
   the release, not in git.**
